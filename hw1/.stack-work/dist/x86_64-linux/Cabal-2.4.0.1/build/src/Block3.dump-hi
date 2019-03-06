@@ -1,0 +1,2833 @@
+
+==================== FINAL INTERFACE ====================
+2019-03-06 17:43:03.741335629 UTC
+
+interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block3 8063
+  interface hash: 798e9649a64f08eef939702a11594015
+  ABI hash: 2af74f00ca2b1dedada042a2742ab0a4
+  export-list hash: c73eeb4cd132239138f0afb2e4b20ebd
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9d156e2ccc398f2f187b19220f36d2ba
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Block3.afterDays
+  Block3.buildCastle
+  Block3.buildHouse
+  Block3.buildLandmark
+  Block3.buildWalls
+  Block3.citizens
+  Block3.cityLord
+  Block3.cityWalls
+  Block3.daysToParty
+  Block3.emptyCastle
+  Block3.getResult
+  Block3.isWeekend
+  Block3.nextDay
+  Block3.setLord
+  Block3.showResult
+  Block3.Castle{Block3.Castle lord walls}
+  Block3.City{Block3.City castle houses landmark}
+  Block3.Day{Block3.Friday Block3.Monday Block3.Saturday Block3.Sunday Block3.Thursday Block3.Tuesday Block3.Wednesday}
+  Block3.House{Block3.House livingPersons}
+  Block3.Landmark{Block3.Church Block3.Library}
+  Block3.LivingPersons{Block3.Four Block3.One Block3.Three Block3.Two}
+  Block3.Lord{Block3.Lord}
+  Block3.Nat{Block3.S Block3.Z}
+  Block3.OperationResult{Block3.Failure Block3.Success}
+  Block3.Walls{Block3.Walls}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:Data.List.NonEmpty d9b99a249213afa9344e96f715fca047
+import  -/  base-4.12.0.0:Data.Maybe 1e8e1362415df45376dffd98f8a47766
+import  -/  base-4.12.0.0:Data.Ratio 96f9a1de850e5ea66ed6c5bd6817461b
+import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Enum 51972331265459b2ecdf2bf83fce4045
+import  -/  base-4.12.0.0:GHC.Err 28d622b06927ca4c3b335ec5326c34b2
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Real f7dad82c1d43d80823865d3e6c6636e0
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 7f56f3d142debd8666df241a1ddc7887
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay :: GHC.Enum.Enum Block3.Day
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Day
+                  Block3.nextDay
+                  Block3.$fEnumDay_$cpred
+                  Block3.$fEnumDay_$ctoEnum
+                  Block3.$fEnumDay_$cfromEnum
+                  Block3.$fEnumDay_$cenumFrom
+                  Block3.$fEnumDay_$cenumFromThen
+                  Block3.$fEnumDay_$cenumFromTo
+                  Block3.$fEnumDay_$cenumFromThenTo -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay1 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 6#) -}
+d201af46585470d0056cd87f89bb6e8c
+  $fEnumDay10 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+728c460bcdb8ab09249884fa6e6542c5
+  $fEnumDay11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+2cfa94643540e42579d9166a61de9648
+  $fEnumDay12 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+3ef814dad43fcb31f61296aa4270da88
+  $fEnumDay13 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay14 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 5#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay15 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 4#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay16 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 3#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay17 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 2#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay18 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 1#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay19 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 0#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay2 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 5#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay20 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum -1#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay3 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 4#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay4 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 3#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay5 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 2#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay6 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 1#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay7 :: [Block3.Day]
+  {- Unfolding: (Block3.$fEnumDay_go7 0#) -}
+175e53ca636d9b1362478f4030dabecc
+  $fEnumDay8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+50318db33fd7b64039cf98b3b681ece4
+  $fEnumDay9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cenumFrom :: Block3.Day -> [Block3.Day]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Block3.Day) ->
+                 case x of wild {
+                   Block3.Monday -> Block3.$fEnumDay7
+                   Block3.Tuesday -> Block3.$fEnumDay6
+                   Block3.Wednesday -> Block3.$fEnumDay5
+                   Block3.Thursday -> Block3.$fEnumDay4
+                   Block3.Friday -> Block3.$fEnumDay3
+                   Block3.Saturday -> Block3.$fEnumDay2
+                   Block3.Sunday -> Block3.$fEnumDay1 }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cenumFromThen ::
+    Block3.Day -> Block3.Day -> [Block3.Day]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.Day) (y :: Block3.Day) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Block3.Day]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Block3.Monday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 0#)
+                       Block3.Tuesday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 1#)
+                       Block3.Wednesday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 2#)
+                       Block3.Thursday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 3#)
+                       Block3.Friday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 4#)
+                       Block3.Saturday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 5#)
+                       Block3.Sunday
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.Day
+                            Block3.$fEnumDay_$ctoEnum
+                            (GHC.Enum.efdInt x1 6#) }
+                 } in
+                 case x of wild {
+                   Block3.Monday -> $j 0#
+                   Block3.Tuesday -> $j 1#
+                   Block3.Wednesday -> $j 2#
+                   Block3.Thursday -> $j 3#
+                   Block3.Friday -> $j 4#
+                   Block3.Saturday -> $j 5#
+                   Block3.Sunday -> $j 6# }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cenumFromThenTo ::
+    Block3.Day -> Block3.Day -> Block3.Day -> [Block3.Day]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S,1*U><S,1*U> -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cenumFromTo :: Block3.Day -> Block3.Day -> [Block3.Day]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.Day) (y :: Block3.Day) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Block3.Day]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Block3.Monday
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go6 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Tuesday
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go5 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Wednesday
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go4 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Thursday
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go3 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Friday
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go2 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Saturday
+                       -> case GHC.Prim.># x1 5# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go1 x1
+                            1# -> GHC.Types.[] @ Block3.Day }
+                       Block3.Sunday
+                       -> case GHC.Prim.># x1 6# of lwild {
+                            DEFAULT -> Block3.$fEnumDay_go x1
+                            1# -> GHC.Types.[] @ Block3.Day } }
+                 } in
+                 case x of wild {
+                   Block3.Monday -> $j 0#
+                   Block3.Tuesday -> $j 1#
+                   Block3.Wednesday -> $j 2#
+                   Block3.Thursday -> $j 3#
+                   Block3.Friday -> $j 4#
+                   Block3.Saturday -> $j 5#
+                   Block3.Sunday -> $j 6# }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cfromEnum :: Block3.Day -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Day) ->
+                 case ds of wild {
+                   Block3.Monday -> Block3.$fEnumDay_z
+                   Block3.Tuesday -> Block3.$fEnumDay13
+                   Block3.Wednesday -> Block3.$fEnumDay12
+                   Block3.Thursday -> Block3.$fEnumDay11
+                   Block3.Friday -> Block3.$fEnumDay10
+                   Block3.Saturday -> Block3.$fEnumDay9
+                   Block3.Sunday -> Block3.$fEnumDay8 }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$cpred :: Block3.Day -> Block3.Day
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Block3.Day) ->
+                 case x of wild {
+                   Block3.Monday -> Block3.$fEnumDay20
+                   Block3.Tuesday -> Block3.$fEnumDay19
+                   Block3.Wednesday -> Block3.$fEnumDay18
+                   Block3.Thursday -> Block3.$fEnumDay17
+                   Block3.Friday -> Block3.$fEnumDay16
+                   Block3.Saturday -> Block3.$fEnumDay15
+                   Block3.Sunday -> Block3.$fEnumDay14 }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_$ctoEnum :: GHC.Types.Int -> Block3.Day
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Block3.$w$ctoEnum ww1 }) -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go1 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go2 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go3 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go4 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go5 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go6 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+b449762fea2f899ac11419d7d2748742
+  $fEnumDay_go7 :: GHC.Prim.Int# -> [Block3.Day]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+9bfbf325efac71f56e36cc619be21d4c
+  $fEnumDay_z :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons :: GHC.Enum.Enum Block3.LivingPersons
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.LivingPersons
+                  Block3.$fEnumLivingPersons_$csucc
+                  Block3.$fEnumLivingPersons_$cpred
+                  Block3.$fEnumLivingPersons_$ctoEnum
+                  Block3.$fEnumLivingPersons_$cfromEnum
+                  Block3.$fEnumLivingPersons_$cenumFrom
+                  Block3.$fEnumLivingPersons_$cenumFromThen
+                  Block3.$fEnumLivingPersons_$cenumFromTo
+                  Block3.$fEnumLivingPersons_$cenumFromThenTo -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons1 :: Block3.LivingPersons
+  {- Strictness: x -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons2 :: [Block3.LivingPersons]
+  {- Unfolding: (Block3.$fEnumLivingPersons_go4 4#) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons3 :: [Block3.LivingPersons]
+  {- Unfolding: (Block3.$fEnumLivingPersons_go4 3#) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons4 :: [Block3.LivingPersons]
+  {- Unfolding: (Block3.$fEnumLivingPersons_go4 2#) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons5 :: [Block3.LivingPersons]
+  {- Unfolding: (Block3.$fEnumLivingPersons_go4 1#) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cenumFrom ::
+    Block3.LivingPersons -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Block3.LivingPersons) ->
+                 case x of wild {
+                   Block3.One -> Block3.$fEnumLivingPersons5
+                   Block3.Two -> Block3.$fEnumLivingPersons4
+                   Block3.Three -> Block3.$fEnumLivingPersons3
+                   Block3.Four -> Block3.$fEnumLivingPersons2 }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cenumFromThen ::
+    Block3.LivingPersons
+    -> Block3.LivingPersons -> [Block3.LivingPersons]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.LivingPersons)
+                   (y :: Block3.LivingPersons) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Block3.LivingPersons]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Block3.One
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.LivingPersons
+                            Block3.$fEnumLivingPersons_$ctoEnum
+                            (GHC.Enum.efdInt x1 1#)
+                       Block3.Two
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.LivingPersons
+                            Block3.$fEnumLivingPersons_$ctoEnum
+                            (GHC.Enum.efdInt x1 2#)
+                       Block3.Three
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.LivingPersons
+                            Block3.$fEnumLivingPersons_$ctoEnum
+                            (GHC.Enum.efdInt x1 3#)
+                       Block3.Four
+                       -> GHC.Base.map
+                            @ GHC.Types.Int
+                            @ Block3.LivingPersons
+                            Block3.$fEnumLivingPersons_$ctoEnum
+                            (GHC.Enum.efdInt x1 4#) }
+                 } in
+                 case x of wild {
+                   Block3.One -> $j 1#
+                   Block3.Two -> $j 2#
+                   Block3.Three -> $j 3#
+                   Block3.Four -> $j 4# }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cenumFromThenTo ::
+    Block3.LivingPersons
+    -> Block3.LivingPersons
+    -> Block3.LivingPersons
+    -> [Block3.LivingPersons]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cenumFromTo ::
+    Block3.LivingPersons
+    -> Block3.LivingPersons -> [Block3.LivingPersons]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.LivingPersons)
+                   (y :: Block3.LivingPersons) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Block3.LivingPersons]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Block3.One
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Block3.$fEnumLivingPersons_go3 x1
+                            1# -> GHC.Types.[] @ Block3.LivingPersons }
+                       Block3.Two
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Block3.$fEnumLivingPersons_go2 x1
+                            1# -> GHC.Types.[] @ Block3.LivingPersons }
+                       Block3.Three
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Block3.$fEnumLivingPersons_go1 x1
+                            1# -> GHC.Types.[] @ Block3.LivingPersons }
+                       Block3.Four
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Block3.$fEnumLivingPersons_go x1
+                            1# -> GHC.Types.[] @ Block3.LivingPersons } }
+                 } in
+                 case x of wild {
+                   Block3.One -> $j 1#
+                   Block3.Two -> $j 2#
+                   Block3.Three -> $j 3#
+                   Block3.Four -> $j 4# }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cfromEnum ::
+    Block3.LivingPersons -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.LivingPersons) ->
+                 case ds of wild {
+                   Block3.One -> Block3.$fEnumDay13
+                   Block3.Two -> Block3.$fEnumDay12
+                   Block3.Three -> Block3.$fEnumDay11
+                   Block3.Four -> Block3.$fEnumDay10 }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$cpred ::
+    Block3.LivingPersons -> Block3.LivingPersons
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.LivingPersons) ->
+                 case x of wild {
+                   Block3.One -> Block3.$fEnumLivingPersons1
+                   Block3.Two -> Block3.One
+                   Block3.Three -> Block3.Two
+                   Block3.Four -> Block3.Three }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$csucc ::
+    Block3.LivingPersons -> Block3.LivingPersons
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.LivingPersons) ->
+                 case x of wild {
+                   Block3.One -> Block3.Two
+                   Block3.Two -> Block3.Three
+                   Block3.Three -> Block3.Four
+                   Block3.Four -> Block3.$fEnumLivingPersons1 }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_$ctoEnum ::
+    GHC.Types.Int -> Block3.LivingPersons
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Int) ->
+                 case ds of wild { GHC.Types.I# ds1 ->
+                 case ds1 of ds2 {
+                   DEFAULT -> Block3.$fEnumLivingPersons1
+                   1# -> Block3.One
+                   2# -> Block3.Two
+                   3# -> Block3.Three
+                   4# -> Block3.Four } }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_go :: GHC.Prim.Int# -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_go1 :: GHC.Prim.Int# -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_go2 :: GHC.Prim.Int# -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_go3 :: GHC.Prim.Int# -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fEnumLivingPersons_go4 :: GHC.Prim.Int# -> [Block3.LivingPersons]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat :: GHC.Enum.Enum Block3.Nat
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.S
+                  Block3.$fEnumNat_$cpred
+                  Block3.$fEnumNat_$ctoEnum
+                  Block3.$fEnumNat_$cfromEnum
+                  Block3.$fEnumNat_$cenumFrom
+                  Block3.$fEnumNat_$cenumFromThen
+                  Block3.$fEnumNat_$cenumFromTo
+                  Block3.$fEnumNat_$cenumFromThenTo -}
+2093fbdc6a5f3f37991d4853d88d1e54
+  $fEnumNat1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cenumFrom :: Block3.Nat -> [Block3.Nat]
+  {- Arity: 1, Strictness: <S,1*U>m2,
+     Unfolding: (\ (x :: Block3.Nat) ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 x Block3.$fEnumNat1) of wild { DEFAULT ->
+                 Block3.$fEnumNat_go wild }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cenumFromThen ::
+    Block3.Nat -> Block3.Nat -> [Block3.Nat]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 x Block3.$fEnumNat1) of wild { DEFAULT ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 y Block3.$fEnumNat1) of wild1 { DEFAULT ->
+                 GHC.Base.map
+                   @ GHC.Types.Int
+                   @ Block3.Nat
+                   Block3.$fEnumNat_$ctoEnum
+                   (GHC.Enum.efdInt wild wild1) } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cenumFromThenTo ::
+    Block3.Nat -> Block3.Nat -> Block3.Nat -> [Block3.Nat]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
+     Unfolding: (\ (x1 :: Block3.Nat)
+                   (x2 :: Block3.Nat)
+                   (y :: Block3.Nat) ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 x1 Block3.$fEnumNat1) of wild { DEFAULT ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 x2 Block3.$fEnumNat1) of wild1 { DEFAULT ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 y Block3.$fEnumNat1) of wild2 { DEFAULT ->
+                 case GHC.Prim.>=# wild1 wild of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.># wild2 wild1 of lwild1 {
+                        DEFAULT
+                        -> GHC.Types.:
+                             @ Block3.Nat
+                             (Block3.$w$ctoEnum1 wild)
+                             (let {
+                                delta :: GHC.Prim.Int# = GHC.Prim.-# wild1 wild
+                              } in
+                              let {
+                                y' :: GHC.Prim.Int# = GHC.Prim.-# wild2 delta
+                              } in
+                              letrec {
+                                go_dn :: GHC.Prim.Int# -> [Block3.Nat]
+                                  {- Arity: 1, Strictness: <S,U> -}
+                                = \ (x :: GHC.Prim.Int#) ->
+                                  case GHC.Prim.<# x y' of lwild2 {
+                                    DEFAULT
+                                    -> GHC.Types.:
+                                         @ Block3.Nat
+                                         (Block3.$w$ctoEnum1 x)
+                                         (go_dn (GHC.Prim.+# x delta))
+                                    1#
+                                    -> GHC.Types.:
+                                         @ Block3.Nat
+                                         (Block3.$w$ctoEnum1 x)
+                                         (GHC.Types.[] @ Block3.Nat) }
+                              } in
+                              go_dn wild1)
+                        1#
+                        -> case GHC.Prim.># wild2 wild of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Block3.Nat
+                                  (Block3.$w$ctoEnum1 wild)
+                                  (GHC.Types.[] @ Block3.Nat)
+                             1# -> GHC.Types.[] @ Block3.Nat } }
+                   1#
+                   -> case GHC.Prim.<# wild2 wild1 of lwild1 {
+                        DEFAULT
+                        -> GHC.Types.:
+                             @ Block3.Nat
+                             (Block3.$w$ctoEnum1 wild)
+                             (let {
+                                delta :: GHC.Prim.Int# = GHC.Prim.-# wild1 wild
+                              } in
+                              let {
+                                y' :: GHC.Prim.Int# = GHC.Prim.-# wild2 delta
+                              } in
+                              letrec {
+                                go_up :: GHC.Prim.Int# -> [Block3.Nat]
+                                  {- Arity: 1, Strictness: <S,U> -}
+                                = \ (x :: GHC.Prim.Int#) ->
+                                  case GHC.Prim.># x y' of lwild2 {
+                                    DEFAULT
+                                    -> GHC.Types.:
+                                         @ Block3.Nat
+                                         (Block3.$w$ctoEnum1 x)
+                                         (go_up (GHC.Prim.+# x delta))
+                                    1#
+                                    -> GHC.Types.:
+                                         @ Block3.Nat
+                                         (Block3.$w$ctoEnum1 x)
+                                         (GHC.Types.[] @ Block3.Nat) }
+                              } in
+                              go_up wild1)
+                        1#
+                        -> case GHC.Prim.<# wild2 wild of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Block3.Nat
+                                  (Block3.$w$ctoEnum1 wild)
+                                  (GHC.Types.[] @ Block3.Nat)
+                             1# -> GHC.Types.[] @ Block3.Nat } } } } } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cenumFromTo :: Block3.Nat -> Block3.Nat -> [Block3.Nat]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 x Block3.$fEnumNat1) of wild { DEFAULT ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 y Block3.$fEnumNat1) of wild1 { DEFAULT ->
+                 case GHC.Prim.># wild wild1 of lwild {
+                   DEFAULT
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Block3.Nat]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Block3.Nat
+                            (Block3.$w$ctoEnum1 x1)
+                            (case GHC.Prim.==# x1 wild1 of lwild1 {
+                               DEFAULT -> go (GHC.Prim.+# x1 1#)
+                               1# -> GHC.Types.[] @ Block3.Nat })
+                      } in
+                      go wild
+                   1# -> GHC.Types.[] @ Block3.Nat } } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cfromEnum :: Block3.Nat -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Block3.Nat) ->
+                 case GHC.Integer.Type.integerToInt
+                        (Block3.$fEnumNat_iter1 a Block3.$fEnumNat1) of wild { DEFAULT ->
+                 GHC.Types.I# wild }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$cpred :: Block3.Nat -> Block3.Nat
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Nat) ->
+                 case ds of wild { Block3.Z -> Block3.Z Block3.S a -> a }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_$ctoEnum :: GHC.Types.Int -> Block3.Nat
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Block3.$w$ctoEnum1 ww1 }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_go :: GHC.Prim.Int# -> [Block3.Nat]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_iter ::
+    GHC.Integer.Type.Integer -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, Strictness: <S,U><L,U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEnumNat_iter1 ::
+    Block3.Nat -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEqNat :: GHC.Classes.Eq Block3.Nat
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat Block3.$fEqNat_$c== Block3.$fEqNat_$c/= -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEqNat_$c/= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEqNat_$c== :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Block3.Nat) (b :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare a b of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.EQ -> GHC.Types.True }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fEqNat_$ccompare :: Block3.Nat -> Block3.Nat -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat :: GHC.Real.Integral Block3.Nat
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.$fRealNat
+                  Block3.$fEnumNat
+                  Block3.$fIntegralNat_$cquot
+                  Block3.$fIntegralNat_$crem
+                  Block3.$fIntegralNat_$cdiv
+                  Block3.$fIntegralNat_$cmod
+                  Block3.$fIntegralNat_$cquotRem
+                  Block3.$fIntegralNat_$cquotRem
+                  Block3.$fIntegralNat_$ctoInteger -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat1 :: (Block3.Nat, Block3.Nat)
+  {- Strictness: x -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$cdiv :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (n :: Block3.Nat) (d :: Block3.Nat) ->
+                 case d of wild {
+                   Block3.Z -> case Block3.$fIntegralNat1 ret_ty Block3.Nat of {}
+                   Block3.S ipv
+                   -> case Block3.$fIntegralNat_iter
+                             n
+                             wild
+                             Block3.Z of wild1 { (,) q ds ->
+                      q } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$cmod :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (n :: Block3.Nat) (d :: Block3.Nat) ->
+                 case d of wild {
+                   Block3.Z -> case Block3.$fIntegralNat1 ret_ty Block3.Nat of {}
+                   Block3.S ipv
+                   -> case Block3.$fIntegralNat_iter
+                             n
+                             wild
+                             Block3.Z of wild1 { (,) ds r ->
+                      r } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$cquot :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (n :: Block3.Nat) (d :: Block3.Nat) ->
+                 case d of wild {
+                   Block3.Z -> case Block3.$fIntegralNat1 ret_ty Block3.Nat of {}
+                   Block3.S ipv
+                   -> case Block3.$fIntegralNat_iter
+                             n
+                             wild
+                             Block3.Z of wild1 { (,) q ds ->
+                      q } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$cquotRem ::
+    Block3.Nat -> Block3.Nat -> (Block3.Nat, Block3.Nat)
+  {- Arity: 2, Strictness: <S,U><S,1*U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Block3.Nat) (ds1 :: Block3.Nat) ->
+                 case ds1 of wild {
+                   Block3.Z -> Block3.$fIntegralNat1
+                   Block3.S ipv -> Block3.$fIntegralNat_iter ds wild Block3.Z }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$crem :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (n :: Block3.Nat) (d :: Block3.Nat) ->
+                 case d of wild {
+                   Block3.Z -> case Block3.$fIntegralNat1 ret_ty Block3.Nat of {}
+                   Block3.S ipv
+                   -> case Block3.$fIntegralNat_iter
+                             n
+                             wild
+                             Block3.Z of wild1 { (,) ds r ->
+                      r } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_$ctoInteger :: Block3.Nat -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Block3.Nat) ->
+                 Block3.$fEnumNat_iter1 a Block3.$fEnumNat1) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fIntegralNat_iter ::
+    Block3.Nat -> Block3.Nat -> Block3.Nat -> (Block3.Nat, Block3.Nat)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><L,U>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Block3.Nat) (w1 :: Block3.Nat) (w2 :: Block3.Nat) ->
+                 case Block3.$witer w w1 w2 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat :: GHC.Num.Num Block3.Nat
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.$fNumNat_$c+
+                  Block3.$fNumNat_$c-
+                  Block3.$fNumNat_$c*
+                  Block3.$fNumNat_$cnegate
+                  Block3.$fNumNat_$cabs
+                  Block3.$fNumNat_$csignum
+                  Block3.$fNumNat_$cfromInteger -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat1 :: Block3.Nat
+  {- HasNoCafRefs, Strictness: m2, Unfolding: (Block3.S Block3.Z) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$c* :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Block3.Nat) (ds1 :: Block3.Nat) ->
+                 case ds1 of wild {
+                   Block3.Z -> Block3.Z
+                   Block3.S ipv
+                   -> case ds of wild1 {
+                        Block3.Z -> Block3.Z
+                        Block3.S ipv1 -> Block3.$fNumNat_iter wild1 wild1 wild } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$c+ :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$c- :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$cabs :: Block3.Nat -> Block3.Nat
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ (a :: Block3.Nat) -> a) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$cfromInteger :: GHC.Integer.Type.Integer -> Block3.Nat
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.leInteger# a Block3.$fEnumNat1 of wild {
+                   DEFAULT -> Block3.$fEnumNat_iter a Block3.Z 1# -> Block3.Z }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$cnegate :: Block3.Nat -> Block3.Nat
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: Block3.Nat) -> Block3.$fNumNat_$c- Block3.Z x) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_$csignum :: Block3.Nat -> Block3.Nat
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Nat) ->
+                 case ds of wild {
+                   Block3.Z -> Block3.Z Block3.S ipv -> Block3.$fNumNat1 }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fNumNat_iter ::
+    Block3.Nat -> Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><S,1*U> -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat :: GHC.Classes.Ord Block3.Nat
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.$fEqNat
+                  Block3.$fEqNat_$ccompare
+                  Block3.$fOrdNat_$c<
+                  Block3.$fOrdNat_$c<=
+                  Block3.$fOrdNat_$c>
+                  Block3.$fOrdNat_$c>=
+                  Block3.$fOrdNat_$cmax
+                  Block3.$fOrdNat_$cmin -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$c< :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$c<= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$c> :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$c>= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$cmax :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fOrdNat_$cmin :: Block3.Nat -> Block3.Nat -> Block3.Nat
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
+                 case Block3.$fEqNat_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fRealNat :: GHC.Real.Real Block3.Nat
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.$fNumNat
+                  Block3.$fOrdNat
+                  Block3.$fRealNat_$ctoRational -}
+f3383e681b19339977855bf82a4ae6ad
+  $fRealNat1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fRealNat_$ctoRational :: Block3.Nat -> GHC.Real.Rational
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Block3.Nat) ->
+                 case GHC.Real.$w$s$cfromRational
+                        (Block3.$fEnumNat_iter1 a Block3.$fEnumNat1)
+                        Block3.$fRealNat1 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+bd5792d1b2e39d642e69426f7416a51d
+  $fShowCastle :: GHC.Show.Show Block3.Castle
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Castle
+                  Block3.$fShowCastle_$cshowsPrec
+                  Block3.$fShowCastle_$cshow
+                  Block3.$fShowCastle_$cshowList -}
+bd5792d1b2e39d642e69426f7416a51d
+  $fShowCastle1 :: Block3.Castle -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: (\ (w :: Block3.Castle) ->
+                 case w of ww { Block3.Castle ww1 ww2 ->
+                 Block3.$w$cshowsPrec 0# ww1 ww2 }) -}
+3dfe48ba27f62b7cdd8cd59eecec7352
+  $fShowCastle2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+260286f6714a49501ec1916ff87b63cc
+  $fShowCastle3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("walls = "#) -}
+e4f87730a026b52fdfacd206ce3ab584
+  $fShowCastle4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("lord = "#) -}
+2862353d3edaacb5f1c20f61ff8db3b0
+  $fShowCastle5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Castle {"#) -}
+bd5792d1b2e39d642e69426f7416a51d
+  $fShowCastle_$cshow :: Block3.Castle -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Castle) ->
+                 Block3.$fShowCastle_$cshowsPrec
+                   Block3.$fEnumDay_z
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+bd5792d1b2e39d642e69426f7416a51d
+  $fShowCastle_$cshowList :: [Block3.Castle] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Castle]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.Castle Block3.$fShowCastle1 ls s) -}
+bd5792d1b2e39d642e69426f7416a51d
+  $fShowCastle_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Castle -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Block3.Castle) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Block3.Castle ww3 ww4 ->
+                 Block3.$w$cshowsPrec ww1 ww3 ww4 } }) -}
+62a881e4d1c4805239fb008343214aaf
+  $fShowCity :: GHC.Show.Show Block3.City
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.City
+                  Block3.$fShowCity_$cshowsPrec
+                  Block3.$fShowCity_$cshow
+                  Block3.$fShowCity_$cshowList -}
+62a881e4d1c4805239fb008343214aaf
+  $fShowCity1 :: Block3.City -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U(U,U))>,
+     Unfolding: (\ (w :: Block3.City) ->
+                 case w of ww { Block3.City ww1 ww2 ww3 ->
+                 Block3.$w$cshowsPrec1 0# ww1 ww2 ww3 }) -}
+1a0d4077ef263c8135e5f45866564745
+  $fShowCity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("houses = "#) -}
+31b03b64a325d957886104b91aeaaed4
+  $fShowCity3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("landmark = "#) -}
+e673fa7333b5dd34a5deb770065f3739
+  $fShowCity4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("castle = "#) -}
+05883f29bb7c395c3581beed63eb22ae
+  $fShowCity5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("City {"#) -}
+62a881e4d1c4805239fb008343214aaf
+  $fShowCity_$cshow :: Block3.City -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U(U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.City) ->
+                 Block3.$fShowCity_$cshowsPrec
+                   Block3.$fEnumDay_z
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+62a881e4d1c4805239fb008343214aaf
+  $fShowCity_$cshowList :: [Block3.City] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.City]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.City Block3.$fShowCity1 ls s) -}
+62a881e4d1c4805239fb008343214aaf
+  $fShowCity_$cshowsPrec ::
+    GHC.Types.Int -> Block3.City -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U(U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Block3.City) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Block3.City ww3 ww4 ww5 ->
+                 Block3.$w$cshowsPrec1 ww1 ww3 ww4 ww5 } }) -}
+b449762fea2f899ac11419d7d2748742
+  $fShowDay :: GHC.Show.Show Block3.Day
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Day
+                  Block3.$fShowDay_$cshowsPrec
+                  Block3.$fShowDay_$cshow
+                  Block3.$fShowDay_$cshowList -}
+4d40ebd7206472ca4d133624c35ec80e
+  $fShowDay1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay2) -}
+389dfd1e13868ac9177f6e7c67f7b97d
+  $fShowDay10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Wednesday"#) -}
+5cd0eb390820931d0cb685a182203256
+  $fShowDay11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay12) -}
+f3db76d039fe674c82e4419869a1ed7b
+  $fShowDay12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tuesday"#) -}
+fe27e76590bb5e15d7b269c1eeb13870
+  $fShowDay13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay14) -}
+7a497fc2e966b79b84c1a2d21685a811
+  $fShowDay14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Monday"#) -}
+fcc4d8e06629d934696820e0d734aab9
+  $fShowDay2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Sunday"#) -}
+c8df9172cfde6f64e2aa6002252e5e5f
+  $fShowDay3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay4) -}
+98b97fda4dac61dc5ae3f7b92c78500e
+  $fShowDay4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Saturday"#) -}
+958993f221120a85f92f588f038403be
+  $fShowDay5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay6) -}
+4b3a33ac7bc31bdeaa57d893d28fb16a
+  $fShowDay6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Friday"#) -}
+e1d7472dd37741a2b313d6e1a5ba99e6
+  $fShowDay7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay8) -}
+5d97599a82106bdfc3c707451827dafb
+  $fShowDay8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Thursday"#) -}
+309413d8d978ac9308bc536b1ab8cd5e
+  $fShowDay9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay10) -}
+b449762fea2f899ac11419d7d2748742
+  $fShowDay_$cshow :: Block3.Day -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Day) ->
+                 case x of wild {
+                   Block3.Monday -> Block3.$fShowDay13
+                   Block3.Tuesday -> Block3.$fShowDay11
+                   Block3.Wednesday -> Block3.$fShowDay9
+                   Block3.Thursday -> Block3.$fShowDay7
+                   Block3.Friday -> Block3.$fShowDay5
+                   Block3.Saturday -> Block3.$fShowDay3
+                   Block3.Sunday -> Block3.$fShowDay1 }) -}
+b449762fea2f899ac11419d7d2748742
+  $fShowDay_$cshowList :: [Block3.Day] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Day]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.Day Block3.$w$cshowsPrec4 ls s) -}
+b449762fea2f899ac11419d7d2748742
+  $fShowDay_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Day -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Block3.Day)
+                   (w2 :: GHC.Base.String) ->
+                 Block3.$w$cshowsPrec4 w1 w2) -}
+7689b436c3d20fbe3be53fd627060bc4
+  $fShowHouse :: GHC.Show.Show Block3.House
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.House
+                  Block3.$fShowHouse_$cshowsPrec
+                  Block3.$fShowHouse_$cshow
+                  Block3.$fShowHouse_$cshowList -}
+7689b436c3d20fbe3be53fd627060bc4
+  $fShowHouse1 :: Block3.House -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ (w :: Block3.House) (w1 :: GHC.Base.String) ->
+                 Block3.$w$cshowsPrec2 0# w w1) -}
+65e7789fed9e5183153a0035b8efab37
+  $fShowHouse10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("livingPersons = "#) -}
+e25c837b51750716534ea97e1b3b1de7
+  $fShowHouse11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("House {"#) -}
+160a318be32615bff47f7817eb8310df
+  $fShowHouse12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowCastle2) -}
+26e7505c9fc573fe55d1fbb392808a83
+  $fShowHouse2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowHouse3) -}
+70d83e35f21351c5aff689400fcc8c32
+  $fShowHouse3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Four"#) -}
+ca349c289fb629d21926d6098d5f22cf
+  $fShowHouse4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowHouse5) -}
+2e5236b2056235058281e098e02244d0
+  $fShowHouse5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Three"#) -}
+22db3346298058c267bdc7e986fe7b17
+  $fShowHouse6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowHouse7) -}
+6bee6d71b2bfab2b5f4b96fb072536a2
+  $fShowHouse7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Two"#) -}
+79344f5391dbe8d9cf398b68bcb844aa
+  $fShowHouse8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowHouse9) -}
+5a6b930e57e970068a518147efb7abea
+  $fShowHouse9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("One"#) -}
+7689b436c3d20fbe3be53fd627060bc4
+  $fShowHouse_$cshow :: Block3.House -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: Block3.House) ->
+                 GHC.CString.unpackAppendCString#
+                   Block3.$fShowHouse11
+                   (GHC.CString.unpackAppendCString#
+                      Block3.$fShowHouse10
+                      (Block3.$w$cshowsPrec3
+                         x `cast` (Block3.N:House[0])
+                         Block3.$fShowHouse12))) -}
+7689b436c3d20fbe3be53fd627060bc4
+  $fShowHouse_$cshowList :: [Block3.House] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.House]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.House Block3.$fShowHouse1 ls s) -}
+7689b436c3d20fbe3be53fd627060bc4
+  $fShowHouse_$cshowsPrec ::
+    GHC.Types.Int -> Block3.House -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Block3.House)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Block3.$w$cshowsPrec2 ww1 w1 w2 }) -}
+048847b6a9d15f099995c4a67c1156d0
+  $fShowLandmark :: GHC.Show.Show Block3.Landmark
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Landmark
+                  Block3.$fShowLandmark_$cshowsPrec
+                  Block3.$fShowLandmark_$cshow
+                  Block3.$fShowLandmark_$cshowList -}
+048847b6a9d15f099995c4a67c1156d0
+  $fShowLandmark1 :: Block3.Landmark -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Block3.Landmark) (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Block3.Church
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLandmark4)
+                        eta
+                   Block3.Library
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLandmark2)
+                        eta }) -}
+8e6ecb2192ad4bd793e49afbcd3ae76e
+  $fShowLandmark2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Block3.$fShowLandmark3) -}
+d63d61e0d89c4ac87d31896a39f6f078
+  $fShowLandmark3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Library"#) -}
+22877ac0f134a647a67a47ca0bdd11fa
+  $fShowLandmark4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Block3.$fShowLandmark5) -}
+cc34af5540c529bfba9b29ad9bbbdb46
+  $fShowLandmark5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Church"#) -}
+048847b6a9d15f099995c4a67c1156d0
+  $fShowLandmark_$cshow :: Block3.Landmark -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Landmark) ->
+                 case x of wild {
+                   Block3.Church -> Block3.$fShowLandmark4
+                   Block3.Library -> Block3.$fShowLandmark2 }) -}
+048847b6a9d15f099995c4a67c1156d0
+  $fShowLandmark_$cshowList :: [Block3.Landmark] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Landmark]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Block3.Landmark
+                   Block3.$fShowLandmark1
+                   ls
+                   s) -}
+048847b6a9d15f099995c4a67c1156d0
+  $fShowLandmark_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Landmark -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Block3.Landmark)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   Block3.Church
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLandmark4)
+                        eta
+                   Block3.Library
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLandmark2)
+                        eta }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fShowLivingPersons :: GHC.Show.Show Block3.LivingPersons
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.LivingPersons
+                  Block3.$fShowLivingPersons_$cshowsPrec
+                  Block3.$fShowLivingPersons_$cshow
+                  Block3.$fShowLivingPersons_$cshowList -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fShowLivingPersons_$cshow ::
+    Block3.LivingPersons -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.LivingPersons) ->
+                 case x of wild {
+                   Block3.One -> Block3.$fShowHouse8
+                   Block3.Two -> Block3.$fShowHouse6
+                   Block3.Three -> Block3.$fShowHouse4
+                   Block3.Four -> Block3.$fShowHouse2 }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fShowLivingPersons_$cshowList ::
+    [Block3.LivingPersons] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.LivingPersons]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Block3.LivingPersons
+                   Block3.$w$cshowsPrec3
+                   ls
+                   s) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $fShowLivingPersons_$cshowsPrec ::
+    GHC.Types.Int -> Block3.LivingPersons -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Block3.LivingPersons)
+                   (w2 :: GHC.Base.String) ->
+                 Block3.$w$cshowsPrec3 w1 w2) -}
+a51c635a1ebc8f1c0e5d957b4567dd18
+  $fShowLord :: GHC.Show.Show Block3.Lord
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Lord
+                  Block3.$fShowLord_$cshowsPrec
+                  Block3.$fShowLord_$cshow
+                  Block3.$fShowLord_$cshowList -}
+a51c635a1ebc8f1c0e5d957b4567dd18
+  $fShowLord1 :: Block3.Lord -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*H><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Block3.Lord) (eta :: GHC.Base.String) ->
+                 case ds of wild { Block3.Lord ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLord2)
+                   eta }) -}
+ea4e69511b6509567b0f127677e38959
+  $fShowLord2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowLord3) -}
+52c4ff57df0576f5fb12313eb4c5814c
+  $fShowLord3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lord"#) -}
+a51c635a1ebc8f1c0e5d957b4567dd18
+  $fShowLord_$cshow :: Block3.Lord -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Lord) ->
+                 case x of wild { Block3.Lord -> Block3.$fShowLord2 }) -}
+a51c635a1ebc8f1c0e5d957b4567dd18
+  $fShowLord_$cshowList :: [Block3.Lord] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Lord]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.Lord Block3.$fShowLord1 ls s) -}
+a51c635a1ebc8f1c0e5d957b4567dd18
+  $fShowLord_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Lord -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Block3.Lord)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild { Block3.Lord ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLord2)
+                   eta }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fShowNat :: GHC.Show.Show Block3.Nat
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Nat
+                  Block3.$fShowNat_$cshowsPrec
+                  Block3.$fShowNat_$cshow
+                  Block3.$fShowNat_$cshowList -}
+11428480cd746b86ccea6a79e22aeff2
+  $fShowNat1 :: Block3.Nat -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Block3.$fShowNat_$cshowsPrec Block3.$fEnumDay_z) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fShowNat_$cshow :: Block3.Nat -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Nat) ->
+                 Block3.$fShowNat_$cshowsPrec
+                   Block3.$fEnumDay_z
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fShowNat_$cshowList :: [Block3.Nat] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Nat]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.Nat Block3.$fShowNat1 ls s) -}
+11428480cd746b86ccea6a79e22aeff2
+  $fShowNat_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Nat -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  $fShowWalls :: GHC.Show.Show Block3.Walls
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Walls
+                  Block3.$fShowWalls_$cshowsPrec
+                  Block3.$fShowWalls_$cshow
+                  Block3.$fShowWalls_$cshowList -}
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  $fShowWalls1 :: Block3.Walls -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*H><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Block3.Walls) (eta :: GHC.Base.String) ->
+                 case ds of wild { Block3.Walls ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowWalls2)
+                   eta }) -}
+6b7ccd2acc18d5337545be5b0a390962
+  $fShowWalls2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowWalls3) -}
+5227e8b650f61488d9d7b9f623fb68e7
+  $fShowWalls3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Walls"#) -}
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  $fShowWalls_$cshow :: Block3.Walls -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.Walls) ->
+                 case x of wild { Block3.Walls -> Block3.$fShowWalls2 }) -}
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  $fShowWalls_$cshowList :: [Block3.Walls] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block3.Walls]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block3.Walls Block3.$fShowWalls1 ls s) -}
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  $fShowWalls_$cshowsPrec ::
+    GHC.Types.Int -> Block3.Walls -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Block3.Walls)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild { Block3.Walls ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowWalls2)
+                   eta }) -}
+414e594c81400291510d3a806f087845
+  $tc'Castle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18028982106818979178##
+                   8977034267173006010##
+                   Block3.$trModule
+                   Block3.$tc'Castle2
+                   0#
+                   Block3.$tc'Castle1) -}
+39b4df6bac02ebf7a97bace7476f843b
+  $tc'Castle1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d0835d8efcdf1ba83518f36e3e812842
+  $tc'Castle2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Castle3) -}
+15a2b07b192b1f4f1593b64e6ac2800f
+  $tc'Castle3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Castle"#) -}
+56328100db75c449435c963fdb418c42
+  $tc'Church :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10801186635281054788##
+                   17670121776578856084##
+                   Block3.$trModule
+                   Block3.$tc'Church2
+                   0#
+                   Block3.$tc'Church1) -}
+7128df2341703c9d4a10e3ae9a7bb30e
+  $tc'Church1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+5244be681f4fcf03aec0f1e0d14faa24
+  $tc'Church2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Church3) -}
+da62f4678e182ae93b34b096d9ec6648
+  $tc'Church3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Church"#) -}
+922ed96be27efca4702694cfe86a1441
+  $tc'City :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12264686442033450305##
+                   17132557278051764666##
+                   Block3.$trModule
+                   Block3.$tc'City2
+                   0#
+                   Block3.$tc'City1) -}
+ab7c8f651364297b879d0137bb86088e
+  $tc'City1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5d4b60f455d627c8ecf4b431ba3d71a8
+  $tc'City2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'City3) -}
+23c37502480ac0cd46fffd0f966bbff4
+  $tc'City3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'City"#) -}
+06f81f13ed03fbcfffad5525fb5bff06
+  $tc'Failure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17884944170126211130##
+                   16332173502379396935##
+                   Block3.$trModule
+                   Block3.$tc'Failure2
+                   0#
+                   Block3.$tc'Failure1) -}
+3c1aa76cd3bb2622abf9e042ebf901c1
+  $tc'Failure1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+138af5660f8e81d284fe587e1b05ea54
+  $tc'Failure2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Failure3) -}
+976514ecb0a5413d7760a65ab7f5a475
+  $tc'Failure3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Failure"#) -}
+1d2320f8fab66215d58fe248de1c5cbe
+  $tc'Four :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11419644563442910312##
+                   12684867670261045899##
+                   Block3.$trModule
+                   Block3.$tc'Four2
+                   0#
+                   Block3.$tc'Four1) -}
+f247ce2bcdbf5916ee592aaeba66b955
+  $tc'Four1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+c62aef271aaa83db9b73cfa35395f3c1
+  $tc'Four2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Four3) -}
+179afb7e0457afca1c1736569c3e4043
+  $tc'Four3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Four"#) -}
+2bede3c9c285180fc9caa7f91c3707a6
+  $tc'Friday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   408698833269602856##
+                   4949112208166275216##
+                   Block3.$trModule
+                   Block3.$tc'Friday2
+                   0#
+                   Block3.$tc'Friday1) -}
+e999ea339a8b67f57d2c2b84b9187554
+  $tc'Friday1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+4730ea4a05408465b19efaaebf8567de
+  $tc'Friday2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Friday3) -}
+37750ad5e5414a66467c4d2f3bcb030a
+  $tc'Friday3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Friday"#) -}
+b74f0257efed409e4fa7ba8bb6204a71
+  $tc'House :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6391032125825497211##
+                   15997575631500888139##
+                   Block3.$trModule
+                   Block3.$tc'House2
+                   0#
+                   Block3.$tc'House1) -}
+378cda25bd5b9eef0df94b2f70a6080e
+  $tc'House1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c90474757d1b233cbf59170161c633b1
+  $tc'House2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'House3) -}
+8ea80eb57d385675f965eb0f3100aeca
+  $tc'House3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'House"#) -}
+befa06174d29913c5dbaee36596a52f6
+  $tc'Library :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5578829961778522727##
+                   15443546880604991598##
+                   Block3.$trModule
+                   Block3.$tc'Library1
+                   0#
+                   Block3.$tc'Church1) -}
+4739c7186df2e4abfcb3facb3737a217
+  $tc'Library1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Library2) -}
+95bf240b55c7793eb5f58faffd443034
+  $tc'Library2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Library"#) -}
+6475da699a2d04b6be51aa57abbef290
+  $tc'Lord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6387153037978896501##
+                   15261683121632721022##
+                   Block3.$trModule
+                   Block3.$tc'Lord2
+                   0#
+                   Block3.$tc'Lord1) -}
+4143c93e95a21ef4a22fc7c8fe3887ad
+  $tc'Lord1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+a57a3744fdd17b86e2d5d6b71f44bdf9
+  $tc'Lord2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Lord3) -}
+bb80d64ed4f5f41b3c8206c5e6bb2c3e
+  $tc'Lord3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Lord"#) -}
+65e8cc0d3d8c7adc4f8f4998b611a908
+  $tc'Monday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6668403295199985334##
+                   12327998436532495830##
+                   Block3.$trModule
+                   Block3.$tc'Monday1
+                   0#
+                   Block3.$tc'Friday1) -}
+00dc0e51ef35b6e70e775a1ef88c1f37
+  $tc'Monday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Monday2) -}
+4b8b181a3d8359cc7da8617251f3cfdc
+  $tc'Monday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Monday"#) -}
+f1c379452a90b72ce8ef3d8a55002367
+  $tc'One :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6008195751003516979##
+                   10163684593536674851##
+                   Block3.$trModule
+                   Block3.$tc'One1
+                   0#
+                   Block3.$tc'Four1) -}
+5dbd4a3f7a65e324d07ec8a280687b71
+  $tc'One1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'One2) -}
+35bb35691e2a687724a743c2cf81cb0b
+  $tc'One2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'One"#) -}
+218ea1bfa0a5a1ee61d6da41ea790111
+  $tc'S :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10783816564550965505##
+                   16840581951271874799##
+                   Block3.$trModule
+                   Block3.$tc'S2
+                   0#
+                   Block3.$tc'S1) -}
+cac0e69eb251faeb514ccedb3b2bc299
+  $tc'S1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+72fe5a3c3f6da070b37af70ac12045f7
+  $tc'S2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'S3) -}
+b8315f1336d8d9cf427a6ca055b4b68e
+  $tc'S3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'S"#) -}
+01be6960e069420b606c7dc05ec514a7
+  $tc'Saturday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8471237501008705252##
+                   13249127910664187992##
+                   Block3.$trModule
+                   Block3.$tc'Saturday1
+                   0#
+                   Block3.$tc'Friday1) -}
+ec042fb1669db29aa2fee8a9d32acd38
+  $tc'Saturday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Saturday2) -}
+67d51dd3ef0e78fee10e3563a2c09475
+  $tc'Saturday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Saturday"#) -}
+f84e1b96894f09713182e3a20672057a
+  $tc'Success :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4028594644465011179##
+                   16652045992076358399##
+                   Block3.$trModule
+                   Block3.$tc'Success1
+                   0#
+                   Block3.$tc'Failure1) -}
+d4460896be30470c52b425151bc6476f
+  $tc'Success1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Success2) -}
+0cdd84ef5ea8e2bb02087a88bc20c869
+  $tc'Success2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Success"#) -}
+d3eb3fe65decc3be15351290462144a1
+  $tc'Sunday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17683876481431794867##
+                   10147050671866436224##
+                   Block3.$trModule
+                   Block3.$tc'Sunday1
+                   0#
+                   Block3.$tc'Friday1) -}
+c2fb6a346336ddfb135f449413767a1f
+  $tc'Sunday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Sunday2) -}
+5912c559fd5debc4f8f3ceb045aa2958
+  $tc'Sunday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Sunday"#) -}
+ad6a025b4cbf956c0127e38b0fe1be2a
+  $tc'Three :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10064404448949184350##
+                   15734910667936166656##
+                   Block3.$trModule
+                   Block3.$tc'Three1
+                   0#
+                   Block3.$tc'Four1) -}
+ba4095198053a0de59244f9a3390581e
+  $tc'Three1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Three2) -}
+044db1384e17ec3499b8a9ad1efe6b87
+  $tc'Three2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Three"#) -}
+68c62866f4fd02d887c9a43659757c8b
+  $tc'Thursday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9847125017208447404##
+                   3721408854511113734##
+                   Block3.$trModule
+                   Block3.$tc'Thursday1
+                   0#
+                   Block3.$tc'Friday1) -}
+3091eb8efbd9adc7db08443bb51bc080
+  $tc'Thursday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Thursday2) -}
+9a46a5600c5c0d80751239a030d8b091
+  $tc'Thursday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Thursday"#) -}
+2cf475bc9cd5f88e73812f2f6bccf529
+  $tc'Tuesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4532023251894825325##
+                   5822003063745590367##
+                   Block3.$trModule
+                   Block3.$tc'Tuesday1
+                   0#
+                   Block3.$tc'Friday1) -}
+290bfa2dc6fdeafbba65a0414088b709
+  $tc'Tuesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Tuesday2) -}
+c787cb0f790461123347ab232bae2d11
+  $tc'Tuesday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tuesday"#) -}
+2d185a8a7844331f001d0a307e952c33
+  $tc'Two :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12787811406742614966##
+                   16793521788881876371##
+                   Block3.$trModule
+                   Block3.$tc'Two1
+                   0#
+                   Block3.$tc'Four1) -}
+fdd40f89a3020e33d2bd113834e75405
+  $tc'Two1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Two2) -}
+325ce686e01b9f0538dca9771766a573
+  $tc'Two2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Two"#) -}
+5533a19bd995fbdb374f3522fd6db2cb
+  $tc'Walls :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5734774308143609897##
+                   8141521595996010800##
+                   Block3.$trModule
+                   Block3.$tc'Walls2
+                   0#
+                   Block3.$tc'Walls1) -}
+9e7464d0b06c333f0edb0cfa3ceb5e96
+  $tc'Walls1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+5ed3b7e1e740580b117deeea2c658e5c
+  $tc'Walls2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Walls3) -}
+b6b9421c29ad09911e681ab319cf8a53
+  $tc'Walls3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Walls"#) -}
+19d0e201a1ab251f24e0c3ffd228587d
+  $tc'Wednesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8758843060854481139##
+                   7648655330730763409##
+                   Block3.$trModule
+                   Block3.$tc'Wednesday1
+                   0#
+                   Block3.$tc'Friday1) -}
+3d11b47012faafb9035c323c86b1c5bb
+  $tc'Wednesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Wednesday2) -}
+57f5b43f54a2edfb9df6a8c0ea8e02fa
+  $tc'Wednesday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Wednesday"#) -}
+6dc7d50f49833f22e8f9df88faedc7c2
+  $tc'Z :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6971197423685443908##
+                   17278441685108209164##
+                   Block3.$trModule
+                   Block3.$tc'Z2
+                   0#
+                   Block3.$tc'Z1) -}
+9b56825779c8fbf5b6613a71e858acda
+  $tc'Z1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+7b7e9025401aac813a93c014f77dbd80
+  $tc'Z2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Z3) -}
+8c057ba4f528880aa3f2db3ccce58fcd
+  $tc'Z3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Z"#) -}
+0880764560df6769b99705a55c057a16
+  $tcCastle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3357078682408316196##
+                   11196306042487301519##
+                   Block3.$trModule
+                   Block3.$tcCastle1
+                   0#
+                   GHC.Types.krep$*) -}
+f4375991ed17c49b3598f160b285a520
+  $tcCastle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcCastle2) -}
+0f4f1f00bfeab68b1eefeaab15100504
+  $tcCastle2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Castle"#) -}
+bbaacadef433c31cd59891dbac415e17
+  $tcCity :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9285381521866732843##
+                   12192727602429471602##
+                   Block3.$trModule
+                   Block3.$tcCity1
+                   0#
+                   GHC.Types.krep$*) -}
+32467b9620bda7246ad792bb2b64d105
+  $tcCity1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcCity2) -}
+154a941bc8de6210155fe7257d830073
+  $tcCity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("City"#) -}
+57890dc7a2a4942e526658d67aba18a2
+  $tcDay :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15286370042110415662##
+                   1987680529546523777##
+                   Block3.$trModule
+                   Block3.$tcDay1
+                   0#
+                   GHC.Types.krep$*) -}
+0008094dee5de3ea316f99f1aa063599
+  $tcDay1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcDay2) -}
+7fb433c2a9b5f43a2bacc5f4f1562bbd
+  $tcDay2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Day"#) -}
+2f8bef28ca3a8b0433e824fb6df160f7
+  $tcHouse :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7908799272550390332##
+                   1344541039478179112##
+                   Block3.$trModule
+                   Block3.$tcHouse1
+                   0#
+                   GHC.Types.krep$*) -}
+6c96bd312c0ef939f39af51661180e6e
+  $tcHouse1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcHouse2) -}
+105e62beccc9e3db54ef8075f8b84a6f
+  $tcHouse2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("House"#) -}
+f873274429429b7da1915a079535dcdb
+  $tcLandmark :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3537691680210802516##
+                   11796677143290835306##
+                   Block3.$trModule
+                   Block3.$tcLandmark1
+                   0#
+                   GHC.Types.krep$*) -}
+ddeacacf05a8a730448cd51c7d3b4d6c
+  $tcLandmark1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcLandmark2) -}
+e17cfb4a0d28d23dc16120f8d152e002
+  $tcLandmark2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Landmark"#) -}
+694a8c6d4f793ab140484640865fa10f
+  $tcLivingPersons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7391284097401247080##
+                   15901722194599202174##
+                   Block3.$trModule
+                   Block3.$tcLivingPersons1
+                   0#
+                   GHC.Types.krep$*) -}
+b68530cea98410538eff5e3f0ee576a0
+  $tcLivingPersons1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcLivingPersons2) -}
+a0e6e7e74e918ca68928e2f2fab90c7e
+  $tcLivingPersons2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LivingPersons"#) -}
+c2f16e96622dfaab731a88df5a231c6a
+  $tcLord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5760964210731124096##
+                   7783140360843977001##
+                   Block3.$trModule
+                   Block3.$tcLord1
+                   0#
+                   GHC.Types.krep$*) -}
+7cedbde55f0d625883d43fdadc051532
+  $tcLord1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$fShowLord3) -}
+3bc6ff47e7956e7f966f312185b84575
+  $tcNat :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5277910887126414390##
+                   8526042001500852017##
+                   Block3.$trModule
+                   Block3.$tcNat1
+                   0#
+                   GHC.Types.krep$*) -}
+70297dfc4fc730009ae7acfcda416568
+  $tcNat1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcNat2) -}
+87b9e1fe9f12af60cabb010027bb296b
+  $tcNat2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Nat"#) -}
+f52e6d3212556cba09e2982aecae4024
+  $tcOperationResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1437403122351546374##
+                   7141065436783649920##
+                   Block3.$trModule
+                   Block3.$tcOperationResult1
+                   0#
+                   GHC.Types.krep$*) -}
+2f236b2dd2e069dc9bf0270f5f590426
+  $tcOperationResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcOperationResult2) -}
+5028f614d734f775a2d7740c3f00119f
+  $tcOperationResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("OperationResult"#) -}
+283dc04b40d5c0671f21e2512a21ccef
+  $tcWalls :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4841724623730844659##
+                   1383704887941941782##
+                   Block3.$trModule
+                   Block3.$tcWalls1
+                   0#
+                   GHC.Types.krep$*) -}
+d282c6a64cf2dfc69760561af0ff7e2e
+  $tcWalls1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$fShowWalls3) -}
+37c8bfec32684ce6c68fbb10451851a1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Block3.$trModule3
+                   Block3.$trModule1) -}
+75f11f4d6047da6b27843fa52f0aad8c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$trModule2) -}
+9f8f5675e0d047bd1f38135f9c5a722e
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Block3"#) -}
+86acd0169e738613eae7b0a23fc5ef86
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$trModule4) -}
+706574199cb5a8e768d1559e1fecdb94
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
+9a5f4848cacc1d5f5f3d93402f800b03
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Maybe.Maybe Block3.Lord
+    -> GHC.Maybe.Maybe Block3.Walls
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Maybe.Maybe Block3.Lord)
+                   (ww2 :: GHC.Maybe.Maybe Block3.Walls) ->
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ Block3.Lord
+                       Block3.$fShowLord
+                       Block3.$fEnumDay_z
+                       ww1
+                 } in
+                 let {
+                   f3 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ Block3.Walls
+                       Block3.$fShowWalls
+                       Block3.$fEnumDay_z
+                       ww2
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.CString.unpackAppendCString#
+                        Block3.$fShowCastle5
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowCastle4
+                           (f2
+                              (GHC.Base.++
+                                 @ GHC.Types.Char
+                                 GHC.Show.showCommaSpace1
+                                 (GHC.CString.unpackAppendCString#
+                                    Block3.$fShowCastle3
+                                    (f3
+                                       (GHC.CString.unpackAppendCString#
+                                          Block3.$fShowCastle2
+                                          x))))))
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowCastle5
+                           (GHC.CString.unpackAppendCString#
+                              Block3.$fShowCastle4
+                              (f2
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    GHC.Show.showCommaSpace1
+                                    (GHC.CString.unpackAppendCString#
+                                       Block3.$fShowCastle3
+                                       (f3
+                                          (GHC.CString.unpackAppendCString#
+                                             Block3.$fShowCastle2
+                                             (GHC.Types.:
+                                                @ GHC.Types.Char
+                                                GHC.Show.$fShow(,)2
+                                                x)))))))) }) -}
+716ce65770195c6d24fa0e6697134ecc
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> GHC.Maybe.Maybe Block3.Castle
+    -> GHC.Maybe.Maybe Block3.Landmark
+    -> GHC.Base.NonEmpty Block3.House
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Maybe.Maybe Block3.Castle)
+                   (ww2 :: GHC.Maybe.Maybe Block3.Landmark)
+                   (ww3 :: GHC.Base.NonEmpty Block3.House) ->
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ Block3.Castle
+                       Block3.$fShowCastle
+                       Block3.$fEnumDay_z
+                       ww1
+                 } in
+                 let {
+                   f3 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ Block3.Landmark
+                       Block3.$fShowLandmark
+                       Block3.$fEnumDay_z
+                       ww2
+                 } in
+                 let {
+                   f4 :: GHC.Base.String -> GHC.Base.String
+                   = case ww3 of ww4 { GHC.Base.:| ww5 ww6 ->
+                     GHC.Show.$w$cshowsPrec7
+                       @ Block3.House
+                       Block3.$fShowHouse
+                       0#
+                       ww5
+                       ww6 }
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.CString.unpackAppendCString#
+                        Block3.$fShowCity5
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowCity4
+                           (f2
+                              (GHC.Base.++
+                                 @ GHC.Types.Char
+                                 GHC.Show.showCommaSpace1
+                                 (GHC.CString.unpackAppendCString#
+                                    Block3.$fShowCity3
+                                    (f3
+                                       (GHC.Base.++
+                                          @ GHC.Types.Char
+                                          GHC.Show.showCommaSpace1
+                                          (GHC.CString.unpackAppendCString#
+                                             Block3.$fShowCity2
+                                             (f4
+                                                (GHC.CString.unpackAppendCString#
+                                                   Block3.$fShowCastle2
+                                                   x)))))))))
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowCity5
+                           (GHC.CString.unpackAppendCString#
+                              Block3.$fShowCity4
+                              (f2
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    GHC.Show.showCommaSpace1
+                                    (GHC.CString.unpackAppendCString#
+                                       Block3.$fShowCity3
+                                       (f3
+                                          (GHC.Base.++
+                                             @ GHC.Types.Char
+                                             GHC.Show.showCommaSpace1
+                                             (GHC.CString.unpackAppendCString#
+                                                Block3.$fShowCity2
+                                                (f4
+                                                   (GHC.CString.unpackAppendCString#
+                                                      Block3.$fShowCastle2
+                                                      (GHC.Types.:
+                                                         @ GHC.Types.Char
+                                                         GHC.Show.$fShow(,)2
+                                                         x))))))))))) }) -}
+7689b436c3d20fbe3be53fd627060bc4
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int# -> Block3.House -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Block3.House)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        Block3.$fShowHouse11
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowHouse10
+                           (Block3.$w$cshowsPrec3
+                              w `cast` (Block3.N:House[0])
+                              (GHC.CString.unpackAppendCString# Block3.$fShowCastle2 w1)))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Block3.$fShowHouse11
+                           (GHC.CString.unpackAppendCString#
+                              Block3.$fShowHouse10
+                              (Block3.$w$cshowsPrec3
+                                 w `cast` (Block3.N:House[0])
+                                 (GHC.CString.unpackAppendCString#
+                                    Block3.$fShowCastle2
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }) -}
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  $w$cshowsPrec3 ::
+    Block3.LivingPersons -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Block3.LivingPersons)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Block3.One -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse8 w1
+                   Block3.Two -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse6 w1
+                   Block3.Three -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse4 w1
+                   Block3.Four
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse2 w1 }) -}
+b449762fea2f899ac11419d7d2748742
+  $w$cshowsPrec4 :: Block3.Day -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Block3.Day) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Block3.Monday -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay13 w1
+                   Block3.Tuesday
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay11 w1
+                   Block3.Wednesday
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay9 w1
+                   Block3.Thursday
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay7 w1
+                   Block3.Friday -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay5 w1
+                   Block3.Saturday
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay3 w1
+                   Block3.Sunday
+                   -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay1 w1 }) -}
+b449762fea2f899ac11419d7d2748742
+  $w$ctoEnum :: GHC.Prim.Int# -> Block3.Day
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
+11428480cd746b86ccea6a79e22aeff2
+  $w$ctoEnum1 :: GHC.Prim.Int# -> Block3.Nat
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   a :: GHC.Integer.Type.Integer = GHC.Integer.Type.smallInteger ww
+                 } in
+                 case GHC.Integer.Type.leInteger# a Block3.$fEnumNat1 of wild {
+                   DEFAULT -> Block3.$fEnumNat_iter a Block3.Z 1# -> Block3.Z }) -}
+c55e69ca64656409440db9b96ccb08f3
+  $wafterDays :: GHC.Prim.Int# -> Block3.Day -> Block3.Day
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: Block3.Day) ->
+                 case w of wild {
+                   Block3.Monday -> Block3.$w$ctoEnum ww
+                   Block3.Tuesday -> Block3.$w$ctoEnum (GHC.Prim.+# 1# ww)
+                   Block3.Wednesday -> Block3.$w$ctoEnum (GHC.Prim.+# 2# ww)
+                   Block3.Thursday -> Block3.$w$ctoEnum (GHC.Prim.+# 3# ww)
+                   Block3.Friday -> Block3.$w$ctoEnum (GHC.Prim.+# 4# ww)
+                   Block3.Saturday -> Block3.$w$ctoEnum (GHC.Prim.+# 5# ww)
+                   Block3.Sunday -> Block3.$w$ctoEnum (GHC.Prim.+# 6# ww) }) -}
+db221888cda85347cb876aecbcac1f51
+  $wbuildLandmark ::
+    GHC.Maybe.Maybe Block3.Castle
+    -> GHC.Maybe.Maybe Block3.Landmark
+    -> GHC.Base.NonEmpty Block3.House
+    -> Block3.Landmark
+    -> Block3.OperationResult
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Maybe.Maybe Block3.Castle)
+                   (ww1 :: GHC.Maybe.Maybe Block3.Landmark)
+                   (ww2 :: GHC.Base.NonEmpty Block3.House)
+                   (w :: Block3.Landmark) ->
+                 case ww1 of wild {
+                   GHC.Maybe.Nothing
+                   -> Block3.Success
+                        (Block3.City ww (GHC.Maybe.Just @ Block3.Landmark w) ww2,
+                         case w of wild1 {
+                           Block3.Church -> Block3.buildLandmark5
+                           Block3.Library -> Block3.buildLandmark2 })
+                   GHC.Maybe.Just ipv
+                   -> Block3.Failure
+                        (Block3.City ww wild ww2,
+                         GHC.CString.unpackAppendCString#
+                           Block3.buildLandmark1
+                           (case ipv of wild1 {
+                              Block3.Church -> Block3.$fShowLandmark4
+                              Block3.Library -> Block3.$fShowLandmark2 })) }) -}
+8daa0d022e9e0d5c0dc767b52cb5f123
+  $wbuildWalls ::
+    GHC.Maybe.Maybe Block3.Castle
+    -> GHC.Maybe.Maybe Block3.Landmark
+    -> GHC.Base.NonEmpty Block3.House
+    -> Block3.OperationResult
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U(U,U)>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Maybe.Maybe Block3.Castle)
+                   (ww1 :: GHC.Maybe.Maybe Block3.Landmark)
+                   (ww2 :: GHC.Base.NonEmpty Block3.House) ->
+                 case ww of wild {
+                   GHC.Maybe.Nothing
+                   -> Block3.Failure
+                        (Block3.City (GHC.Maybe.Nothing @ Block3.Castle) ww1 ww2,
+                         Block3.buildWalls9)
+                   GHC.Maybe.Just v
+                   -> case v of wild1 { Block3.Castle ds ds1 ->
+                      case ds of wild2 {
+                        GHC.Maybe.Nothing
+                        -> Block3.Failure (Block3.City wild ww1 ww2, Block3.buildWalls9)
+                        GHC.Maybe.Just ipv
+                        -> case ww2 of ww3 { GHC.Base.:| ww4 ww5 ->
+                           case Block3.$wcitizens ww4 ww5 of ww6 { DEFAULT ->
+                           case GHC.Prim.<# ww6 10# of lwild {
+                             DEFAULT
+                             -> case ds1 of wild3 {
+                                  GHC.Maybe.Nothing
+                                  -> Block3.Success
+                                       (Block3.City
+                                          (GHC.Maybe.Just
+                                             @ Block3.Castle
+                                             (Block3.Castle wild2 Block3.buildWalls7))
+                                          ww1
+                                          ww3,
+                                        Block3.buildWalls5)
+                                  GHC.Maybe.Just ipv1
+                                  -> Block3.Failure (Block3.City wild ww1 ww3, Block3.buildWalls3) }
+                             1#
+                             -> Block3.Failure
+                                  (Block3.City wild ww1 ww3, Block3.buildWalls1) } } } } } }) -}
+cfa00a295bb7d8b2414e5b1d2ad923bf
+  $wcitizens :: Block3.House -> [Block3.House] -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: Block3.House) (ww1 :: [Block3.House]) ->
+                 case ww `cast` (Block3.N:House[0]) of wild {
+                   Block3.One
+                   -> case (Block3.buildWalls_go
+                              (GHC.Base.map
+                                 @ Block3.House
+                                 @ GHC.Types.Int
+                                 Block3.buildWalls8
+                                 ww1))
+                             `cast`
+                           (Data.Semigroup.Internal.N:Sum[0]
+                                <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
+                      GHC.Prim.+# 1# y }
+                   Block3.Two
+                   -> case (Block3.buildWalls_go
+                              (GHC.Base.map
+                                 @ Block3.House
+                                 @ GHC.Types.Int
+                                 Block3.buildWalls8
+                                 ww1))
+                             `cast`
+                           (Data.Semigroup.Internal.N:Sum[0]
+                                <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
+                      GHC.Prim.+# 2# y }
+                   Block3.Three
+                   -> case (Block3.buildWalls_go
+                              (GHC.Base.map
+                                 @ Block3.House
+                                 @ GHC.Types.Int
+                                 Block3.buildWalls8
+                                 ww1))
+                             `cast`
+                           (Data.Semigroup.Internal.N:Sum[0]
+                                <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
+                      GHC.Prim.+# 3# y }
+                   Block3.Four
+                   -> case (Block3.buildWalls_go
+                              (GHC.Base.map
+                                 @ Block3.House
+                                 @ GHC.Types.Int
+                                 Block3.buildWalls8
+                                 ww1))
+                             `cast`
+                           (Data.Semigroup.Internal.N:Sum[0]
+                                <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
+                      GHC.Prim.+# 4# y } }) -}
+11428480cd746b86ccea6a79e22aeff2
+  $witer ::
+    Block3.Nat
+    -> Block3.Nat -> Block3.Nat -> (# Block3.Nat, Block3.Nat #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><L,U>,
+     Inline: [2] -}
+96642c4623111f5e86a406169ab8a920
+  $wsetLord ::
+    GHC.Maybe.Maybe Block3.Castle
+    -> GHC.Maybe.Maybe Block3.Landmark
+    -> GHC.Base.NonEmpty Block3.House
+    -> Block3.OperationResult
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Maybe.Maybe Block3.Castle)
+                   (ww1 :: GHC.Maybe.Maybe Block3.Landmark)
+                   (ww2 :: GHC.Base.NonEmpty Block3.House) ->
+                 case ww of wild {
+                   GHC.Maybe.Nothing
+                   -> Block3.Failure
+                        (Block3.City (GHC.Maybe.Nothing @ Block3.Castle) ww1 ww2,
+                         Block3.setLord6)
+                   GHC.Maybe.Just ipv
+                   -> case ipv of wild1 { Block3.Castle ds ds1 ->
+                      case ds of wild2 {
+                        GHC.Maybe.Nothing
+                        -> Block3.Success
+                             (Block3.City
+                                (GHC.Maybe.Just
+                                   @ Block3.Castle
+                                   (Block3.Castle Block3.setLord5 ds1))
+                                ww1
+                                ww2,
+                              Block3.setLord3)
+                        GHC.Maybe.Just ipv1
+                        -> Block3.Failure
+                             (Block3.City wild ww1 ww2, Block3.setLord1) } } }) -}
+bd5792d1b2e39d642e69426f7416a51d
+  data Castle
+    = Castle {lord :: GHC.Maybe.Maybe Block3.Lord,
+              walls :: GHC.Maybe.Maybe Block3.Walls}
+62a881e4d1c4805239fb008343214aaf
+  data City
+    = City {castle :: GHC.Maybe.Maybe Block3.Castle,
+            landmark :: GHC.Maybe.Maybe Block3.Landmark,
+            houses :: GHC.Base.NonEmpty Block3.House}
+b449762fea2f899ac11419d7d2748742
+  data Day
+    = Monday
+    | Tuesday
+    | Wednesday
+    | Thursday
+    | Friday
+    | Saturday
+    | Sunday
+7689b436c3d20fbe3be53fd627060bc4
+  newtype House = House {livingPersons :: Block3.LivingPersons}
+048847b6a9d15f099995c4a67c1156d0
+  data Landmark = Church | Library
+2b9e228cdf06d5ed35fd0ae6c1941d2e
+  data LivingPersons = One | Two | Three | Four
+a51c635a1ebc8f1c0e5d957b4567dd18
+  data Lord = Lord
+11428480cd746b86ccea6a79e22aeff2
+  data Nat = Z | S Block3.Nat
+6b64abca8e01c973efd4f24d553a6634
+  data OperationResult
+    = Success (Block3.City, GHC.Base.String)
+    | Failure (Block3.City, GHC.Base.String)
+c66a9b8cf368b6e0d812ef8b1a0f972f
+  data Walls = Walls
+8991514108fbbc38e6e7a24d6c45f5ff
+  afterDays :: GHC.Types.Int -> Block3.Day -> Block3.Day
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Block3.Day) ->
+                 case w of ww { GHC.Types.I# ww1 -> Block3.$wafterDays ww1 w1 }) -}
+8ab1648e5dde32b9467b9eba96361f74
+  buildCastle :: Block3.City -> Block3.OperationResult
+  {- Arity: 1, Strictness: <S(SLL),1*U(U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (city :: Block3.City) ->
+                 case city of wild { Block3.City ds ds1 ds2 ->
+                 case ds of wild1 {
+                   GHC.Maybe.Nothing
+                   -> Block3.Success
+                        (Block3.City Block3.buildCastle5 ds1 ds2, Block3.buildCastle3)
+                   GHC.Maybe.Just ipv
+                   -> Block3.Failure (wild, Block3.buildCastle1) } }) -}
+ab40ca96368ef31e7cd9d79bbad97dfc
+  buildCastle1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildCastle2) -}
+54f399c01eeea5e4fda728f2db0d09a0
+  buildCastle2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("city already has castle"#) -}
+d56c4cdc2dfb7fe2991d4003f48877cc
+  buildCastle3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildCastle4) -}
+34bef83f1711652e20470df81d734e23
+  buildCastle4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("castle built"#) -}
+4152f0a43b69dbdef79b15a66e0be3bb
+  buildCastle5 :: GHC.Maybe.Maybe Block3.Castle
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ Block3.Castle Block3.emptyCastle) -}
+d6d9fa60410294db59bd5ab19f8bd6c9
+  buildHouse ::
+    Block3.City -> Block3.LivingPersons -> Block3.OperationResult
+  {- Arity: 2, Strictness: <L,1*U(U,U,U(1*U,1*U))><L,U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (city :: Block3.City) (persons :: Block3.LivingPersons) ->
+                 Block3.Success
+                   (case city of wild { Block3.City ds ds1 ds2 ->
+                    Block3.City
+                      ds
+                      ds1
+                      (GHC.Base.:|
+                         @ Block3.House
+                         persons `cast` (Sym (Block3.N:House[0]))
+                         (GHC.Types.:
+                            @ Block3.House
+                            (case ds2 of wild1 { GHC.Base.:| b bs -> b })
+                            (case ds2 of wild1 { GHC.Base.:| b bs -> bs }))) },
+                    Block3.buildHouse1)) -}
+de0a6bfa54ade56f9e4857bbbdbcea34
+  buildHouse1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildHouse2) -}
+deb7fc0ce4590b38d88953fffc39c48c
+  buildHouse2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("new house was built"#) -}
+e97f85b615cab318b6bfbc621374c8c1
+  buildLandmark ::
+    Block3.City -> Block3.Landmark -> Block3.OperationResult
+  {- Arity: 2, Strictness: <S(LSL),1*U(U,1*U,U)><L,U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Block3.City) (w1 :: Block3.Landmark) ->
+                 case w of ww { Block3.City ww1 ww2 ww3 ->
+                 Block3.$wbuildLandmark ww1 ww2 ww3 w1 }) -}
+880c592a26f1a4463cf4d938d91d165c
+  buildLandmark1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("city already has "#) -}
+5c5088fee03b3a6582df25f3978ba4b7
+  buildLandmark2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Block3.$fShowLandmark2
+                   Block3.buildLandmark3) -}
+781509410d4ba6fa490d06734bda61c1
+  buildLandmark3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildLandmark4) -}
+ceb6090216b0a87205d80b25e0b385a2
+  buildLandmark4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" built"#) -}
+a326d6cabe77ae1b000fa0eb47cc3a92
+  buildLandmark5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Block3.$fShowLandmark4
+                   Block3.buildLandmark3) -}
+4ccd4b9becd5ebd82a8ff4669c4e1ae2
+  buildWalls :: Block3.City -> Block3.OperationResult
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,U,U(U,U))>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Block3.City) ->
+                 case w of ww { Block3.City ww1 ww2 ww3 ->
+                 Block3.$wbuildWalls ww1 ww2 ww3 }) -}
+2ccf8a09a64b885d49891d4939ec52f5
+  buildWalls1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildWalls2) -}
+d0b0862a234ab4bf12619f0646f18a32
+  buildWalls10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("there is no lord"#) -}
+85ba0c0722939bbce00d42d0ef81ea46
+  buildWalls2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("there is not enough people"#) -}
+b701fb7d2d91c83a1e9903fd92950d58
+  buildWalls3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildWalls4) -}
+69494fec63d537f3db1ec8a82f869481
+  buildWalls4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("city already has walls"#) -}
+a484fe24ad59160fe2768e761f8d7f95
+  buildWalls5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildWalls6) -}
+4f9ebd6dca1f4e3cb9c1a06771c887c0
+  buildWalls6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("walls were built"#) -}
+8ff6e7e1db9e21fc229595891d8d3781
+  buildWalls7 :: GHC.Maybe.Maybe Block3.Walls
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ Block3.Walls Block3.Walls) -}
+211b4565753c43a2907cc1937acac7b2
+  buildWalls8 :: Block3.House -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block3.House) ->
+                 case x `cast` (Block3.N:House[0]) of wild {
+                   Block3.One -> Block3.$fEnumDay13
+                   Block3.Two -> Block3.$fEnumDay12
+                   Block3.Three -> Block3.$fEnumDay11
+                   Block3.Four -> Block3.$fEnumDay10 }) -}
+63c0c25b3c824dd78b403496f477bb3e
+  buildWalls9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.buildWalls10) -}
+f2627dfe5655dcd3cb1d63898487d47d
+  buildWalls_go ::
+    [GHC.Types.Int] -> Data.Semigroup.Internal.Sum GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m -}
+62a881e4d1c4805239fb008343214aaf
+  castle :: Block3.City -> GHC.Maybe.Maybe Block3.Castle
+  RecSel Left Block3.City
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.City) ->
+                 case ds of wild { Block3.City ds1 ds2 ds3 -> ds1 }) -}
+3d2dcf08fb2b0df0cf5fcdea8cacd047
+  citizens :: Block3.City -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS(SS)),1*U(A,A,1*U(1*U,1*U))>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Block3.City) ->
+                 case w of ww { Block3.City ww1 ww2 ww3 ->
+                 case ww3 of ww4 { GHC.Base.:| ww5 ww6 ->
+                 case Block3.$wcitizens ww5 ww6 of ww7 { DEFAULT ->
+                 GHC.Types.I# ww7 } } }) -}
+ad2b6de72b91dd5709137df0dab0bbdc
+  cityLord :: Block3.City -> GHC.Maybe.Maybe Block3.Lord
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (city :: Block3.City) ->
+                 case city of wild { Block3.City ds ds1 ds2 ->
+                 case ds of wild1 {
+                   GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ Block3.Lord
+                   GHC.Maybe.Just v
+                   -> case v of wild2 { Block3.Castle ds3 ds4 -> ds3 } } }) -}
+9be0dd389565512d5a6bb72c89a58cb4
+  cityWalls :: Block3.City -> GHC.Maybe.Maybe Block3.Walls
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (city :: Block3.City) ->
+                 case city of wild { Block3.City ds ds1 ds2 ->
+                 case ds of wild1 {
+                   GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ Block3.Walls
+                   GHC.Maybe.Just v
+                   -> case v of wild2 { Block3.Castle ds3 ds4 -> ds4 } } }) -}
+343357d920811e47cff8a77776da0c0b
+  daysToParty :: Block3.Day -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Block3.Day) ->
+                 case w of wild {
+                   Block3.Monday -> GHC.Types.I# 4#
+                   Block3.Tuesday -> GHC.Types.I# 3#
+                   Block3.Wednesday -> GHC.Types.I# 2#
+                   Block3.Thursday -> GHC.Types.I# 1#
+                   Block3.Friday -> GHC.Types.I# 0#
+                   Block3.Saturday -> GHC.Types.I# 6#
+                   Block3.Sunday -> GHC.Types.I# 5# }) -}
+71ea3ff01805c3f26fe1029bc3c61e9a
+  emptyCastle :: Block3.Castle
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Block3.Castle
+                   (GHC.Maybe.Nothing @ Block3.Lord)
+                   (GHC.Maybe.Nothing @ Block3.Walls)) -}
+4992a27ca2515d2d5dfcc2e28247e905
+  getResult :: Block3.OperationResult -> Block3.City
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.OperationResult) ->
+                 case ds of wild {
+                   Block3.Success x
+                   -> Data.Tuple.fst @ Block3.City @ GHC.Base.String x
+                   Block3.Failure x
+                   -> Data.Tuple.fst @ Block3.City @ GHC.Base.String x }) -}
+62a881e4d1c4805239fb008343214aaf
+  houses :: Block3.City -> GHC.Base.NonEmpty Block3.House
+  RecSel Left Block3.City
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.City) ->
+                 case ds of wild { Block3.City ds1 ds2 ds3 -> ds3 }) -}
+7b40abec0c45e20f2688f47463c681f2
+  isWeekend :: Block3.Day -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Day) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Types.False
+                   Block3.Saturday -> GHC.Types.True
+                   Block3.Sunday -> GHC.Types.True }) -}
+62a881e4d1c4805239fb008343214aaf
+  landmark :: Block3.City -> GHC.Maybe.Maybe Block3.Landmark
+  RecSel Left Block3.City
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.City) ->
+                 case ds of wild { Block3.City ds1 ds2 ds3 -> ds2 }) -}
+7689b436c3d20fbe3be53fd627060bc4
+  livingPersons :: Block3.House -> Block3.LivingPersons
+  RecSel Left Block3.House
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Block3.livingPersons1
+                  `cast`
+                (<Block3.House>_R ->_R Block3.N:House[0]) -}
+7689b436c3d20fbe3be53fd627060bc4
+  livingPersons1 :: Block3.House -> Block3.House
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Block3.House) -> ds) -}
+bd5792d1b2e39d642e69426f7416a51d
+  lord :: Block3.Castle -> GHC.Maybe.Maybe Block3.Lord
+  RecSel Left Block3.Castle
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Castle) ->
+                 case ds of wild { Block3.Castle ds1 ds2 -> ds1 }) -}
+b449762fea2f899ac11419d7d2748742
+  nextDay :: Block3.Day -> Block3.Day
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Block3.Day) ->
+                 case x of wild {
+                   Block3.Monday -> Block3.$fEnumDay18
+                   Block3.Tuesday -> Block3.$fEnumDay17
+                   Block3.Wednesday -> Block3.$fEnumDay16
+                   Block3.Thursday -> Block3.$fEnumDay15
+                   Block3.Friday -> Block3.$fEnumDay14
+                   Block3.Saturday -> Block3.nextDay2
+                   Block3.Sunday -> Block3.nextDay1 }) -}
+b449762fea2f899ac11419d7d2748742
+  nextDay1 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 7#) -}
+b449762fea2f899ac11419d7d2748742
+  nextDay2 :: Block3.Day
+  {- Unfolding: (Block3.$w$ctoEnum 6#) -}
+b4c69f135a981a32a89c430a9d6d45a0
+  setLord :: Block3.City -> Block3.OperationResult
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Block3.City) ->
+                 case w of ww { Block3.City ww1 ww2 ww3 ->
+                 Block3.$wsetLord ww1 ww2 ww3 }) -}
+6d7cd5acb6ba840aaa69d93ca80a1bca
+  setLord1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.setLord2) -}
+c2b8415e16803f0524ff05363878eca2
+  setLord2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("castle already has lord"#) -}
+147f85b27d809b63dffd664faae17b2c
+  setLord3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.setLord4) -}
+55b1f6f7e2ae8a2d51e71751b785ac66
+  setLord4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("lord was set"#) -}
+004c64d0ae2525ae884745e72943389f
+  setLord5 :: GHC.Maybe.Maybe Block3.Lord
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ Block3.Lord Block3.Lord) -}
+3c77b2755bb3e08150faae2935531930
+  setLord6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3.setLord7) -}
+422fd7008560c0a90b7bb5fa123e6bb9
+  setLord7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("there is no castle for lord"#) -}
+1fed6226266cf5623c615b7a457bd880
+  showResult :: Block3.OperationResult -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Block3.OperationResult) ->
+                 case ds of wild {
+                   Block3.Success x
+                   -> GHC.CString.unpackAppendCString#
+                        Block3.showResult2
+                        (case x of wild1 { (,) ds1 y -> y })
+                   Block3.Failure x
+                   -> GHC.CString.unpackAppendCString#
+                        Block3.showResult1
+                        (case x of wild1 { (,) ds1 y -> y }) }) -}
+333c50c4e89daa32ca150251dc81d1ae
+  showResult1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Failure: "#) -}
+05c86f11668ba2098b85f79a338cb744
+  showResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Success: "#) -}
+bd5792d1b2e39d642e69426f7416a51d
+  walls :: Block3.Castle -> GHC.Maybe.Maybe Block3.Walls
+  RecSel Left Block3.Castle
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Block3.Castle) ->
+                 case ds of wild { Block3.Castle ds1 ds2 -> ds2 }) -}
+instance [safe] GHC.Enum.Enum [Block3.Day] = Block3.$fEnumDay
+instance [safe] GHC.Enum.Enum [Block3.LivingPersons]
+  = Block3.$fEnumLivingPersons
+instance [safe] GHC.Enum.Enum [Block3.Nat] = Block3.$fEnumNat
+instance [safe] GHC.Classes.Eq [Block3.Nat] = Block3.$fEqNat
+instance [safe] GHC.Real.Integral [Block3.Nat]
+  = Block3.$fIntegralNat
+instance [safe] GHC.Num.Num [Block3.Nat] = Block3.$fNumNat
+instance [safe] GHC.Classes.Ord [Block3.Nat] = Block3.$fOrdNat
+instance [safe] GHC.Real.Real [Block3.Nat] = Block3.$fRealNat
+instance [safe] GHC.Show.Show [Block3.Castle] = Block3.$fShowCastle
+instance [safe] GHC.Show.Show [Block3.City] = Block3.$fShowCity
+instance [safe] GHC.Show.Show [Block3.Day] = Block3.$fShowDay
+instance [safe] GHC.Show.Show [Block3.House] = Block3.$fShowHouse
+instance [safe] GHC.Show.Show [Block3.Landmark]
+  = Block3.$fShowLandmark
+instance [safe] GHC.Show.Show [Block3.LivingPersons]
+  = Block3.$fShowLivingPersons
+instance [safe] GHC.Show.Show [Block3.Lord] = Block3.$fShowLord
+instance [safe] GHC.Show.Show [Block3.Nat] = Block3.$fShowNat
+instance [safe] GHC.Show.Show [Block3.Walls] = Block3.$fShowWalls
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

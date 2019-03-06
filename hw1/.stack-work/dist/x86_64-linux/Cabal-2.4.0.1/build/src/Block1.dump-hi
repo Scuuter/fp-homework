@@ -1,0 +1,113 @@
+
+==================== FINAL INTERFACE ====================
+2019-03-05 15:06:22.030183249 UTC
+
+interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block1 8063
+  interface hash: 4bd452481c073fb4cef744f98fc02bb5
+  ABI hash: a37b94905d16e01b2f6816b2dbec0c74
+  export-list hash: 3e8750cfb90c156dd8633d9c4aab20e6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Block1.contains
+  Block1.order3
+  Block1.smartReplicate
+  Block1.stringSum
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
+import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  base-4.12.0.0:Text.Read e428ad664707f4e90693a55e6a6b4b1a
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+16ffccf96eaca4a4b16de32ac51fdafd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Block1.$trModule3
+                   Block1.$trModule1) -}
+9d997b0f5118697cc751368fe28a1b09
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block1.$trModule2) -}
+30f90464c219b3f7b231e294d22ea10d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Block1"#) -}
+940dcf8d12f57085028fc7cecf8273a5
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block1.$trModule4) -}
+d67fd48eda8b5ac0cf5c7392ff2583da
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
+da478f0eadefbda2057eab7613865e9f
+  $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [2] -}
+fb17f73c5d27a0a5b9e57fd96e23aa3e
+  contains :: GHC.Classes.Eq a => a -> [[a]] -> [[a]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (x :: a) (eta :: [[a]]) ->
+                 GHC.Base.build
+                   @ [a]
+                   (\ @ b (c :: [a] -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ [a]
+                      @ b
+                      (GHC.List.filterFB @ [a] @ b c (GHC.List.elem @ a $dEq x))
+                      n
+                      eta)) -}
+fb6ec32326747f29c29a12ad7a03faf3
+  order3 :: GHC.Classes.Ord a => (a, a, a) -> (a, a, a)
+  {- Arity: 2,
+     Strictness: <L,1*U(A,1*C(C1(U)),A,A,A,A,A,A)><S,1*U(U,U,U)>m,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: (a, a, a)) ->
+                 case w1 of ww { (,,) ww1 ww2 ww3 ->
+                 let {
+                   list :: [a]
+                   = Data.OldList.sortBy
+                       @ a
+                       (GHC.Classes.compare @ a w)
+                       (GHC.Types.:
+                          @ a
+                          ww1
+                          (GHC.Types.: @ a ww2 (GHC.Types.: @ a ww3 (GHC.Types.[] @ a))))
+                 } in
+                 (GHC.List.head @ a list, GHC.List.$w!! @ a list 1#,
+                  GHC.List.last @ a list) }) -}
+a2044b347e8ce35a396d4f00e0f13c2c
+  smartReplicate :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+94e36d4a5cadd6600daeb1018b9ff9e9
+  stringSum :: GHC.Base.String -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 case Block1.$wgo w 0# of ww { DEFAULT -> GHC.Types.I# ww }) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
