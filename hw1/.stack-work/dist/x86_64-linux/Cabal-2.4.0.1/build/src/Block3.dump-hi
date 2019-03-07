@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-06 17:43:03.741335629 UTC
+2019-03-07 02:33:33.556941623 UTC
 
 interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block3 8063
-  interface hash: 798e9649a64f08eef939702a11594015
-  ABI hash: 2af74f00ca2b1dedada042a2742ab0a4
-  export-list hash: c73eeb4cd132239138f0afb2e4b20ebd
+  interface hash: 597be0fcc7496fc81e7386a537ae758a
+  ABI hash: da002be6e079a90c1312553b6568a367
+  export-list hash: b14d6931c241c30308ce0584d87324a5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9d156e2ccc398f2f187b19220f36d2ba
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -15,21 +15,32 @@ interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block3 8063
   used TH splices: False
   where
 exports:
+  GHC.Real.even
   Block3.afterDays
   Block3.buildCastle
   Block3.buildHouse
   Block3.buildLandmark
   Block3.buildWalls
+  Block3.checkFoldable
   Block3.citizens
   Block3.cityLord
   Block3.cityWalls
   Block3.daysToParty
-  Block3.emptyCastle
+  Block3.find
+  Block3.fromList
   Block3.getResult
+  Block3.insert
+  Block3.isEmpty
   Block3.isWeekend
   Block3.nextDay
+  Block3.remove
   Block3.setLord
   Block3.showResult
+  Block3.size
+  GHC.Num.Num|{GHC.Num.* GHC.Num.+ GHC.Num.- GHC.Num.fromInteger}
+  GHC.Real.Integral|{GHC.Real.div GHC.Real.mod GHC.Real.toInteger}
+  GHC.Classes.Eq|{GHC.Classes.==}
+  GHC.Classes.Ord|{GHC.Classes.compare}
   Block3.Castle{Block3.Castle lord walls}
   Block3.City{Block3.City castle houses landmark}
   Block3.Day{Block3.Friday Block3.Monday Block3.Saturday Block3.Sunday Block3.Thursday Block3.Tuesday Block3.Wednesday}
@@ -39,6 +50,7 @@ exports:
   Block3.Lord{Block3.Lord}
   Block3.Nat{Block3.S Block3.Z}
   Block3.OperationResult{Block3.Failure Block3.Success}
+  Block3.Tree{Block3.Leaf Block3.Node}
   Block3.Walls{Block3.Walls}
 module dependencies:
 package dependencies: base-4.12.0.0* ghc-prim-0.5.3
@@ -50,8 +62,10 @@ family instance modules: base-4.12.0.0:Control.Applicative
                          base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
                          base-4.12.0.0:GHC.IO.Exception
 import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
 import  -/  base-4.12.0.0:Data.List.NonEmpty d9b99a249213afa9344e96f715fca047
 import  -/  base-4.12.0.0:Data.Maybe 1e8e1362415df45376dffd98f8a47766
+import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
 import  -/  base-4.12.0.0:Data.Ratio 96f9a1de850e5ea66ed6c5bd6817461b
 import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
 import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
@@ -707,6 +721,408 @@ b449762fea2f899ac11419d7d2748742
 11428480cd746b86ccea6a79e22aeff2
   $fEqNat_$ccompare :: Block3.Nat -> Block3.Nat -> GHC.Types.Ordering
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree :: Data.Foldable.Foldable Block3.Tree
+  DFunId
+  {- Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block3.Tree
+                  Block3.$fFoldableTree_$cfold
+                  Block3.$fFoldableTree_$cfoldMap
+                  Block3.$fFoldableTree_$cfoldr
+                  Block3.$fFoldableTree_$cfoldr'
+                  Block3.$fFoldableTree_$cfoldl
+                  Block3.$fFoldableTree_$cfoldl'
+                  Block3.$fFoldableTree_$cfoldr1
+                  Block3.$fFoldableTree_$cfoldl1
+                  Block3.$fFoldableTree_$ctoList
+                  Block3.$fFoldableTree_$cnull
+                  Block3.$fFoldableTree_$clength
+                  Block3.$fFoldableTree6
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Classes.Eq a>_R
+                   ->_R <a>_R
+                   ->_R <Block3.Tree a>_R
+                   ->_R Data.Semigroup.Internal.N:Any[0])
+                  Block3.$fFoldableTree_$cmaximum
+                  Block3.$fFoldableTree_$cminimum
+                  Block3.$fFoldableTree3
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Num.Num a>_R
+                   ->_R <Block3.Tree a>_R
+                   ->_R Data.Semigroup.Internal.N:Sum[0] <a>_R)
+                  Block3.$fFoldableTree1
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Num.Num a>_R
+                   ->_R <Block3.Tree a>_R
+                   ->_R Data.Semigroup.Internal.N:Product[0] <a>_R) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree1 ::
+    GHC.Num.Num a => Block3.Tree a -> Data.Semigroup.Internal.Product a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,1*C(C1(U)),A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Block3.$fFoldableTree_$cfoldMap
+                   @ (Data.Semigroup.Internal.Product a)
+                   @ a
+                   (Data.Semigroup.Internal.$fMonoidProduct @ a $dNum)
+                   (Block3.$fFoldableTree2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Product[0] <a>_R))) -}
+7dde331e617e710232dbd3284aad200d
+  $fFoldableTree10 ::
+    Data.Semigroup.Internal.Dual
+      (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a))
+    -> Data.Semigroup.Internal.Dual
+         (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a))
+    -> GHC.Maybe.Maybe a
+    -> GHC.Maybe.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(S),1*C1(U)><L,U>,
+     Unfolding: (\ @ a
+                   (ds :: Data.Semigroup.Internal.Dual
+                            (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a)))
+                   (ds1 :: Data.Semigroup.Internal.Dual
+                             (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a)))[OneShot]
+                   (eta :: GHC.Maybe.Maybe a) ->
+                 ds1
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R))
+                   (ds
+                      `cast`
+                    (Data.Semigroup.Internal.N:Dual[0]
+                         (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R))
+                      eta)) -}
+623fad2d5841afce727e2813a94990f4
+  $fFoldableTree11 :: a
+  {- Strictness: x -}
+bbbb9abd7e58e0be57d9e5c38298846a
+  $fFoldableTree12 ::
+    Data.Semigroup.Internal.Dual
+      (Data.Semigroup.Internal.Endo (b -> b))
+    -> Data.Semigroup.Internal.Dual
+         (Data.Semigroup.Internal.Endo (b -> b))
+    -> (b -> b)
+    -> b
+    -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(S),1*C1(U)><L,U>,
+     Unfolding: (\ @ b
+                   (ds :: Data.Semigroup.Internal.Dual
+                            (Data.Semigroup.Internal.Endo (b -> b)))
+                   (ds1 :: Data.Semigroup.Internal.Dual
+                             (Data.Semigroup.Internal.Endo (b -> b)))[OneShot]
+                   (eta :: b -> b) ->
+                 ds1
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R))
+                   (ds
+                      `cast`
+                    (Data.Semigroup.Internal.N:Dual[0]
+                         (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R))
+                      eta)) -}
+2c38442f4644627324f6baaddae11a0e
+  $fFoldableTree2 :: a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a (v :: a) -> v) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree3 ::
+    GHC.Num.Num a => Block3.Tree a -> Data.Semigroup.Internal.Sum a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*C(C1(U)),A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Block3.$fFoldableTree_$cfoldMap
+                   @ (Data.Semigroup.Internal.Sum a)
+                   @ a
+                   (Data.Semigroup.Internal.$fMonoidSum @ a $dNum)
+                   (Block3.$fFoldableTree2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R))) -}
+81fd94ae29654c089be0bacb0702049f
+  $fFoldableTree4 :: a
+  {- Strictness: x -}
+f3f8c7b0f6c12b410da6252932f4db1a
+  $fFoldableTree5 :: a
+  {- Strictness: x -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree6 ::
+    GHC.Classes.Eq a =>
+    a -> Block3.Tree a -> Data.Semigroup.Internal.Any
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(C(U)),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 Block3.$fFoldableTree_$s$cfoldMap
+                   @ a
+                   (GHC.Classes.== @ a $dEq eta)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Any[0]))) -}
+900e75130dc0f714a1989de4e7c9ece8
+  $fFoldableTree7 ::
+    a
+    -> (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><C(S),1*C1(U(U))><S,1*U(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (x :: a)
+                   (k :: GHC.Types.Int -> GHC.Types.Int)
+                   (z :: GHC.Types.Int) ->
+                 case z of wild { GHC.Types.I# x1 ->
+                 k (GHC.Types.I# (GHC.Prim.+# x1 1#)) }) -}
+02668e6fa5550ec15bafb3dd37d46647
+  $fFoldableTree8 :: a -> GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: a) (ds1 :: GHC.Types.Bool) -> GHC.Types.False) -}
+7133c8b3e755b712907673035481ba17
+  $fFoldableTree9 :: a
+  {- Strictness: x -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfold :: GHC.Base.Monoid m => Block3.Tree m -> m
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(A,U,C(C1(U)),A)><S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m ($dMonoid :: GHC.Base.Monoid m) ->
+                 Block3.$fFoldableTree_$cfoldMap
+                   @ m
+                   @ m
+                   $dMonoid
+                   (GHC.Base.id @ m)) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldMap ::
+    GHC.Base.Monoid m => (a -> m) -> Block3.Tree a -> m
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U(A,U,C(C1(U)),A)><L,C(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m
+                   @ a
+                   (w :: GHC.Base.Monoid m)
+                   (w1 :: a -> m)
+                   (w2 :: Block3.Tree a) ->
+                 case w of ww { GHC.Base.C:Monoid ww1 ww2 ww3 ww4 ->
+                 Block3.$w$cfoldMap @ m @ a ww2 ww3 w1 w2 }) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldl :: (b -> a -> b) -> b -> Block3.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (f2 :: b -> a -> b) (z :: b) (t1 :: Block3.Tree a) ->
+                 (Block3.$fFoldableTree_$cfoldMap
+                    @ (Data.Semigroup.Internal.Dual (Data.Semigroup.Internal.Endo b))
+                    @ a
+                    (Block3.$fFoldableTree_$dMonoid @ b)
+                    (\ (x :: a) (y :: b) -> f2 y x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <b>_R)))
+                    t1)
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <b>_R))
+                   z) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldl' :: (b -> a -> b) -> b -> Block3.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f2 :: b -> a -> b)
+                   (z0 :: b)
+                   (xs :: Block3.Tree a) ->
+                 Block3.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (b -> b)
+                   (\ (x :: a) (k :: b -> b)[OneShot] (z :: b) ->
+                    case f2 z x of vx { DEFAULT -> k vx })
+                   (GHC.Base.id @ b)
+                   xs
+                   z0) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldl1 :: (a -> a -> a) -> Block3.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f2 :: a -> a -> a) (xs :: Block3.Tree a) ->
+                 case (Block3.$w$cfoldMap
+                         @ (Data.Semigroup.Internal.Dual
+                              (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a)))
+                         @ a
+                         (GHC.Base.id @ (GHC.Maybe.Maybe a))
+                           `cast`
+                         (Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R)))
+                         (Block3.$fFoldableTree10 @ a)
+                           `cast`
+                         (<Data.Semigroup.Internal.Dual
+                             (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a))>_R
+                          ->_R <Data.Semigroup.Internal.Dual
+                                  (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a))>_R
+                          ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                        (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R)))
+                         (\ (x :: a) (y :: GHC.Maybe.Maybe a) ->
+                          GHC.Maybe.Just
+                            @ a
+                            (case y of wild {
+                               GHC.Maybe.Nothing -> x GHC.Maybe.Just x1 -> f2 x1 x }))
+                           `cast`
+                         (<a>_R
+                          ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                        (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R)))
+                         xs)
+                        `cast`
+                      (Data.Semigroup.Internal.N:Dual[0]
+                           (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R))
+                        (GHC.Maybe.Nothing @ a) of wild {
+                   GHC.Maybe.Nothing -> Block3.$fFoldableTree9 @ a
+                   GHC.Maybe.Just v -> v }) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldr :: (a -> b -> b) -> b -> Block3.Tree a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldr' :: (a -> b -> b) -> b -> Block3.Tree a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f2 :: a -> b -> b)
+                   (z0 :: b)
+                   (xs :: Block3.Tree a) ->
+                 (Block3.$w$cfoldMap
+                    @ (Data.Semigroup.Internal.Dual
+                         (Data.Semigroup.Internal.Endo (b -> b)))
+                    @ a
+                    (GHC.Base.id @ (b -> b))
+                      `cast`
+                    (Sym (Data.Semigroup.Internal.N:Dual[0]
+                              (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R)))
+                    (Block3.$fFoldableTree12 @ b)
+                      `cast`
+                    (<Data.Semigroup.Internal.Dual
+                        (Data.Semigroup.Internal.Endo (b -> b))>_R
+                     ->_R <Data.Semigroup.Internal.Dual
+                             (Data.Semigroup.Internal.Endo (b -> b))>_R
+                     ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R)))
+                    (\ (x :: a) (y :: b -> b) (z :: b) ->
+                     case f2 x z of vx { DEFAULT -> y vx })
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R)))
+                    xs)
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   z0) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cfoldr1 :: (a -> a -> a) -> Block3.Tree a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a (f2 :: a -> a -> a) (xs :: Block3.Tree a) ->
+                 case Block3.$fFoldableTree_$cfoldr
+                        @ a
+                        @ (GHC.Maybe.Maybe a)
+                        (\ (x :: a) (m :: GHC.Maybe.Maybe a)[OneShot] ->
+                         GHC.Maybe.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Maybe.Nothing -> x GHC.Maybe.Just y -> f2 x y }))
+                        (GHC.Maybe.Nothing @ a)
+                        xs of wild {
+                   GHC.Maybe.Nothing -> Block3.$fFoldableTree11 @ a
+                   GHC.Maybe.Just v -> v }) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$clength :: Block3.Tree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (xs :: Block3.Tree a) ->
+                 Block3.$fFoldableTree_$cfoldr
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (Block3.$fFoldableTree7 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   xs
+                   Block3.$fEnumDay_z) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cmaximum :: GHC.Classes.Ord a => Block3.Tree a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Block3.Tree a) ->
+                 case (Block3.$w$cfoldMap
+                         @ (Data.Functor.Utils.Max a)
+                         @ a
+                         (GHC.Maybe.Nothing @ a)
+                           `cast`
+                         (Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
+                         (Data.Functor.Utils.$fMonoidMax_$c<> @ a $dOrd)
+                         (GHC.Maybe.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
+                         x)
+                        `cast`
+                      (Data.Functor.Utils.N:Max[0] <a>_N) of wild {
+                   GHC.Maybe.Nothing -> Block3.$fFoldableTree5 @ a
+                   GHC.Maybe.Just v -> v }) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cminimum :: GHC.Classes.Ord a => Block3.Tree a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: Block3.Tree a) ->
+                 case (Block3.$w$cfoldMap
+                         @ (Data.Functor.Utils.Min a)
+                         @ a
+                         (GHC.Maybe.Nothing @ a)
+                           `cast`
+                         (Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
+                         (Data.Functor.Utils.$fMonoidMin_$c<> @ a $dOrd)
+                         (GHC.Maybe.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
+                         x)
+                        `cast`
+                      (Data.Functor.Utils.N:Min[0] <a>_N) of wild {
+                   GHC.Maybe.Nothing -> Block3.$fFoldableTree4 @ a
+                   GHC.Maybe.Just v -> v }) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$cnull :: Block3.Tree a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 Block3.$fFoldableTree_$cfoldr
+                   @ a
+                   @ GHC.Types.Bool
+                   (Block3.$fFoldableTree8 @ a)
+                   GHC.Types.True) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$ctoList :: Block3.Tree a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t1 :: Block3.Tree a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    Block3.$fFoldableTree_$cfoldr @ a @ b c n t1)) -}
+717e9f0a1bce904437d702506535f814
+  $fFoldableTree_$dMonoid ::
+    GHC.Base.Monoid
+      (Data.Semigroup.Internal.Dual (Data.Semigroup.Internal.Endo b))
+  {- Unfolding: (\ @ b ->
+                 Data.Semigroup.Internal.$fMonoidDual
+                   @ (Data.Semigroup.Internal.Endo b)
+                   (Data.Semigroup.Internal.$fMonoidEndo @ b)) -}
+b77616921f126580cc676023b6e47b3d
+  $fFoldableTree_$s$cfoldMap ::
+    (a -> Data.Semigroup.Internal.Any)
+    -> Block3.Tree a -> Data.Semigroup.Internal.Any
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
 11428480cd746b86ccea6a79e22aeff2
   $fIntegralNat :: GHC.Real.Integral Block3.Nat
   DFunId
@@ -1412,6 +1828,47 @@ a51c635a1ebc8f1c0e5d957b4567dd18
   $fShowNat_$cshowsPrec ::
     GHC.Types.Int -> Block3.Nat -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+b77616921f126580cc676023b6e47b3d
+  $fShowTree :: GHC.Show.Show a => GHC.Show.Show (Block3.Tree a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Block3.Tree a)
+                  (Block3.$fShowTree_$cshowsPrec @ a v)
+                  (Block3.$fShowTree_$cshow @ a v)
+                  (Block3.$fShowTree_$cshowList @ a v) -}
+b77616921f126580cc676023b6e47b3d
+  $fShowTree_$cshow ::
+    GHC.Show.Show a => Block3.Tree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Block3.Tree a) ->
+                 Block3.$fShowTree_$cshowsPrec
+                   @ a
+                   $dShow
+                   Block3.$fEnumDay_z
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b77616921f126580cc676023b6e47b3d
+  $fShowTree_$cshowList ::
+    GHC.Show.Show a => [Block3.Tree a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Block3.Tree a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Block3.Tree a)
+                   (Block3.$fShowTree_$cshowsPrec @ a $dShow Block3.$fEnumDay_z)
+                   ls
+                   s) -}
+b77616921f126580cc676023b6e47b3d
+  $fShowTree_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Block3.Tree a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><L,1*U(U)><S,1*U> -}
 c66a9b8cf368b6e0d812ef8b1a0f972f
   $fShowWalls :: GHC.Show.Show Block3.Walls
   DFunId
@@ -1608,6 +2065,26 @@ c90474757d1b233cbf59170161c633b1
 8ea80eb57d385675f965eb0f3100aeca
   $tc'House3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'House"#) -}
+32c4082e684688cc8f1bd93d04ca3013
+  $tc'Leaf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   670979707597238753##
+                   6190183561061724745##
+                   Block3.$trModule
+                   Block3.$tc'Leaf2
+                   1#
+                   Block3.$tc'Leaf1) -}
+55e4a03c4d551ef31da39aff58aaf0a3
+  $tc'Leaf1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+f294d40792e33a6b97a06ad6aa622a08
+  $tc'Leaf2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Leaf3) -}
+20f78a964913282c6b2ca68ace7fa2c7
+  $tc'Leaf3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Leaf"#) -}
 befa06174d29913c5dbaee36596a52f6
   $tc'Library :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -1662,6 +2139,26 @@ bb80d64ed4f5f41b3c8206c5e6bb2c3e
 4b8b181a3d8359cc7da8617251f3cfdc
   $tc'Monday2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Monday"#) -}
+eeb43651765c1aeda73a054ae987d5b5
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14075206749421032796##
+                   9710587612503236355##
+                   Block3.$trModule
+                   Block3.$tc'Node2
+                   1#
+                   Block3.$tc'Node1) -}
+90a17a1e8b9c73da0eaedc76c14aa921
+  $tc'Node1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6b7c1a8e70391244529d75fb8b9227f7
+  $tc'Node2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tc'Node3) -}
+261a820c167cb0e8764b7fd40e16baed
+  $tc'Node3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Node"#) -}
 f1c379452a90b72ce8ef3d8a55002367
   $tc'One :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -2025,6 +2522,23 @@ f52e6d3212556cba09e2982aecae4024
 5028f614d734f775a2d7740c3f00119f
   $tcOperationResult2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("OperationResult"#) -}
+bf4e2a01638dc0d47f277f226cf07f4e
+  $tcTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17352187880435339589##
+                   15762954681375200936##
+                   Block3.$trModule
+                   Block3.$tcTree1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+ce990e4b502dfdf9216c278a7eac7172
+  $tcTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block3.$tcTree2) -}
+2a9707716fc98dac70f67a372fe54be6
+  $tcTree2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tree"#) -}
 283dc04b40d5c0671f21e2512a21ccef
   $tcWalls :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -2060,6 +2574,10 @@ d282c6a64cf2dfc69760561af0ff7e2e
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
+b77616921f126580cc676023b6e47b3d
+  $w$cfoldMap :: m -> (m -> m -> m) -> (a -> m) -> Block3.Tree a -> m
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><L,C(C1(U))><L,C(U)><S,1*U>, Inline: [2] -}
 9a5f4848cacc1d5f5f3d93402f800b03
   $w$cshowsPrec ::
     GHC.Prim.Int#
@@ -2413,6 +2931,15 @@ cfa00a295bb7d8b2414e5b1d2ad923bf
                            (Data.Semigroup.Internal.N:Sum[0]
                                 <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
                       GHC.Prim.+# 4# y } }) -}
+52d2460d1cedbbe88585adac6dad7b99
+  $winsert ::
+    GHC.Classes.Ord a =>
+    a
+    -> Block3.Tree a
+    -> (# GHC.Base.NonEmpty a, Block3.Tree a, Block3.Tree a #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>,
+     Inline: [2] -}
 11428480cd746b86ccea6a79e22aeff2
   $witer ::
     Block3.Nat
@@ -2449,6 +2976,9 @@ cfa00a295bb7d8b2414e5b1d2ad923bf
                         GHC.Maybe.Just ipv1
                         -> Block3.Failure
                              (Block3.City wild ww1 ww2, Block3.setLord1) } } }) -}
+a35b8b9411cab33ebcef0dd5ad306679
+  $wsize :: Block3.Tree a -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
 bd5792d1b2e39d642e69426f7416a51d
   data Castle
     = Castle {lord :: GHC.Maybe.Maybe Block3.Lord,
@@ -2481,6 +3011,9 @@ a51c635a1ebc8f1c0e5d957b4567dd18
   data OperationResult
     = Success (Block3.City, GHC.Base.String)
     | Failure (Block3.City, GHC.Base.String)
+b77616921f126580cc676023b6e47b3d
+  data Tree a
+    = Leaf | Node (GHC.Base.NonEmpty a) (Block3.Tree a) (Block3.Tree a)
 c66a9b8cf368b6e0d812ef8b1a0f972f
   data Walls = Walls
 8991514108fbbc38e6e7a24d6c45f5ff
@@ -2628,6 +3161,34 @@ f2627dfe5655dcd3cb1d63898487d47d
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.City) ->
                  case ds of wild { Block3.City ds1 ds2 ds3 -> ds1 }) -}
+21600c778024ff1ae3127384f82e12ff
+  checkFoldable :: GHC.Classes.Ord a => [a] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U(C(C1(U)),A),1*C(C1(U)),C(C1(U)),A,C(C1(U)),A,A,A)><S,U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> Block3.Tree a {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> Block3.Leaf @ a
+                       : y ys
+                       -> case Block3.$winsert
+                                 @ a
+                                 $dOrd
+                                 y
+                                 (go ys) of ww { (#,,#) ww1 ww2 ww3 ->
+                          Block3.Node @ a ww1 ww2 ww3 } }
+                 } in
+                 GHC.Classes.$fEq[]_$c==
+                   @ a
+                   (GHC.Classes.$p1Ord @ a $dOrd)
+                   (Block3.$fFoldableTree_$cfoldr
+                      @ a
+                      @ [a]
+                      (GHC.Types.: @ a)
+                      (GHC.Types.[] @ a)
+                      (go eta))
+                   (Data.OldList.sortBy @ a (GHC.Classes.compare @ a $dOrd) eta)) -}
 3d2dcf08fb2b0df0cf5fcdea8cacd047
   citizens :: Block3.City -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs,
@@ -2677,6 +3238,29 @@ ad2b6de72b91dd5709137df0dab0bbdc
      Unfolding: (Block3.Castle
                    (GHC.Maybe.Nothing @ Block3.Lord)
                    (GHC.Maybe.Nothing @ Block3.Walls)) -}
+72d0b5ce96087f2ab91b38bfb7ed5ff8
+  find :: GHC.Classes.Ord a => a -> Block3.Tree a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
+88991ea25a3d54a588e7914c858a694b
+  fromList :: GHC.Classes.Ord a => [a] -> Block3.Tree a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> Block3.Tree a {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> Block3.Leaf @ a
+                       : y ys
+                       -> case Block3.$winsert
+                                 @ a
+                                 $dOrd
+                                 y
+                                 (go ys) of ww { (#,,#) ww1 ww2 ww3 ->
+                          Block3.Node @ a ww1 ww2 ww3 } }
+                 } in
+                 go eta) -}
 4992a27ca2515d2d5dfcc2e28247e905
   getResult :: Block3.OperationResult -> Block3.City
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
@@ -2694,6 +3278,23 @@ ad2b6de72b91dd5709137df0dab0bbdc
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.City) ->
                  case ds of wild { Block3.City ds1 ds2 ds3 -> ds3 }) -}
+d235f669ecb83412695804f3471ccaa1
+  insert :: GHC.Classes.Ord a => a -> Block3.Tree a -> Block3.Tree a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>m2,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: a) (w2 :: Block3.Tree a) ->
+                 case Block3.$winsert @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Block3.Node @ a ww1 ww2 ww3 }) -}
+52ed85dbd691b21e804379bbc2360607
+  isEmpty :: Block3.Tree a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Block3.Tree a) ->
+                 case ds of wild {
+                   Block3.Leaf -> GHC.Types.True
+                   Block3.Node ipv ipv1 ipv2 -> GHC.Types.False }) -}
 7b40abec0c45e20f2688f47463c681f2
   isWeekend :: Block3.Day -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
@@ -2748,6 +3349,10 @@ b449762fea2f899ac11419d7d2748742
 b449762fea2f899ac11419d7d2748742
   nextDay2 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 6#) -}
+b2fe50bb659a6217b2f8c500c2afdbbc
+  remove :: GHC.Classes.Ord a => a -> Block3.Tree a -> Block3.Tree a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
 b4c69f135a981a32a89c430a9d6d45a0
   setLord :: Block3.City -> Block3.OperationResult
   {- Arity: 1, Strictness: <S(SLL),1*U(1*U,U,U)>, Inline: [2],
@@ -2796,6 +3401,12 @@ c2b8415e16803f0524ff05363878eca2
 05c86f11668ba2098b85f79a338cb744
   showResult2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Success: "#) -}
+3759313ad711fd934b8117af3fa64ab5
+  size :: Block3.Tree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Block3.Tree a) ->
+                 case Block3.$wsize @ a w of ww { DEFAULT -> GHC.Types.I# ww }) -}
 bd5792d1b2e39d642e69426f7416a51d
   walls :: Block3.Castle -> GHC.Maybe.Maybe Block3.Walls
   RecSel Left Block3.Castle
@@ -2808,6 +3419,8 @@ instance [safe] GHC.Enum.Enum [Block3.LivingPersons]
   = Block3.$fEnumLivingPersons
 instance [safe] GHC.Enum.Enum [Block3.Nat] = Block3.$fEnumNat
 instance [safe] GHC.Classes.Eq [Block3.Nat] = Block3.$fEqNat
+instance [safe] Data.Foldable.Foldable [Block3.Tree]
+  = Block3.$fFoldableTree
 instance [safe] GHC.Real.Integral [Block3.Nat]
   = Block3.$fIntegralNat
 instance [safe] GHC.Num.Num [Block3.Nat] = Block3.$fNumNat
@@ -2823,7 +3436,14 @@ instance [safe] GHC.Show.Show [Block3.LivingPersons]
   = Block3.$fShowLivingPersons
 instance [safe] GHC.Show.Show [Block3.Lord] = Block3.$fShowLord
 instance [safe] GHC.Show.Show [Block3.Nat] = Block3.$fShowNat
+instance [safe] GHC.Show.Show [Block3.Tree] = Block3.$fShowTree
 instance [safe] GHC.Show.Show [Block3.Walls] = Block3.$fShowWalls
+"SPEC $cfoldMap @ Any _" forall @ a
+                                ($dMonoid :: GHC.Base.Monoid Data.Semigroup.Internal.Any)
+  Block3.$fFoldableTree_$cfoldMap @ Data.Semigroup.Internal.Any
+                                  @ a
+                                  $dMonoid
+  = Block3.$fFoldableTree_$s$cfoldMap @ a
 trusted: safe
 require own pkg trusted: False
 module header:

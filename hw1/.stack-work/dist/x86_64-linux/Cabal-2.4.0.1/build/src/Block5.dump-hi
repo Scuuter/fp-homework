@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-06 08:08:02.680722801 UTC
+2019-03-07 02:33:35.148216929 UTC
 
-interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block5 8063
-  interface hash: 17e8995fe1f467f2eb6903887f1bb45d
-  ABI hash: 0f192de01d4645e4885cc2a8d991dfad
-  export-list hash: a6127f4d306bb16a2167606f666d0e4e
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block5 [orphan module] 8063
+  interface hash: 2d7be62683bb3cb43fdad5f497ec483a
+  ABI hash: 348c6634ce120e2fd7a146a9699e3592
+  export-list hash: df092c556e8dabba92953bc3c13acc97
+  orphan hash: de4862efae9c4281c3c7e66a739c8b78
+  flag hash: 9d156e2ccc398f2f187b19220f36d2ba
   opt_hash: 6faf2de08de32d19db9870899d88e59a
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   plugin_hash: ad164012d6b1e14942349d58b1132007
@@ -15,8 +15,17 @@ interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block5 8063
   used TH splices: False
   where
 exports:
+  Block5.fromString
   Block5.maybeConcat
-module dependencies:
+  Block5.toString
+  GHC.Base.Monoid|{GHC.Base.mappend GHC.Base.mempty}
+  GHC.Base.Semigroup|{GHC.Base.<>}
+  Block4.NonEmpty{Block4.:|}
+  Block5.Builder{Block5.Many Block5.One}
+  Block5.Endo{Block5.Endo getEndo}
+  Block5.Name{Block5.Name}
+  Block5.ThisOrThat{Block5.Both Block5.That Block5.This}
+module dependencies: Block4
 package dependencies: base-4.12.0.0* ghc-prim-0.5.3
                       integer-gmp-1.0.2.0
 orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
@@ -28,7 +37,618 @@ family instance modules: base-4.12.0.0:Control.Applicative
 import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
 import  -/  base-4.12.0.0:Data.Maybe 1e8e1362415df45376dffd98f8a47766
 import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
 import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  Block4 392feafbcf5999b5fc8a5c7a30f61b16
+  exports: afc4a2c73c7c8e2754e1864fa9f38177
+  :| 5b11f1b09b419b8a373fd7c60c6a4a53
+  NonEmpty fc1d09ae788db53502aafd30aeeb2d10
+05e11eb77ff23d2bde9bee82312d607d
+  $fMonoidBuilder :: GHC.Base.Monoid Block5.Builder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Builder
+                  Block5.$fSemigroupBuilder
+                  Block5.$fMonoidBuilder_$cmempty
+                  Block5.$fMonoidBuilder_$c<>
+                  Block5.$fMonoidBuilder_go -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fMonoidBuilder_$c<> ::
+    Block5.Builder -> Block5.Builder -> Block5.Builder
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>m2,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Block5.Builder) (w1 :: Block5.Builder) ->
+                 case w of wild {
+                   Block5.One a
+                   -> case w1 of wild1 {
+                        Block5.One b
+                        -> Block5.Many
+                             (GHC.Types.:
+                                @ Block5.Builder
+                                (Block5.One a)
+                                (GHC.Types.:
+                                   @ Block5.Builder
+                                   (Block5.One b)
+                                   (GHC.Types.[] @ Block5.Builder)))
+                        Block5.Many b
+                        -> Block5.Many (GHC.Types.: @ Block5.Builder (Block5.One a) b) }
+                   Block5.Many a
+                   -> case w1 of wild1 {
+                        Block5.One b
+                        -> Block5.Many
+                             (GHC.Base.augment
+                                @ Block5.Builder
+                                (\ @ b1
+                                   (c :: Block5.Builder -> b1 -> b1)[OneShot]
+                                   (n :: b1)[OneShot] ->
+                                 GHC.Base.foldr @ Block5.Builder @ b1 c n a)
+                                (GHC.Types.:
+                                   @ Block5.Builder
+                                   (Block5.One b)
+                                   (GHC.Types.[] @ Block5.Builder)))
+                        Block5.Many b
+                        -> Block5.Many
+                             (GHC.Base.augment
+                                @ Block5.Builder
+                                (\ @ b1
+                                   (c :: Block5.Builder -> b1 -> b1)[OneShot]
+                                   (n :: b1)[OneShot] ->
+                                 GHC.Base.foldr @ Block5.Builder @ b1 c n a)
+                                b) } }) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fMonoidBuilder_$cmempty :: Block5.Builder
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Block5.Many (GHC.Types.[] @ Block5.Builder)) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fMonoidBuilder_go :: [Block5.Builder] -> Block5.Builder
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Block5.Builder]) ->
+                 case Block5.$wgo w of ww { Unit# ww1 -> Block5.Many ww1 }) -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fMonoidEndo ::
+    GHC.Base.Monoid a => GHC.Base.Monoid (Block5.Endo a)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Base.Monoid a).
+                  @ (Block5.Endo a)
+                  (Block5.$fSemigroupEndo @ a)
+                  (GHC.Base.id @ a) `cast` (Sym (Block5.N:Endo[0] <a>_R))
+                  (Block5.$fMonoidEndo2 @ a)
+                    `cast`
+                  (<Block5.Endo a>_R
+                   ->_R <Block5.Endo a>_R
+                   ->_R Sym (Block5.N:Endo[0] <a>_R))
+                  (Block5.$fMonoidEndo1 @ a)
+                    `cast`
+                  (<[Block5.Endo a]>_R ->_R Sym (Block5.N:Endo[0] <a>_R)) -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fMonoidEndo1 :: [Block5.Endo a] -> a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fMonoidEndo2 :: Block5.Endo a -> Block5.Endo a -> a -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,C(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: Block5.Endo a) (ds1 :: Block5.Endo a) ->
+                 GHC.Base..
+                   @ a
+                   @ a
+                   @ a
+                   ds `cast` (Block5.N:Endo[0] <a>_R)
+                   ds1 `cast` (Block5.N:Endo[0] <a>_R)) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fMonoidName :: GHC.Base.Monoid Block5.Name
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Name
+                  Block5.$fSemigroupName
+                  (GHC.Types.[] @ GHC.Types.Char) `cast` (Sym (Block5.N:Name[0]))
+                  Block5.$fMonoidName_$c<>
+                  Block5.$fMonoidName_go -}
+0360720cd2f61357f1faebce34c4c511
+  $fMonoidName1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("."#) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fMonoidName_$c<> :: Block5.Name -> Block5.Name -> Block5.Name
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Block5.Name) (ds1 :: Block5.Name) ->
+                 case ds1 `cast` (Block5.N:Name[0]) of wild {
+                   [] -> ds
+                   : ipv ipv1
+                   -> case ds `cast` (Block5.N:Name[0]) of wild1 {
+                        [] -> wild `cast` (Sym (Block5.N:Name[0]))
+                        : ipv2 ipv3
+                        -> (GHC.Base.++_$s++
+                              @ GHC.Types.Char
+                              (GHC.CString.unpackAppendCString# Block5.$fMonoidName1 wild)
+                              ipv2
+                              ipv3)
+                             `cast`
+                           (Sym (Block5.N:Name[0])) } }) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fMonoidName_go :: [Block5.Name] -> Block5.Name
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fSemigroupBuilder :: GHC.Base.Semigroup Block5.Builder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Builder
+                  Block5.$fMonoidBuilder_$c<>
+                  Block5.$fSemigroupBuilder_$csconcat
+                  Block5.$fSemigroupBuilder_$cstimes -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fSemigroupBuilder_$csconcat ::
+    GHC.Base.NonEmpty Block5.Builder -> Block5.Builder
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.NonEmpty Block5.Builder) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Block5.$fSemigroupBuilder_go a1 as }) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fSemigroupBuilder_$cstimes ::
+    GHC.Real.Integral b => b -> Block5.Builder -> Block5.Builder
+  {- Arity: 1, Strictness: <L,U> -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fSemigroupBuilder_go ::
+    Block5.Builder -> [Block5.Builder] -> Block5.Builder
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fSemigroupEndo :: GHC.Base.Semigroup (Block5.Endo a)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Block5.Endo a)
+                  (Block5.$fMonoidEndo2 @ a)
+                    `cast`
+                  (<Block5.Endo a>_R
+                   ->_R <Block5.Endo a>_R
+                   ->_R Sym (Block5.N:Endo[0] <a>_R))
+                  (Block5.$fSemigroupEndo_$csconcat @ a)
+                  (Block5.$fSemigroupEndo_$cstimes @ a) -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fSemigroupEndo1 ::
+    Block5.Endo a -> [Block5.Endo a] -> Block5.Endo a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fSemigroupEndo_$csconcat ::
+    GHC.Base.NonEmpty (Block5.Endo a) -> Block5.Endo a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: GHC.Base.NonEmpty (Block5.Endo a)) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Block5.$fSemigroupEndo1 @ a a1 as }) -}
+1d54caad66942ffd8083ab5d272d83bf
+  $fSemigroupEndo_$cstimes ::
+    GHC.Real.Integral b => b -> Block5.Endo a -> Block5.Endo a
+  {- Arity: 1, Strictness: <L,U> -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fSemigroupName :: GHC.Base.Semigroup Block5.Name
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Name
+                  Block5.$fMonoidName_$c<>
+                  Block5.$fSemigroupName_$csconcat
+                  Block5.$fSemigroupName_$cstimes -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fSemigroupName_$csconcat ::
+    GHC.Base.NonEmpty Block5.Name -> Block5.Name
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.NonEmpty Block5.Name) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Block5.$fSemigroupName_go a1 as }) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fSemigroupName_$cstimes ::
+    GHC.Real.Integral b => b -> Block5.Name -> Block5.Name
+  {- Arity: 1, Strictness: <L,U> -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fSemigroupName_go :: Block5.Name -> [Block5.Name] -> Block5.Name
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+6d1ea934553b242fcde600e0dd80f534
+  $fSemigroupNonEmpty :: GHC.Base.Semigroup (Block4.NonEmpty a)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Block4.NonEmpty a)
+                  (Block5.$fSemigroupNonEmpty_$c<> @ a)
+                  (Block5.$fSemigroupNonEmpty_$csconcat @ a)
+                  (Block5.$fSemigroupNonEmpty_$cstimes @ a) -}
+e3735c77d384d46a1538644d50b60a14
+  $fSemigroupNonEmpty1 ::
+    Block4.NonEmpty a -> [Block4.NonEmpty a] -> Block4.NonEmpty a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U,U)><S,1*U>m,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Block4.NonEmpty a) (w1 :: [Block4.NonEmpty a]) ->
+                 case w of ww { Block4.:| ww1 ww2 ->
+                 case Block5.$wpoly_go @ a ww1 ww2 w1 of ww3 { (#,#) ww4 ww5 ->
+                 Block4.:| @ a ww4 ww5 } }) -}
+eecd4f5e5f2e72e9b3c5a3aa82d34b48
+  $fSemigroupNonEmpty_$c<> ::
+    Block4.NonEmpty a -> Block4.NonEmpty a -> Block4.NonEmpty a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U,1*U)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (ds :: Block4.NonEmpty a) (ds1 :: Block4.NonEmpty a) ->
+                 case ds of wild { Block4.:| x xs ->
+                 case ds1 of wild1 { Block4.:| y ys ->
+                 Block4.:|
+                   @ a
+                   x
+                   (GHC.Base.augment
+                      @ a
+                      (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                       GHC.Base.foldr @ a @ b c n xs)
+                      (GHC.Types.: @ a y ys)) } }) -}
+c0fe0526652a5a45289d2ee2c9873cb6
+  $fSemigroupNonEmpty_$csconcat ::
+    GHC.Base.NonEmpty (Block4.NonEmpty a) -> Block4.NonEmpty a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U(U,U),1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: GHC.Base.NonEmpty (Block4.NonEmpty a)) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Block5.$fSemigroupNonEmpty1 @ a a1 as }) -}
+6eb37242f2e40d29364beecd3d3a86c5
+  $fSemigroupNonEmpty_$cstimes ::
+    GHC.Real.Integral b => b -> Block4.NonEmpty a -> Block4.NonEmpty a
+  {- Arity: 1, Strictness: <L,U> -}
+a3e48272ec8621832906d9cc6d833516
+  $fSemigroupThisOrThat :: GHC.Base.Semigroup (Block5.ThisOrThat a b)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ a @ b.
+                  @ (Block5.ThisOrThat a b)
+                  (Block5.$fSemigroupThisOrThat_$c<> @ a @ b)
+                  (Block5.$fSemigroupThisOrThat_$csconcat @ a @ b)
+                  (Block5.$fSemigroupThisOrThat_$cstimes @ a @ b) -}
+a3e48272ec8621832906d9cc6d833516
+  $fSemigroupThisOrThat1 ::
+    Block5.ThisOrThat a b
+    -> [Block5.ThisOrThat a b] -> Block5.ThisOrThat a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+a3e48272ec8621832906d9cc6d833516
+  $fSemigroupThisOrThat_$c<> ::
+    Block5.ThisOrThat a b
+    -> Block5.ThisOrThat a b -> Block5.ThisOrThat a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (ds :: Block5.ThisOrThat a b)
+                   (ds1 :: Block5.ThisOrThat a b) ->
+                 case ds of wild {
+                   Block5.This a1
+                   -> case ds1 of wild1 {
+                        Block5.This ds2 -> wild
+                        Block5.That b1 -> Block5.Both @ a @ b a1 b1
+                        Block5.Both ds2 b1 -> Block5.Both @ a @ b a1 b1 }
+                   Block5.That ds2
+                   -> case ds1 of wild1 {
+                        Block5.This b1 -> Block5.Both @ a @ b b1 ds2
+                        Block5.That b1 -> wild1
+                        Block5.Both a1 b1 -> wild1 }
+                   Block5.Both a1 b1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> wild Block5.That c -> Block5.Both @ a @ b a1 c } }) -}
+a3e48272ec8621832906d9cc6d833516
+  $fSemigroupThisOrThat_$csconcat ::
+    GHC.Base.NonEmpty (Block5.ThisOrThat a b) -> Block5.ThisOrThat a b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b (ds :: GHC.Base.NonEmpty (Block5.ThisOrThat a b)) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Block5.$fSemigroupThisOrThat1 @ b @ a a1 as }) -}
+a3e48272ec8621832906d9cc6d833516
+  $fSemigroupThisOrThat_$cstimes ::
+    GHC.Real.Integral b2 =>
+    b2 -> Block5.ThisOrThat a b1 -> Block5.ThisOrThat a b1
+  {- Arity: 1, Strictness: <L,U> -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fShowBuilder :: GHC.Show.Show Block5.Builder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Builder
+                  Block5.$fShowBuilder_$cshowsPrec
+                  Block5.$fShowBuilder_$cshow
+                  Block5.$fShowBuilder_$cshowList -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fShowBuilder1 :: Block5.Builder -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (w :: Block5.Builder) (w1 :: GHC.Base.String) ->
+                 Block5.$w$cshowsPrec 0# w w1) -}
+57c8ead3f650da6d1fff081f61a49ac0
+  $fShowBuilder2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fShowBuilder_$cshow :: Block5.Builder -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Block5.Builder) ->
+                 Block5.$fShowBuilder_$cshowsPrec
+                   Block5.$fShowBuilder2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fShowBuilder_$cshowList :: [Block5.Builder] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block5.Builder]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block5.Builder Block5.$fShowBuilder1 ls s) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $fShowBuilder_$cshowsPrec ::
+    GHC.Types.Int -> Block5.Builder -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Block5.Builder)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Block5.$w$cshowsPrec ww1 w1 w2 }) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fShowName :: GHC.Show.Show Block5.Name
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Block5.Name
+                  Block5.$fShowName_$cshowsPrec
+                  Block5.$fShowName_$cshow
+                  Block5.$fShowName_$cshowList -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fShowName1 :: Block5.Name -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ (w :: Block5.Name) (w1 :: GHC.Base.String) ->
+                 Block5.$w$cshowsPrec1 0# w w1) -}
+9870aa3f5eeea794ee41b410735f6c44
+  $fShowName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Name "#) -}
+5b8ba779ad776fbbd84fbe76b8a6e262
+  $fShowName3 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fShowName_$cshow :: Block5.Name -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: Block5.Name) ->
+                 GHC.CString.unpackAppendCString#
+                   Block5.$fShowName2
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.$fShow(,)3
+                      (GHC.Show.showLitString
+                         x `cast` (Block5.N:Name[0])
+                         Block5.$fShowName3))) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fShowName_$cshowList :: [Block5.Name] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Block5.Name]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Block5.Name Block5.$fShowName1 ls s) -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $fShowName_$cshowsPrec ::
+    GHC.Types.Int -> Block5.Name -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Block5.Name)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Block5.$w$cshowsPrec1 ww1 w1 w2 }) -}
+e2ba00618dbdba1693e16eb223fc44f9
+  $tc'Both :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14803503613938575109##
+                   5350950197068872270##
+                   Block5.$trModule
+                   Block5.$tc'Both2
+                   2#
+                   Block5.$tc'Both1) -}
+49f42fea5176b9c024866a0bbb22f70d
+  $tc'Both1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e2e654b85bb432c3b86e962077c8c832
+  $tc'Both2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'Both3) -}
+443a41a8c301e2cad9512b121a7133a5
+  $tc'Both3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Both"#) -}
+de2d9e720051ba44a33778ce78383880
+  $tc'Endo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1018586300096423067##
+                   3344762629105194180##
+                   Block5.$trModule
+                   Block5.$tc'Endo2
+                   1#
+                   Block5.$tc'Endo1) -}
+8295bf1a0bcdb12ca4c0b1af16fa23d3
+  $tc'Endo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+08ff9e105a8488d71bef46459bd9f0de
+  $tc'Endo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'Endo3) -}
+068a1929875df03ed0eef1f2e4f1b5a7
+  $tc'Endo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Endo"#) -}
+ab29f19b33b24a6719644ac7568961b2
+  $tc'Many :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10527477123189072893##
+                   11060810499266270169##
+                   Block5.$trModule
+                   Block5.$tc'Many2
+                   0#
+                   Block5.$tc'Many1) -}
+59becd9daea77c62b6b820a5fa1a41f8
+  $tc'Many1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f6991c4e6ce965eb686251ecd21dc5cf
+  $tc'Many2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'Many3) -}
+30b1da162c11d2718e0305a6db8aff8e
+  $tc'Many3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Many"#) -}
+23721c9ece12f6a61d597cb521539814
+  $tc'Name :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3080522966720326503##
+                   16844932896618525641##
+                   Block5.$trModule
+                   Block5.$tc'Name2
+                   0#
+                   Block5.$tc'Name1) -}
+f30124c448960368950c550098648a4c
+  $tc'Name1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+30a86d9593c1174d13a35b8bedd6dadd
+  $tc'Name2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'Name3) -}
+8538f72b0596b9745b1b8f21c6445a7d
+  $tc'Name3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Name"#) -}
+8e5409ba1a7984582a95790588daff5a
+  $tc'One :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12850457519397832466##
+                   18217499273143526920##
+                   Block5.$trModule
+                   Block5.$tc'One2
+                   0#
+                   Block5.$tc'One1) -}
+6b5f5ba85282d5bd356edcb443447ef7
+  $tc'One1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3e022bb8c645b696fc3d87afe0a32594
+  $tc'One2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'One3) -}
+694b29b44d09bb56105f5f741f3dfa86
+  $tc'One3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'One"#) -}
+65d25a1d4b4a50cd436e8c223f60e108
+  $tc'That :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14328835417329761107##
+                   277087764903642519##
+                   Block5.$trModule
+                   Block5.$tc'That2
+                   2#
+                   Block5.$tc'That1) -}
+e8e7f333d11481bf3d26ec426a1a2e07
+  $tc'That1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d1e6103094edcd9288b404bb6f1c50d0
+  $tc'That2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'That3) -}
+64dd8571cb27b08d7048125fd9487757
+  $tc'That3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'That"#) -}
+ff2026ecab1cbaa2fe4276f4391e8d90
+  $tc'This :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6211727027706064721##
+                   4948538481270478689##
+                   Block5.$trModule
+                   Block5.$tc'This2
+                   2#
+                   Block5.$tc'This1) -}
+e6c0a6dbd771d389f96f082eef51d344
+  $tc'This1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6c24c2d33796c8ba09f53f024e64d596
+  $tc'This2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tc'This3) -}
+6eb25b97b25b00cfbaeae7f57bbb30cc
+  $tc'This3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'This"#) -}
+b3cd85f48c7b17f95350104871e527da
+  $tcBuilder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5093126888675890532##
+                   908725213699169762##
+                   Block5.$trModule
+                   Block5.$tcBuilder1
+                   0#
+                   GHC.Types.krep$*) -}
+3c198e6792df99a18f6fd27dbb6b01be
+  $tcBuilder1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tcBuilder2) -}
+62ec47a1872f7c36e8c4bfdb3ec9d745
+  $tcBuilder2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Builder"#) -}
+21d27467b426efb004e5b7a44baa6be8
+  $tcEndo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2815832188470506082##
+                   17562457020159809507##
+                   Block5.$trModule
+                   Block5.$tcEndo1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+0240c2128f55918d0c70265c9b323649
+  $tcEndo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tcEndo2) -}
+8ad17c20d6ac52068a01778aaa903aa7
+  $tcEndo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Endo"#) -}
+0b8223d0b963caef5634337bfc17a3d5
+  $tcName :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8609706186003596280##
+                   863283978951088469##
+                   Block5.$trModule
+                   Block5.$tcName1
+                   0#
+                   GHC.Types.krep$*) -}
+00d7330463f3510011661405b29a3cb0
+  $tcName1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tcName2) -}
+591107df34460c4a764fa15d16e2e104
+  $tcName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Name"#) -}
+954617235e2a216725f5011b15960f04
+  $tcThisOrThat :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9562545982098908728##
+                   14977968060672531886##
+                   Block5.$trModule
+                   Block5.$tcThisOrThat1
+                   0#
+                   GHC.Types.krep$*->*->*) -}
+9d5d447cb4391e1afd1438bde3a747cd
+  $tcThisOrThat1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Block5.$tcThisOrThat2) -}
+a1ce7b5a7a6e24c3aed8af8dd37d7e73
+  $tcThisOrThat2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ThisOrThat"#) -}
 873b621532cd51485cccc4cc74b5ec87
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -50,9 +670,113 @@ dce7d97b706b3969327dc2fe2d6ab752
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
+05e11eb77ff23d2bde9bee82312d607d
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Block5.Builder -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2] -}
+ce55b6d0f4b99e0649c39cae9551935b
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int# -> Block5.Name -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Block5.Name)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        Block5.$fShowName2
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)3
+                           (GHC.Show.showLitString
+                              w `cast` (Block5.N:Name[0])
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 w1)))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Block5.$fShowName2
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.$fShow(,)3
+                              (GHC.Show.showLitString
+                                 w `cast` (Block5.N:Name[0])
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.$fShow(,)3
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }) -}
+d9979c51c44c272245371816ad40d214
+  $wfromString :: GHC.Base.String -> (# [Block5.Builder] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
+05e11eb77ff23d2bde9bee82312d607d
+  $wgo :: [Block5.Builder] -> (# [Block5.Builder] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
+3b9646b6b0b836b91be2ef153558f2d3
+  $wpoly_go :: a -> [a] -> [Block4.NonEmpty a] -> (# a, [a] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><S,1*U>,
+     Inline: [2] -}
+05e11eb77ff23d2bde9bee82312d607d
+  data Builder = One GHC.Types.Char | Many [Block5.Builder]
+1d54caad66942ffd8083ab5d272d83bf
+  newtype Endo a = Endo {getEndo :: a -> a}
+ce55b6d0f4b99e0649c39cae9551935b
+  newtype Name = Name GHC.Base.String
+a3e48272ec8621832906d9cc6d833516
+  data ThisOrThat a b = This a | That b | Both a b
+75e6cf79684c323e759477887300b867
+  fromString :: GHC.Base.String -> Block5.Builder
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 case Block5.$wfromString w of ww { Unit# ww1 ->
+                 Block5.Many ww1 }) -}
+1d54caad66942ffd8083ab5d272d83bf
+  getEndo :: Block5.Endo a -> a -> a
+  RecSel Left Block5.Endo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Block5.getEndo1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Block5.Endo a>_R ->_R Block5.N:Endo[0] <a>_R) -}
+1d54caad66942ffd8083ab5d272d83bf
+  getEndo1 :: Block5.Endo a -> Block5.Endo a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Block5.Endo a) -> ds) -}
 a3ebae20b58620fb60c5b1adb9b0923c
   maybeConcat :: [GHC.Maybe.Maybe [a]] -> [a]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+2f602e2b353c31ed63c26823be7d2cd0
+  toString :: Block5.Builder -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Block5.Builder) ->
+                 case ds of wild {
+                   Block5.One a
+                   -> GHC.Types.: @ GHC.Types.Char a (GHC.Types.[] @ GHC.Types.Char)
+                   Block5.Many a -> Block5.toString_go a }) -}
+edfecc33cd85c0f11a7e462942a84bce
+  toString_go :: [Block5.Builder] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+instance [safe] GHC.Base.Monoid [Block5.Builder]
+  = Block5.$fMonoidBuilder
+instance [safe] GHC.Base.Monoid [Block5.Endo] = Block5.$fMonoidEndo
+instance [safe] GHC.Base.Monoid [Block5.Name] = Block5.$fMonoidName
+instance [safe] GHC.Base.Semigroup [Block5.Builder]
+  = Block5.$fSemigroupBuilder
+instance [safe] GHC.Base.Semigroup [Block5.Endo]
+  = Block5.$fSemigroupEndo
+instance [safe] GHC.Base.Semigroup [Block5.Name]
+  = Block5.$fSemigroupName
+instance [safe] [orphan] GHC.Base.Semigroup [Block4.NonEmpty]
+  = Block5.$fSemigroupNonEmpty
+instance [safe] GHC.Base.Semigroup [Block5.ThisOrThat]
+  = Block5.$fSemigroupThisOrThat
+instance [safe] GHC.Show.Show [Block5.Builder]
+  = Block5.$fShowBuilder
+instance [safe] GHC.Show.Show [Block5.Name] = Block5.$fShowName
 trusted: safe
 require own pkg trusted: False
 module header:

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-06 17:53:51.767865673 UTC
+2019-03-07 02:33:34.731138498 UTC
 
 interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block4 8063
-  interface hash: 3894b7f5537c95e72d5130b1a490e80d
-  ABI hash: 0ee22aea0d3b03f0321b2b66fde301de
-  export-list hash: 5617fc0980b89fcb74027961f62aad3b
+  interface hash: 5d89568397c22af8c019b498e4cf3ae5
+  ABI hash: 392feafbcf5999b5fc8a5c7a30f61b16
+  export-list hash: afc4a2c73c7c8e2754e1864fa9f38177
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9d156e2ccc398f2f187b19220f36d2ba
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -15,6 +15,10 @@ interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block4 8063
   used TH splices: False
   where
 exports:
+  Block4.checkJoinWith
+  Block4.joinWith
+  Block4.splitOn
+  Data.Foldable.Foldable|{Data.Foldable.foldMap Data.Foldable.foldr}
   Block4.NonEmpty{Block4.:|}
   Block4.Pair{Block4.Pair}
 module dependencies:
@@ -28,8 +32,11 @@ family instance modules: base-4.12.0.0:Control.Applicative
                          base-4.12.0.0:GHC.IO.Exception
 import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
 import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Err 28d622b06927ca4c3b335ec5326c34b2
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
 import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
-495723e0b52b75834b0c3650b837e368
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty :: Data.Foldable.Foldable Block4.NonEmpty
   DFunId
   {- Inline: CONLIKE,
@@ -46,7 +53,7 @@ import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
                   Block4.$fFoldableNonEmpty_$ctoList
                   Block4.$fFoldableNonEmpty_$cnull
                   Block4.$fFoldableNonEmpty_$clength
-                  Block4.$fFoldableNonEmpty3
+                  Block4.$fFoldableNonEmpty6
                     `cast`
                   (forall (a :: <*>_N).
                    <GHC.Classes.Eq a>_R
@@ -55,7 +62,7 @@ import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
                    ->_R Data.Semigroup.Internal.N:Any[0])
                   Block4.$fFoldableNonEmpty_$cmaximum
                   Block4.$fFoldableNonEmpty_$cminimum
-                  Block4.$fFoldableNonEmpty2
+                  Block4.$fFoldableNonEmpty3
                     `cast`
                   (forall (a :: <*>_N).
                    <GHC.Num.Num a>_R
@@ -67,29 +74,46 @@ import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
                    <GHC.Num.Num a>_R
                    ->_R <Block4.NonEmpty a>_R
                    ->_R Data.Semigroup.Internal.N:Product[0] <a>_R) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty1 ::
     GHC.Num.Num a =>
     Block4.NonEmpty a -> Data.Semigroup.Internal.Product a
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,A,C(C1(U)),A,A,A,C(U))><S(LS),1*U(U,1*U)>,
-     Inline: [2],
-     Unfolding: InlineRule (2, True, False)
-                (\ @ a (w :: GHC.Num.Num a) (w1 :: Block4.NonEmpty a) ->
-                 case w1 of ww { Block4.:| ww1 ww2 ->
-                 Block4.$w$cproduct @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
-  $fFoldableNonEmpty2 ::
-    GHC.Num.Num a => Block4.NonEmpty a -> Data.Semigroup.Internal.Sum a
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(C(C1(U)),A,A,A,A,A,C(U))><S(LS),1*U(U,1*U)>,
-     Inline: [2],
-     Unfolding: InlineRule (2, True, False)
-                (\ @ a (w :: GHC.Num.Num a) (w1 :: Block4.NonEmpty a) ->
-                 case w1 of ww { Block4.:| ww1 ww2 ->
-                 Block4.$w$csum @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+  {- Arity: 1, Strictness: <L,U(A,A,U,A,A,A,C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Block4.$fFoldableNonEmpty_$cfoldMap
+                   @ (Data.Semigroup.Internal.Product a)
+                   @ a
+                   (Data.Semigroup.Internal.$fMonoidProduct @ a $dNum)
+                   (Block4.$fFoldableNonEmpty2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Product[0] <a>_R))) -}
+8e9e3308fb8d7005a2514356fea3e7fe
+  $fFoldableNonEmpty2 :: a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a (v :: a) -> v) -}
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty3 ::
+    GHC.Num.Num a => Block4.NonEmpty a -> Data.Semigroup.Internal.Sum a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U,A,C(C1(U)),A,A,A,C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 Block4.$fFoldableNonEmpty_$cfoldMap
+                   @ (Data.Semigroup.Internal.Sum a)
+                   @ a
+                   (Data.Semigroup.Internal.$fMonoidSum @ a $dNum)
+                   (Block4.$fFoldableNonEmpty2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R))) -}
+dc8374f541778f7169e32be2d3938058
+  $fFoldableNonEmpty4 :: a
+  {- Strictness: x -}
+ea6d88522c25ebb1ffe9d4253019a497
+  $fFoldableNonEmpty5 :: a
+  {- Strictness: x -}
+fc1d09ae788db53502aafd30aeeb2d10
+  $fFoldableNonEmpty6 ::
     GHC.Classes.Eq a =>
     a -> Block4.NonEmpty a -> Data.Semigroup.Internal.Any
   {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(C(U)),A)><L,U>,
@@ -100,14 +124,14 @@ import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
                    (GHC.Classes.== @ a $dEq eta)
                      `cast`
                    (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Any[0]))) -}
-dc8374f541778f7169e32be2d3938058
-  $fFoldableNonEmpty4 :: a
+c3712c0a790e615279c71e052824b991
+  $fFoldableNonEmpty7 :: a
   {- Strictness: x -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfold ::
     GHC.Base.Monoid m => Block4.NonEmpty m -> m
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,U,C(C1(U)),A)><S(LS),1*U(U,1*U)>,
+     Strictness: <L,U(A,A,C(C1(U)),A)><S(LS),1*U(U,1*U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ @ m ($dMonoid :: GHC.Base.Monoid m) ->
                  Block4.$fFoldableNonEmpty_$cfoldMap
@@ -115,11 +139,11 @@ dc8374f541778f7169e32be2d3938058
                    @ m
                    $dMonoid
                    (GHC.Base.id @ m)) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldMap ::
     GHC.Base.Monoid m => (a -> m) -> Block4.NonEmpty a -> m
   {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,U(A,U,C(C1(U)),A)><L,C(U)><S(LS),1*U(U,1*U)>,
+     Strictness: <L,U(A,A,C(C1(U)),A)><L,C(U)><S(LS),1*U(U,1*U)>,
      Inline: [2],
      Unfolding: InlineRule (3, True, False)
                 (\ @ m
@@ -129,20 +153,27 @@ dc8374f541778f7169e32be2d3938058
                    (w2 :: Block4.NonEmpty a) ->
                  case w2 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldMap @ m @ a w w1 ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldl ::
     (b -> a -> b) -> b -> Block4.NonEmpty a -> b
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,C(C1(U))><L,U><S(LS),1*U(U,1*U)>, Inline: [2],
+  {- Arity: 3, Strictness: <L,C(C1(U))><L,U><S(LS),1*U(U,1*U)>,
      Unfolding: InlineRule (3, True, False)
-                (\ @ b
-                   @ a
-                   (w :: b -> a -> b)
-                   (w1 :: b)
-                   (w2 :: Block4.NonEmpty a) ->
-                 case w2 of ww { Block4.:| ww1 ww2 ->
-                 Block4.$w$cfoldl @ b @ a w w1 ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+                (\ @ b @ a (f :: b -> a -> b) (z :: b) (t1 :: Block4.NonEmpty a) ->
+                 (Block4.$fFoldableNonEmpty_$cfoldMap
+                    @ (Data.Semigroup.Internal.Dual (Data.Semigroup.Internal.Endo b))
+                    @ a
+                    (Block4.$fFoldableNonEmpty_$dMonoid @ b)
+                    (\ (x :: a) (y :: b) -> f y x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <b>_R)))
+                    t1)
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <b>_R))
+                   z) -}
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldl' ::
     (b -> a -> b) -> b -> Block4.NonEmpty a -> b
   {- Arity: 3, HasNoCafRefs,
@@ -155,7 +186,7 @@ dc8374f541778f7169e32be2d3938058
                    (w2 :: Block4.NonEmpty a) ->
                  case w2 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldl' @ b @ a w w1 ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldl1 ::
     (a -> a -> a) -> Block4.NonEmpty a -> a
   {- Arity: 2, Strictness: <L,C(C1(U))><S(LS),1*U(U,1*U)>,
@@ -164,7 +195,7 @@ dc8374f541778f7169e32be2d3938058
                 (\ @ a (w :: a -> a -> a) (w1 :: Block4.NonEmpty a) ->
                  case w1 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldl1 @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldr ::
     (a -> b -> b) -> b -> Block4.NonEmpty a -> b
   {- Arity: 3, HasNoCafRefs,
@@ -177,11 +208,11 @@ dc8374f541778f7169e32be2d3938058
                    (w2 :: Block4.NonEmpty a) ->
                  case w2 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldr @ a @ b w w1 ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldr' ::
     (a -> b -> b) -> b -> Block4.NonEmpty a -> b
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <C(C(S)),C(C1(U))><L,U><S(LS),1*U(U,1*U)>, Inline: [2],
+  {- Arity: 3, Strictness: <L,C(C1(U))><L,U><S(LS),1*U(U,1*U)>,
+     Inline: [2],
      Unfolding: InlineRule (3, True, False)
                 (\ @ a
                    @ b
@@ -190,7 +221,7 @@ dc8374f541778f7169e32be2d3938058
                    (w2 :: Block4.NonEmpty a) ->
                  case w2 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldr' @ a @ b w w1 ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cfoldr1 ::
     (a -> a -> a) -> Block4.NonEmpty a -> a
   {- Arity: 2, HasNoCafRefs,
@@ -199,7 +230,7 @@ dc8374f541778f7169e32be2d3938058
                 (\ @ a (w :: a -> a -> a) (w1 :: Block4.NonEmpty a) ->
                  case w1 of ww { Block4.:| ww1 ww2 ->
                  Block4.$w$cfoldr1 @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$clength :: Block4.NonEmpty a -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>m,
      Inline: [2],
@@ -217,34 +248,62 @@ dc8374f541778f7169e32be2d3938058
                             [] -> GHC.Types.I# ww3 : y ys -> $wgo ys (GHC.Prim.+# ww3 1#) }
                       } in
                       $wgo wild 1# } }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cmaximum ::
     GHC.Classes.Ord a => Block4.NonEmpty a -> a
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S(LS),1*U(U,1*U)>,
-     Inline: [2],
-     Unfolding: InlineRule (2, True, False)
-                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Block4.NonEmpty a) ->
-                 case w1 of ww { Block4.:| ww1 ww2 ->
-                 Block4.$w$cmaximum @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+  {- Arity: 1, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   g :: GHC.Base.Monoid (Data.Functor.Utils.Max a)
+                   = Data.Functor.Utils.$fMonoidMax @ a $dOrd
+                 } in
+                 \ (x :: Block4.NonEmpty a) ->
+                 case x of ww { Block4.:| ww1 ww2 ->
+                 case (Block4.$w$cfoldMap
+                         @ (Data.Functor.Utils.Max a)
+                         @ a
+                         g
+                         (GHC.Maybe.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
+                         ww1
+                         ww2)
+                        `cast`
+                      (Data.Functor.Utils.N:Max[0] <a>_N) of wild {
+                   GHC.Maybe.Nothing -> Block4.$fFoldableNonEmpty5 @ a
+                   GHC.Maybe.Just v -> v } }) -}
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cminimum ::
     GHC.Classes.Ord a => Block4.NonEmpty a -> a
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S(LS),1*U(U,1*U)>,
-     Inline: [2],
-     Unfolding: InlineRule (2, True, False)
-                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Block4.NonEmpty a) ->
-                 case w1 of ww { Block4.:| ww1 ww2 ->
-                 Block4.$w$cminimum @ a w ww1 ww2 }) -}
-495723e0b52b75834b0c3650b837e368
+  {- Arity: 1, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) ->
+                 let {
+                   g :: GHC.Base.Monoid (Data.Functor.Utils.Min a)
+                   = Data.Functor.Utils.$fMonoidMin @ a $dOrd
+                 } in
+                 \ (x :: Block4.NonEmpty a) ->
+                 case x of ww { Block4.:| ww1 ww2 ->
+                 case (Block4.$w$cfoldMap
+                         @ (Data.Functor.Utils.Min a)
+                         @ a
+                         g
+                         (GHC.Maybe.Just @ a)
+                           `cast`
+                         (<a>_R ->_R Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
+                         ww1
+                         ww2)
+                        `cast`
+                      (Data.Functor.Utils.N:Min[0] <a>_N) of wild {
+                   GHC.Maybe.Nothing -> Block4.$fFoldableNonEmpty4 @ a
+                   GHC.Maybe.Just v -> v } }) -}
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$cnull :: Block4.NonEmpty a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ @ a (ds :: Block4.NonEmpty a) ->
                  case ds of wild { Block4.:| x ds1 ->
                  case ds1 of wild1 { DEFAULT -> GHC.Types.False } }) -}
-495723e0b52b75834b0c3650b837e368
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$ctoList :: Block4.NonEmpty a -> [a]
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U,1*U)>m2,
      Inline: (sat-args=1),
@@ -254,7 +313,15 @@ dc8374f541778f7169e32be2d3938058
                    @ a
                    (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
                     Block4.$fFoldableNonEmpty_$cfoldr @ a @ b c n t1)) -}
-495723e0b52b75834b0c3650b837e368
+bdf7c57b295b7ca47ce6e6a4ff0467f2
+  $fFoldableNonEmpty_$dMonoid ::
+    GHC.Base.Monoid
+      (Data.Semigroup.Internal.Dual (Data.Semigroup.Internal.Endo b))
+  {- Unfolding: (\ @ b ->
+                 Data.Semigroup.Internal.$fMonoidDual
+                   @ (Data.Semigroup.Internal.Endo b)
+                   (Data.Semigroup.Internal.$fMonoidEndo @ b)) -}
+fc1d09ae788db53502aafd30aeeb2d10
   $fFoldableNonEmpty_$s$cfoldMap ::
     (a -> Data.Semigroup.Internal.Any)
     -> Block4.NonEmpty a -> Data.Semigroup.Internal.Any
@@ -437,6 +504,70 @@ dc8374f541778f7169e32be2d3938058
                    @ a
                    (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
                     Block4.$fFoldablePair_$cfoldr @ a @ b c n t1)) -}
+fc1d09ae788db53502aafd30aeeb2d10
+  $fShowNonEmpty ::
+    GHC.Show.Show a => GHC.Show.Show (Block4.NonEmpty a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,C(C(U)))>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Block4.NonEmpty a)
+                  (Block4.$fShowNonEmpty_$cshowsPrec @ a v)
+                  (Block4.$fShowNonEmpty_$cshow @ a v)
+                  (Block4.$fShowNonEmpty_$cshowList @ a v) -}
+b98b008a487688fa889a7e87d247005b
+  $fShowNonEmpty1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c24c2211eded660085bf5e077ab4208e
+  $fShowNonEmpty2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" :| "#) -}
+3ee217489f5b4bb95af3b54d5fe859ea
+  $fShowNonEmpty3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+fc1d09ae788db53502aafd30aeeb2d10
+  $fShowNonEmpty_$cshow ::
+    GHC.Show.Show a => Block4.NonEmpty a -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(C(C(C(S)))LL),1*U(1*C1(C1(C1(U))),A,1*C1(C1(U)))><S,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: Block4.NonEmpty a) ->
+                 case w of ww { GHC.Show.C:Show ww1 ww2 ww3 ->
+                 case w1 of ww4 { Block4.:| ww5 ww6 ->
+                 Block4.$w$cshow @ a ww1 ww3 ww5 ww6 } }) -}
+fc1d09ae788db53502aafd30aeeb2d10
+  $fShowNonEmpty_$cshowList ::
+    GHC.Show.Show a => [Block4.NonEmpty a] -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Block4.NonEmpty a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Block4.NonEmpty a)
+                   (Block4.$fShowNonEmpty_$cshowsPrec
+                      @ a
+                      $dShow
+                      Block4.$fShowNonEmpty1)
+                   ls
+                   s) -}
+fc1d09ae788db53502aafd30aeeb2d10
+  $fShowNonEmpty_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Block4.NonEmpty a -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S(S),1*U(U)><S,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Block4.NonEmpty a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Block4.:| ww3 ww4 ->
+                 Block4.$w$cshowsPrec @ a w ww1 ww3 ww4 } }) -}
 8034aa0794ae1157d5cc36bf19e6cf8d
   $tc':| :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -532,54 +663,11 @@ f001d2d9dac214aca135b9a70d6e983a
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
-9ad9340a914b816d6f2439024b787de7
+5885514fdba3f397b9f4ac4c3e22c7fe
   $w$cfoldMap :: GHC.Base.Monoid m => (a -> m) -> a -> [a] -> m
   {- Arity: 4, HasNoCafRefs,
-     Strictness: <L,U(A,1*U,C(C1(U)),A)><L,C(U)><L,U><S,1*U>,
-     Inline: [2],
-     Unfolding: (\ @ m
-                   @ a
-                   (w :: GHC.Base.Monoid m)
-                   (w1 :: a -> m)
-                   (ww :: a)
-                   (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> w1 ww
-                   : ipv ipv1
-                   -> GHC.Base.mappend
-                        @ m
-                        w
-                        (w1 ww)
-                        (let {
-                           z :: m = GHC.Base.mempty @ m w
-                         } in
-                         letrec {
-                           go :: [a] -> m {- Arity: 1, Strictness: <S,1*U> -}
-                           = \ (ds :: [a]) ->
-                             case ds of wild1 {
-                               [] -> z : y ys -> GHC.Base.mappend @ m w (w1 y) (go ys) }
-                         } in
-                         go wild) }) -}
-9c69e8c29592bc11c281b8b591ff8fa9
-  $w$cfoldl :: (b -> a -> b) -> b -> a -> [a] -> b
-  {- Arity: 4, HasNoCafRefs,
-     Strictness: <L,C(C1(U))><L,U><L,U><S,1*U>, Inline: [2],
-     Unfolding: (\ @ b
-                   @ a
-                   (w :: b -> a -> b)
-                   (w1 :: b)
-                   (ww :: a)
-                   (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> w w1 ww
-                   : ipv ipv1
-                   -> letrec {
-                        go :: [a] -> b -> b
-                          <join 2> {- Arity: 2, Strictness: <S,1*U><L,U> -}
-                        = \ (ds :: [a]) (eta :: b) ->
-                          case ds of wild1 { [] -> eta : y ys -> go ys (w eta y) }
-                      } in
-                      go wild (w w1 ww) }) -}
+     Strictness: <L,U(A,A,C(C1(U)),A)><L,C(U)><L,U><S,1*U>,
+     Inline: [2] -}
 5f7057c59f317a4f6dfc0d4f0a9b98f5
   $w$cfoldl' :: (b -> a -> b) -> b -> a -> [a] -> b
   {- Arity: 4, HasNoCafRefs,
@@ -602,31 +690,32 @@ f001d2d9dac214aca135b9a70d6e983a
                             [] -> eta : y ys -> case w eta y of vx1 { DEFAULT -> go ys vx1 } }
                       } in
                       go wild vx } }) -}
-b756e2532a8aa2fd7b03716309553091
+2d2a1eadeea13ffda3cfc16eedd0d1f7
   $w$cfoldl1 :: (a -> a -> a) -> a -> [a] -> a
   {- Arity: 3, Strictness: <L,C(C1(U))><L,U><S,1*U>, Inline: [2],
      Unfolding: (\ @ a (w :: a -> a -> a) (ww :: a) (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> ww
-                   : ipv ipv1
-                   -> letrec {
-                        go :: [a] -> GHC.Maybe.Maybe a -> a
-                          <join 2> {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
-                        = \ (ds :: [a]) (eta :: GHC.Maybe.Maybe a) ->
-                          case ds of wild1 {
-                            []
-                            -> case eta of wild2 {
-                                 GHC.Maybe.Nothing -> Block4.$fFoldableNonEmpty4 @ a
-                                 GHC.Maybe.Just v -> v }
-                            : y ys
-                            -> go
-                                 ys
-                                 (GHC.Maybe.Just
-                                    @ a
-                                    (case eta of wild2 {
-                                       GHC.Maybe.Nothing -> y GHC.Maybe.Just x -> w x y })) }
-                      } in
-                      go wild (GHC.Maybe.Just @ a ww) }) -}
+                 case (Block4.$w$cfoldMap
+                         @ (Data.Semigroup.Internal.Dual
+                              (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a)))
+                         @ a
+                         (Block4.$fFoldableNonEmpty_$dMonoid @ (GHC.Maybe.Maybe a))
+                         (\ (x :: a) (y :: GHC.Maybe.Maybe a) ->
+                          GHC.Maybe.Just
+                            @ a
+                            (case y of wild {
+                               GHC.Maybe.Nothing -> x GHC.Maybe.Just x1 -> w x1 x }))
+                           `cast`
+                         (<a>_R
+                          ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                        (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R)))
+                         ww
+                         ww1)
+                        `cast`
+                      (Data.Semigroup.Internal.N:Dual[0]
+                           (Data.Semigroup.Internal.N:Endo[0] <GHC.Maybe.Maybe a>_R))
+                        (GHC.Maybe.Nothing @ a) of wild {
+                   GHC.Maybe.Nothing -> Block4.$fFoldableNonEmpty7 @ a
+                   GHC.Maybe.Just v -> v }) -}
 59d7eb6a86bafd3232cc858c7f810f47
   $w$cfoldr :: (a -> b -> b) -> b -> a -> [a] -> b
   {- Arity: 4, HasNoCafRefs,
@@ -647,32 +736,34 @@ b756e2532a8aa2fd7b03716309553091
                              case ds of wild1 { [] -> w1 : y ys -> w y (go ys) }
                          } in
                          go wild) }) -}
-df522abf82814797b773b291a0650136
+b926a12393b05cc1bc10afef834fa2e9
   $w$cfoldr' :: (a -> b -> b) -> b -> a -> [a] -> b
-  {- Arity: 4, HasNoCafRefs,
-     Strictness: <C(C(S)),C(C1(U))><L,U><L,U><S,1*U>, Inline: [2],
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,U><S,1*U>,
+     Inline: [2],
      Unfolding: (\ @ a
                    @ b
                    (w :: a -> b -> b)
                    (w1 :: b)
                    (ww :: a)
                    (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> w ww w1
-                   : ipv ipv1
-                   -> letrec {
-                        go :: [a] -> (b -> b) -> b -> b
-                          <join 3> {- Arity: 3, Strictness: <S,1*U><C(S),1*C1(U)><L,U> -}
-                        = \ (ds :: [a]) (eta :: b -> b) (eta1 :: b) ->
-                          case ds of wild1 {
-                            [] -> eta eta1
-                            : y ys
-                            -> go
-                                 ys
-                                 (\ (z :: b)[OneShot] -> case w y z of vx { DEFAULT -> eta vx })
-                                 eta1 }
-                      } in
-                      go wild (\ (z :: b)[OneShot] -> w ww z) w1 }) -}
+                 (Block4.$w$cfoldMap
+                    @ (Data.Semigroup.Internal.Dual
+                         (Data.Semigroup.Internal.Endo (b -> b)))
+                    @ a
+                    (Block4.$fFoldableNonEmpty_$dMonoid @ (b -> b))
+                    (\ (x :: a) (y :: b -> b) (z :: b) ->
+                     case w x z of vx { DEFAULT -> y vx })
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Semigroup.Internal.N:Dual[0]
+                                   (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R)))
+                    ww
+                    ww1)
+                   `cast`
+                 (Data.Semigroup.Internal.N:Dual[0]
+                      (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   w1) -}
 cf306b2e9772539526f1114b659b05cc
   $w$cfoldr1 :: (a -> a -> a) -> a -> [a] -> a
   {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
@@ -694,212 +785,134 @@ cf306b2e9772539526f1114b659b05cc
                       } in
                       case go wild of wild1 {
                         GHC.Maybe.Nothing -> ww GHC.Maybe.Just y -> w ww y } }) -}
-d214e4f70f1aa37c6fcd112bb6952eb9
-  $w$cmaximum :: GHC.Classes.Ord a => a -> [a] -> a
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><L,U><S,1*U>, Inline: [2],
-     Unfolding: (\ @ a
-                   (w :: GHC.Classes.Ord a)
-                   (ww :: a)
-                   (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> ww
-                   : ipv ipv1
-                   -> letrec {
-                        go :: [a] -> Data.Functor.Utils.Max a
-                          {- Arity: 1, Strictness: <S,1*U> -}
-                        = \ (ds :: [a]) ->
-                          case ds of wild1 {
-                            []
-                            -> (GHC.Maybe.Nothing @ a)
-                                 `cast`
-                               (Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
-                            : y ys
-                            -> case (go ys)
-                                      `cast`
-                                    (Data.Functor.Utils.N:Max[0] <a>_N) of wild2 {
-                                 GHC.Maybe.Nothing
-                                 -> (GHC.Maybe.Just @ a y)
-                                      `cast`
-                                    (Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
-                                 GHC.Maybe.Just ipv2
-                                 -> case GHC.Classes.>= @ a w y ipv2 of wild3 {
-                                      GHC.Types.False
-                                      -> wild2 `cast` (Sym (Data.Functor.Utils.N:Max[0]) <a>_N)
-                                      GHC.Types.True
-                                      -> (GHC.Maybe.Just @ a y)
-                                           `cast`
-                                         (Sym (Data.Functor.Utils.N:Max[0]) <a>_N) } } }
-                      } in
-                      case (go wild)
-                             `cast`
-                           (Data.Functor.Utils.N:Max[0] <a>_N) of wild1 {
-                        GHC.Maybe.Nothing -> ww
-                        GHC.Maybe.Just ipv2
-                        -> case GHC.Classes.>= @ a w ww ipv2 of wild2 {
-                             GHC.Types.False -> ipv2 GHC.Types.True -> ww } } }) -}
-e87e56cf7f7a3caa888be827bd22d6a1
-  $w$cminimum :: GHC.Classes.Ord a => a -> [a] -> a
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><L,U><S,1*U>, Inline: [2],
-     Unfolding: (\ @ a
-                   (w :: GHC.Classes.Ord a)
-                   (ww :: a)
-                   (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> ww
-                   : ipv ipv1
-                   -> letrec {
-                        go :: [a] -> Data.Functor.Utils.Min a
-                          {- Arity: 1, Strictness: <S,1*U> -}
-                        = \ (ds :: [a]) ->
-                          case ds of wild1 {
-                            []
-                            -> (GHC.Maybe.Nothing @ a)
-                                 `cast`
-                               (Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
-                            : y ys
-                            -> case (go ys)
-                                      `cast`
-                                    (Data.Functor.Utils.N:Min[0] <a>_N) of wild2 {
-                                 GHC.Maybe.Nothing
-                                 -> (GHC.Maybe.Just @ a y)
-                                      `cast`
-                                    (Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
-                                 GHC.Maybe.Just ipv2
-                                 -> case GHC.Classes.<= @ a w y ipv2 of wild3 {
-                                      GHC.Types.False
-                                      -> wild2 `cast` (Sym (Data.Functor.Utils.N:Min[0]) <a>_N)
-                                      GHC.Types.True
-                                      -> (GHC.Maybe.Just @ a y)
-                                           `cast`
-                                         (Sym (Data.Functor.Utils.N:Min[0]) <a>_N) } } }
-                      } in
-                      case (go wild)
-                             `cast`
-                           (Data.Functor.Utils.N:Min[0] <a>_N) of wild1 {
-                        GHC.Maybe.Nothing -> ww
-                        GHC.Maybe.Just ipv2
-                        -> case GHC.Classes.<= @ a w ww ipv2 of wild2 {
-                             GHC.Types.False -> ipv2 GHC.Types.True -> ww } } }) -}
-ace76e4eaf2da8ad499f30b03aa28bf5
-  $w$cproduct ::
-    GHC.Num.Num a => a -> [a] -> Data.Semigroup.Internal.Product a
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,U(A,A,C(C1(U)),A,A,A,1*C1(U))><L,U><S,1*U>,
+4b6a8694d4f2b60bb5830bfd188f85bb
+  $w$cshow ::
+    (GHC.Types.Int -> a -> GHC.Show.ShowS)
+    -> ([a] -> GHC.Show.ShowS) -> a -> [a] -> GHC.Base.String
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,1*C1(C1(U))><L,U><L,U>,
      Inline: [2],
-     Unfolding: (\ @ a (w :: GHC.Num.Num a) (ww :: a) (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> ww `cast` (Sym (Data.Semigroup.Internal.N:Product[0] <a>_R))
-                   : ipv ipv1
-                   -> (GHC.Num.*
-                         @ a
-                         w
-                         ww
-                         (let {
-                            z :: a
-                            = GHC.Num.fromInteger
-                                @ a
-                                w
-                                Data.Semigroup.Internal.$fMonoidProduct1
-                          } in
-                          letrec {
-                            go :: [a] -> Data.Semigroup.Internal.Product a
-                              {- Arity: 1, Strictness: <S,1*U> -}
-                            = \ (ds :: [a]) ->
-                              case ds of wild1 {
-                                [] -> z `cast` (Sym (Data.Semigroup.Internal.N:Product[0] <a>_R))
-                                : y ys
-                                -> (GHC.Num.*
-                                      @ a
-                                      w
-                                      y
-                                      (go ys) `cast` (Data.Semigroup.Internal.N:Product[0] <a>_R))
-                                     `cast`
-                                   (Sym (Data.Semigroup.Internal.N:Product[0] <a>_R)) }
-                          } in
-                          (go wild) `cast` (Data.Semigroup.Internal.N:Product[0] <a>_R)))
-                        `cast`
-                      (Sym (Data.Semigroup.Internal.N:Product[0] <a>_R)) }) -}
-f4af4b9cc27a05a69d21db76ac3ac9a3
-  $w$csum ::
-    GHC.Num.Num a => a -> [a] -> Data.Semigroup.Internal.Sum a
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <L,U(C(C1(U)),A,A,A,A,A,1*C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   (ww :: GHC.Types.Int -> a -> GHC.Show.ShowS)
+                   (ww1 :: [a] -> GHC.Show.ShowS)
+                   (ww2 :: a)
+                   (ww3 :: [a]) ->
+                 ww
+                   Block4.$fShowNonEmpty3
+                   ww2
+                   (GHC.CString.unpackAppendCString#
+                      Block4.$fShowNonEmpty2
+                      (ww1 ww3 (GHC.Types.[] @ GHC.Types.Char)))) -}
+f17ff3ed79b4633543f0ea7b152ff250
+  $w$cshowsPrec ::
+    GHC.Show.Show a => GHC.Prim.Int# -> a -> [a] -> GHC.Show.ShowS
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(1*C1(C1(C(U))),A,1*C1(C(U)))><S,U><L,U><L,U>,
      Inline: [2],
-     Unfolding: (\ @ a (w :: GHC.Num.Num a) (ww :: a) (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> ww `cast` (Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R))
-                   : ipv ipv1
-                   -> (GHC.Num.+
-                         @ a
-                         w
-                         ww
-                         (let {
-                            z :: a
-                            = GHC.Num.fromInteger @ a w Data.Semigroup.Internal.$fSemigroupAll2
-                          } in
-                          letrec {
-                            go :: [a] -> Data.Semigroup.Internal.Sum a
-                              {- Arity: 1, Strictness: <S,1*U> -}
-                            = \ (ds :: [a]) ->
-                              case ds of wild1 {
-                                [] -> z `cast` (Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R))
-                                : y ys
-                                -> (GHC.Num.+
-                                      @ a
-                                      w
-                                      y
-                                      (go ys) `cast` (Data.Semigroup.Internal.N:Sum[0] <a>_R))
-                                     `cast`
-                                   (Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R)) }
-                          } in
-                          (go wild) `cast` (Data.Semigroup.Internal.N:Sum[0] <a>_R)))
-                        `cast`
-                      (Sym (Data.Semigroup.Internal.N:Sum[0] <a>_R)) }) -}
-2607c00bafa8a1e2cd6e6465a89b2209
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w Block4.$fShowNonEmpty3 ww1
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showList @ a w ww2
+                 } in
+                 case GHC.Prim.>=# ww 10# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      f (GHC.CString.unpackAppendCString# Block4.$fShowNonEmpty2 (g x))
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (f (GHC.CString.unpackAppendCString#
+                              Block4.$fShowNonEmpty2
+                              (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)))) }) -}
+a683d68d6c5677e0d3116b11b4d23500
   $w$s$cfoldMap ::
     (a -> Data.Semigroup.Internal.Any)
     -> a -> [a] -> Data.Semigroup.Internal.Any
   {- Arity: 3, HasNoCafRefs, Strictness: <C(S),C(U)><L,U><S,1*U>,
+     Inline: [2] -}
+819ad61e6ee91970bfff6cfb4332ec04
+  $wjoinWith :: a -> [a] -> [[a]] -> [a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><L,1*U>,
      Inline: [2],
-     Unfolding: (\ @ a
-                   (w :: a -> Data.Semigroup.Internal.Any)
-                   (ww :: a)
-                   (ww1 :: [a]) ->
-                 case ww1 of wild {
-                   [] -> w ww
-                   : ipv ipv1
-                   -> case (w ww) `cast` (Data.Semigroup.Internal.N:Any[0]) of wild1 {
-                        GHC.Types.False
-                        -> letrec {
-                             go :: [a] -> Data.Semigroup.Internal.Any
-                               <join 1> {- Arity: 1, Strictness: <S,1*U> -}
-                             = \ (ds :: [a]) ->
-                               case ds of wild2 {
-                                 []
-                                 -> GHC.Types.False `cast` (Sym (Data.Semigroup.Internal.N:Any[0]))
-                                 : y ys
-                                 -> case (w y) `cast` (Data.Semigroup.Internal.N:Any[0]) of wild3 {
-                                      GHC.Types.False -> go ys
-                                      GHC.Types.True
-                                      -> GHC.Types.True
-                                           `cast`
-                                         (Sym (Data.Semigroup.Internal.N:Any[0])) } }
-                           } in
-                           go wild
-                        GHC.Types.True
-                        -> GHC.Types.True
-                             `cast`
-                           (Sym (Data.Semigroup.Internal.N:Any[0])) } }) -}
-495723e0b52b75834b0c3650b837e368
+     Unfolding: (\ @ a (w :: a) (ww :: [a]) (ww1 :: [[a]]) ->
+                 GHC.Base.++
+                   @ a
+                   ww
+                   (letrec {
+                      go :: [[a]] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                      = \ (ds :: [[a]]) ->
+                        case ds of wild {
+                          [] -> GHC.Types.[] @ a : y ys -> GHC.Base.++_$s++ @ a (go ys) w y }
+                    } in
+                    go ww1)) -}
+95940af5affcbeb69d13d530e2a2317c
+  $wsplitOn :: GHC.Classes.Eq a => a -> [a] -> (# [a], [[a]] #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>, Inline: [2],
+     Unfolding: (\ @ a (w :: GHC.Classes.Eq a) (w1 :: a) (w2 :: [a]) ->
+                 letrec {
+                   $wgo :: [a] -> (# [a], [[a]] #)
+                     {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+                   = \ (w3 :: [a]) ->
+                     case w3 of wild {
+                       [] -> (# GHC.Types.[] @ a, GHC.Types.[] @ [a] #)
+                       : y ys
+                       -> case $wgo ys of ww { (#,#) ww1 ww2 ->
+                          case GHC.Classes.== @ a w y w1 of wild1 {
+                            GHC.Types.False -> (# GHC.Types.: @ a y ww1, ww2 #)
+                            GHC.Types.True
+                            -> (# GHC.Types.[] @ a, GHC.Types.: @ [a] ww1 ww2 #) } } }
+                 } in
+                 $wgo w2) -}
+fc1d09ae788db53502aafd30aeeb2d10
   data NonEmpty a = a :| [a]
 9aac6385765aa9eba2ada19ad5e34d00
   data Pair a = Pair a a
+0fb67c46c029b76c3eec39363a463598
+  checkJoinWith :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)><L,U><S,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: a)
+                   (list :: [a]) ->
+                 case Block4.$wsplitOn @ a $dEq x list of ww { (#,#) ww1 ww2 ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ a
+                   $dEq
+                   (Block4.$wjoinWith @ a x ww1 ww2)
+                   list }) -}
+5f63fbfb45fee0df13f3d6c37f8e6697
+  joinWith :: a -> Block4.NonEmpty [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S(SL),1*U(1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a) (w1 :: Block4.NonEmpty [a]) ->
+                 case w1 of ww { Block4.:| ww1 ww2 ->
+                 Block4.$wjoinWith @ a w ww1 ww2 }) -}
+239359f7b8fa72e06a4c245abd8cfe48
+  splitOn :: GHC.Classes.Eq a => a -> [a] -> Block4.NonEmpty [a]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Classes.Eq a) (w1 :: a) (w2 :: [a]) ->
+                 case Block4.$wsplitOn @ a w w1 w2 of ww { (#,#) ww1 ww2 ->
+                 Block4.:| @ [a] ww1 ww2 }) -}
 instance [safe] Data.Foldable.Foldable [Block4.NonEmpty]
   = Block4.$fFoldableNonEmpty
 instance [safe] Data.Foldable.Foldable [Block4.Pair]
   = Block4.$fFoldablePair
+instance [safe] GHC.Show.Show [Block4.NonEmpty]
+  = Block4.$fShowNonEmpty
 "SPEC $cfoldMap @ Any _" forall @ a
                                 ($dMonoid :: GHC.Base.Monoid Data.Semigroup.Internal.Any)
   Block4.$fFoldableNonEmpty_$cfoldMap @ Data.Semigroup.Internal.Any
