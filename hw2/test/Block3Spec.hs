@@ -96,6 +96,5 @@ parsersTest = testGroup "Test parsers and combinators"
 
   , testCase "psp '(())() a' == Nothing" $
       runParser psp "(())() a" @?= Nothing
-
-
+      
   ]

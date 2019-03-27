@@ -1,3 +1,5 @@
+{-# LANGUAGE UndecidableInstances #-}
+{-# LANGUAGE FlexibleInstances #-}
 
 module Block2
   (
@@ -11,6 +13,7 @@ module Block2
 import Control.Applicative (liftA2)
 import Control.Monad.State (execState, get, put, replicateM_, State)
 
+import Prelude hiding (Monad, return, (>>=))
 
 data Expr
   = Add Expr Expr
@@ -56,3 +59,41 @@ step size arr = do
   let summ = prev - minus + (arr !! i)
   let new = summ / toEnum (min (i + 1) size)
   put (i + 1, summ, new : acc)
+
+
+class MonadFish m where
+  returnFish :: a -> m a
+  (>=>)      :: (a -> m b) -> (b -> m c) -> (a -> m c)
+
+class MonadJoin m where
+  returnJoin :: a -> m a
+  join       :: m (m a) -> m a
+
+class MonadJoin' m where
+  returnJoin' :: a -> m a
+  join'       :: m (m a) -> m a
+
+class Monad m where
+  return :: a -> m a
+  (>>=)  :: m a -> (a -> m b) -> m b
+
+
+instance MonadFish m => MonadJoin m where
+  returnJoin = returnFish
+
+  join = id >=> id
+
+instance MonadFish m => Monad m where
+  return = returnFish
+
+  x >>= f = (const x >=> f) x
+
+instance Monad m => MonadFish m where
+  returnFish = return
+
+  f >=> g = \s -> (f s) >>= g
+
+instance Monad m => MonadJoin' m where
+  returnJoin' = return
+
+  join' x = x >>= id
