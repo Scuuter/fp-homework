@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-27 20:54:22.245673598 UTC
+2019-03-27 20:59:14.773332498 UTC
 
 interface hw2-0.1.0.0-IwL0rDAokyiBcdPpWKuXDH:Block2 8064
-  interface hash: f3b6ec718581c23266a89edb24db8a0e
-  ABI hash: 3b8a186103c6e816b2afe1b2465b499e
+  interface hash: d464388fdf56d0dca16d4d5f46ba3444
+  ABI hash: 6954a17086386d0ba8df5d9d37a92d2a
   export-list hash: 0f507d34b02dfc98bd87a62d76f03f22
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 09a076ecc699f288df5b021f7997e520
@@ -113,64 +113,61 @@ f0e4701fa58b4ff037568228b18308c6
   {- Arity: 2, Strictness: <L,U><L,U> -}
 e3a133cc1f0e3a7fdba0ed1b98b8824b
   $fMonadFishm3 :: a -> m a
-109833942abbb84837e7af19f6f1232b
-  $fMonadJoin'm :: Block2.MonadFish m => Block2.MonadJoin' m
-  DFunId
-  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
-     Unfolding: DFun: @ m :: * -> * (v :: Block2.MonadFish m).
-                  @ m
-                  (\ @ a -> Block2.$fMonadJoin'm3 @ a @ m)
-                  (\ @ a -> Block2.$fMonadJoin'm1 @ a @ m) -}
-a66dd139b923af2ee46ffe0c6c73b8a5
-  $fMonadJoin'm1 :: m (m a) -> m a
-  {- Arity: 1, Strictness: <L,U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ @ a @ m :: * -> * (x :: m (m a)) ->
-                 Block2.>=>
-                   @ m
-                   (Block2.$fMonadJoin'm2 @ m)
-                   @ (m (m a))
-                   @ (m a)
-                   @ a
-                   (GHC.Base.id @ (m (m a)))
-                   (GHC.Base.id @ (m a))
-                   x) -}
-d8273ff71e7eef64e1f95031d9c7a2ba
-  $fMonadJoin'm2 :: Block2.MonadFish m
-11ce0f975f126efbf5ec8acdf6605ca3
-  $fMonadJoin'm3 :: a -> m a
-  {- Unfolding: (\ @ a @ m :: * -> * ->
-                 Block2.returnFish @ m (Block2.$fMonadJoin'm4 @ m) @ a) -}
-36ab700067c9288499d097cd417b3ec7
-  $fMonadJoin'm4 :: Block2.MonadFish m
-814f7f42afb688bca1b59938d378f111
-  $fMonadJoinm :: Block2.Monad m => Block2.MonadJoin m
+d8c350356613e88369656e9ca3e86953
+  $fMonadJoin'm :: Block2.Monad m => Block2.MonadJoin' m
   DFunId
   {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
      Unfolding: DFun: @ m :: * -> * (v :: Block2.Monad m).
                   @ m
-                  (\ @ a -> Block2.$fMonadJoinm3 @ a @ m)
-                  (\ @ a -> Block2.$fMonadJoinm1 @ a @ m) -}
-d50c3136181f3df782b175f3bf7bb247
-  $fMonadJoinm1 :: m (m a) -> m a
+                  (\ @ a -> Block2.$fMonadJoin'm3 @ a @ m)
+                  (\ @ a -> Block2.$fMonadJoin'm1 @ a @ m) -}
+b168d3ca5d137070a7e609ad77408782
+  $fMonadJoin'm1 :: m (m a) -> m a
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (1, True, False)
                 (\ @ a @ m :: * -> * (x :: m (m a)) ->
                  Block2.>>=
                    @ m
-                   (Block2.$fMonadJoinm2 @ m)
+                   (Block2.$fMonadJoin'm2 @ m)
                    @ (m a)
                    @ a
                    x
                    (GHC.Base.id @ (m a))) -}
+d8273ff71e7eef64e1f95031d9c7a2ba
+  $fMonadJoin'm2 :: Block2.Monad m
+8555931aa6f2d9255611d00bd5e11d56
+  $fMonadJoin'm3 :: a -> m a
+  {- Unfolding: (\ @ a @ m :: * -> * ->
+                 Block2.return @ m (Block2.$fMonadJoin'm4 @ m) @ a) -}
+36ab700067c9288499d097cd417b3ec7
+  $fMonadJoin'm4 :: Block2.Monad m
+9ab6751211e6c2cad2c8a980d7f2df85
+  $fMonadJoinm :: Block2.MonadFish m => Block2.MonadJoin m
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ m :: * -> * (v :: Block2.MonadFish m).
+                  @ m
+                  (\ @ a -> Block2.$fMonadJoinm3 @ a @ m)
+                  (\ @ a -> Block2.$fMonadJoinm1 @ a @ m) -}
+42402b2a04f1a5702d3089bc3bb85d74
+  $fMonadJoinm1 :: m (m a) -> m a
+  {- Unfolding: (\ @ a @ m :: * -> * ->
+                 Block2.>=>
+                   @ m
+                   (Block2.$fMonadJoinm2 @ m)
+                   @ (m (m a))
+                   @ (m a)
+                   @ a
+                   (GHC.Base.id @ (m (m a)))
+                   (GHC.Base.id @ (m a))) -}
 3221ee88dddc963a098e58edfb01bf91
-  $fMonadJoinm2 :: Block2.Monad m
-3f90a719c552e44004f6ad4d05387f8a
+  $fMonadJoinm2 :: Block2.MonadFish m
+8482ce83745cd03ad7afdc00de072710
   $fMonadJoinm3 :: a -> m a
   {- Unfolding: (\ @ a @ m :: * -> * ->
-                 Block2.return @ m (Block2.$fMonadJoinm4 @ m) @ a) -}
+                 Block2.returnFish @ m (Block2.$fMonadJoinm4 @ m) @ a) -}
 959a60d3d93286a21e88676711492b8b
-  $fMonadJoinm4 :: Block2.Monad m
+  $fMonadJoinm4 :: Block2.MonadFish m
 7d98d0e54a7debecb824db42178ddcc8
   $fMonadm :: Block2.MonadFish m => Block2.Monad m
   DFunId
@@ -728,12 +725,12 @@ bc03301f7f269a8b9ac68a992f4a22e0
     returnFish :: a -> m a
     (>=>) :: (a -> m b) -> (b -> m c) -> a -> m c
     {-# MINIMAL returnFish, (>=>) #-}
-814f7f42afb688bca1b59938d378f111
+9ab6751211e6c2cad2c8a980d7f2df85
   class MonadJoin (m :: * -> *) where
     returnJoin :: a -> m a
     join :: m (m a) -> m a
     {-# MINIMAL returnJoin, join #-}
-109833942abbb84837e7af19f6f1232b
+d8c350356613e88369656e9ca3e86953
   class MonadJoin' (m :: * -> *) where
     returnJoin' :: a -> m a
     join' :: m (m a) -> m a
