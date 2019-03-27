@@ -1,0 +1,11 @@
+Configuring hw1-0.1.0.0...
+Preprocessing library for hw1-0.1.0.0..
+Building library for hw1-0.1.0.0..
+[1 of 6] Compiling Block1           ( src/Block1.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Block1.o )
+[2 of 6] Compiling Block2           ( src/Block2.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Block2.o )
+[3 of 6] Compiling Block3           ( src/Block3.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Block3.o )
+[4 of 6] Compiling Block4           ( src/Block4.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Block4.o )
+[5 of 6] Compiling Block5           ( src/Block5.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Block5.o )
+[6 of 6] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Lib.o )
+Installing library in /home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O
+Registering library for hw1-0.1.0.0..

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-02-20 19:11:47.909858331 UTC
+2019-03-26 22:31:41.00545165 UTC
 
-interface main:Main 8063
-  interface hash: 97cfb035635ce3f23a5a5907199825b5
-  ABI hash: 60d1527221fa7a7ac6949d0b06d9355f
-  export-list hash: 5e1284d2a82dc29deba829032a620d96
+interface main:Main 8064
+  interface hash: b7c8a4db94e86b0bd0134a69a688b9d8
+  ABI hash: 1de38946547880b16b8c5eeedc2b4e86
+  export-list hash: 320982e739db8eec527fa1e76f60f2a1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 7bfbdc8b5cab71191f824a4089ea8499
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -25,9 +25,9 @@ family instance modules: base-4.12.0.0:Control.Applicative
                          base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
                          base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
                          base-4.12.0.0:GHC.IO.Exception
-import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
 import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
-import  -/  hw2-0.1.0.0:Lib 5a96bb4be749be060ca63ed7061c707c
+import  -/  hw2-0.1.0.0:Lib d10019b15dd1129dda560b61716554db
 be86c9d078d3acbf19ba91fe74a24273
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -46,10 +46,10 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-ffe2067ebbf20eb08652e596f299a57b
+f9ad83e996dd45eafeaae86347abfcca
   main :: GHC.Types.IO ()
   {- Arity: 1, Unfolding: InlineRule (0, True, True) Lib.someFunc -}
-39ce037ddc7af24a0b2e91e4eb1d7818
+d3a8dad86c02d0a3764c831be54e49d7
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

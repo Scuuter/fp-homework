@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/bin"
-libdir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/lib/x86_64-linux-ghc-8.6.3/hw3-0.1.0.0-7qLJWLvJJvHH0pgMb32erC-hw3"
-dynlibdir  = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/lib/x86_64-linux-ghc-8.6.3"
-datadir    = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/share/x86_64-linux-ghc-8.6.3/hw3-0.1.0.0"
-libexecdir = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/libexec/x86_64-linux-ghc-8.6.3/hw3-0.1.0.0"
-sysconfdir = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.3/8.6.3/etc"
+bindir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/bin"
+libdir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw3-0.1.0.0-7qLJWLvJJvHH0pgMb32erC-hw3"
+dynlibdir  = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
+datadir    = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/hw3-0.1.0.0"
+libexecdir = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/hw3-0.1.0.0"
+sysconfdir = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "hw3_bindir") (\_ -> return bindir)

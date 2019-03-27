@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-02-20 19:11:48.152103525 UTC
+2019-03-17 13:41:03.080567062 UTC
 
-interface hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ:Lib 8063
-  interface hash: d54f10270ab80a97d8004d346ee1ccba
-  ABI hash: fb3a922d31a4ce91b5e65eb96564f2c5
-  export-list hash: ba9f0547c7fd9d94f8b3b21437583c49
+interface hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ:Lib 8064
+  interface hash: 7ec0d3694fcc5976ebccd5f3227df040
+  ABI hash: 1299ed780647c0cc490982dcde013198
+  export-list hash: 850d87924ef8af48dcdd71ac55f9924e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: d59a86fc39dabe8754ebbfb830e37f1e
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -25,8 +25,8 @@ family instance modules: base-4.12.0.0:Control.Applicative
                          base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
                          base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
                          base-4.12.0.0:GHC.IO.Exception
-import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
-import  -/  base-4.12.0.0:System.IO 88c2b1c4079c52d62ed362d4eb9a5302
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
 import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
 d1d0609bb020c20b9e97b4f59e8f97b0
   $trModule :: GHC.Types.Module
@@ -47,7 +47,7 @@ f770534fafc5ae7cdf70dd4e3397fdee
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ"#) -}
-bf44d8bab28dde2c9bbcdb3f9020770f
+3577df6b906f28e45cf35c12c4b7d174
   someFunc :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: (GHC.IO.Handle.Text.hPutStr'

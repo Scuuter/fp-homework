@@ -1,0 +1,11 @@
+Configuring hw2-0.1.0.0...
+Preprocessing library for hw2-0.1.0.0..
+Building library for hw2-0.1.0.0..
+[1 of 1] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Lib.o )
+Preprocessing executable 'hw2' for hw2-0.1.0.0..
+Building executable 'hw2' for hw2-0.1.0.0..
+[1 of 1] Compiling Main             ( app/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/hw2/hw2-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/hw2/hw2 ...
+Installing library in /home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw2-0.1.0.0-G7SCDLM4c832C7wbMOi7Pe
+Installing executable hw2 in /home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/bin
+Registering library for hw2-0.1.0.0..

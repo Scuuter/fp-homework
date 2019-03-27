@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-07 02:33:33.556941623 UTC
+2019-03-17 13:41:15.787202015 UTC
 
-interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block3 8063
-  interface hash: 597be0fcc7496fc81e7386a537ae758a
-  ABI hash: da002be6e079a90c1312553b6568a367
-  export-list hash: b14d6931c241c30308ce0584d87324a5
+interface hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O:Block3 8064
+  interface hash: 0cabe445c35e85ef4b8fa2216225d536
+  ABI hash: 6ab984e53df26963229c27a4052c8f18
+  export-list hash: 8188d2b75abedf810b62b6cf345ae7e6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9d156e2ccc398f2f187b19220f36d2ba
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -61,24 +61,24 @@ family instance modules: base-4.12.0.0:Control.Applicative
                          base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
                          base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
                          base-4.12.0.0:GHC.IO.Exception
-import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
-import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
-import  -/  base-4.12.0.0:Data.List.NonEmpty d9b99a249213afa9344e96f715fca047
-import  -/  base-4.12.0.0:Data.Maybe 1e8e1362415df45376dffd98f8a47766
-import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
-import  -/  base-4.12.0.0:Data.Ratio 96f9a1de850e5ea66ed6c5bd6817461b
-import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
-import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
-import  -/  base-4.12.0.0:GHC.Enum 51972331265459b2ecdf2bf83fce4045
-import  -/  base-4.12.0.0:GHC.Err 28d622b06927ca4c3b335ec5326c34b2
-import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
-import  -/  base-4.12.0.0:GHC.Real f7dad82c1d43d80823865d3e6c6636e0
-import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
-import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
-import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  base-4.12.0.0:Data.Foldable 5f70351366640f007be66681d2212df8
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.List.NonEmpty 3897a3e5125f396ad8a9426947468d80
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Ratio ca7795f81c201f83d6159a8388bb75b9
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
 import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
-import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 7f56f3d142debd8666df241a1ddc7887
-b449762fea2f899ac11419d7d2748742
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+7c93b35709d450220253dcaa53183575
   $fEnumDay :: GHC.Enum.Enum Block3.Day
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -92,7 +92,7 @@ b449762fea2f899ac11419d7d2748742
                   Block3.$fEnumDay_$cenumFromThen
                   Block3.$fEnumDay_$cenumFromTo
                   Block3.$fEnumDay_$cenumFromThenTo -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay1 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 6#) -}
 d201af46585470d0056cd87f89bb6e8c
@@ -107,43 +107,43 @@ d201af46585470d0056cd87f89bb6e8c
 3ef814dad43fcb31f61296aa4270da88
   $fEnumDay13 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay14 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 5#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay15 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 4#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay16 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 3#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay17 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 2#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay18 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 1#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay19 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 0#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay2 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 5#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay20 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum -1#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay3 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 4#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay4 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 3#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay5 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 2#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay6 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 1#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay7 :: [Block3.Day]
   {- Unfolding: (Block3.$fEnumDay_go7 0#) -}
 175e53ca636d9b1362478f4030dabecc
@@ -152,7 +152,7 @@ b449762fea2f899ac11419d7d2748742
 50318db33fd7b64039cf98b3b681ece4
   $fEnumDay9 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cenumFrom :: Block3.Day -> [Block3.Day]
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (x :: Block3.Day) ->
@@ -164,7 +164,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> Block3.$fEnumDay3
                    Block3.Saturday -> Block3.$fEnumDay2
                    Block3.Sunday -> Block3.$fEnumDay1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cenumFromThen ::
     Block3.Day -> Block3.Day -> [Block3.Day]
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
@@ -225,11 +225,11 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> $j 4#
                    Block3.Saturday -> $j 5#
                    Block3.Sunday -> $j 6# }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cenumFromThenTo ::
     Block3.Day -> Block3.Day -> Block3.Day -> [Block3.Day]
   {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S,1*U><S,1*U> -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cenumFromTo :: Block3.Day -> Block3.Day -> [Block3.Day]
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: (\ (x :: Block3.Day) (y :: Block3.Day) ->
@@ -275,7 +275,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> $j 4#
                    Block3.Saturday -> $j 5#
                    Block3.Sunday -> $j 6# }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cfromEnum :: Block3.Day -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
      Unfolding: InlineRule (1, True, False)
@@ -288,7 +288,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> Block3.$fEnumDay10
                    Block3.Saturday -> Block3.$fEnumDay9
                    Block3.Sunday -> Block3.$fEnumDay8 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$cpred :: Block3.Day -> Block3.Day
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (x :: Block3.Day) ->
@@ -300,41 +300,41 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> Block3.$fEnumDay16
                    Block3.Saturday -> Block3.$fEnumDay15
                    Block3.Sunday -> Block3.$fEnumDay14 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_$ctoEnum :: GHC.Types.Int -> Block3.Day
   {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
      Inline: [2],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: GHC.Types.Int) ->
                  case w of ww { GHC.Types.I# ww1 -> Block3.$w$ctoEnum ww1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go1 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go2 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go3 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go4 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go5 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go6 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fEnumDay_go7 :: GHC.Prim.Int# -> [Block3.Day]
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
 9bfbf325efac71f56e36cc619be21d4c
   $fEnumDay_z :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons :: GHC.Enum.Enum Block3.LivingPersons
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -348,22 +348,22 @@ b449762fea2f899ac11419d7d2748742
                   Block3.$fEnumLivingPersons_$cenumFromThen
                   Block3.$fEnumLivingPersons_$cenumFromTo
                   Block3.$fEnumLivingPersons_$cenumFromThenTo -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons1 :: Block3.LivingPersons
   {- Strictness: x -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons2 :: [Block3.LivingPersons]
   {- Unfolding: (Block3.$fEnumLivingPersons_go4 4#) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons3 :: [Block3.LivingPersons]
   {- Unfolding: (Block3.$fEnumLivingPersons_go4 3#) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons4 :: [Block3.LivingPersons]
   {- Unfolding: (Block3.$fEnumLivingPersons_go4 2#) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons5 :: [Block3.LivingPersons]
   {- Unfolding: (Block3.$fEnumLivingPersons_go4 1#) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cenumFrom ::
     Block3.LivingPersons -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <S,1*U>,
@@ -373,7 +373,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> Block3.$fEnumLivingPersons4
                    Block3.Three -> Block3.$fEnumLivingPersons3
                    Block3.Four -> Block3.$fEnumLivingPersons2 }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cenumFromThen ::
     Block3.LivingPersons
     -> Block3.LivingPersons -> [Block3.LivingPersons]
@@ -415,14 +415,14 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> $j 2#
                    Block3.Three -> $j 3#
                    Block3.Four -> $j 4# }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cenumFromThenTo ::
     Block3.LivingPersons
     -> Block3.LivingPersons
     -> Block3.LivingPersons
     -> [Block3.LivingPersons]
   {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cenumFromTo ::
     Block3.LivingPersons
     -> Block3.LivingPersons -> [Block3.LivingPersons]
@@ -456,7 +456,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> $j 2#
                    Block3.Three -> $j 3#
                    Block3.Four -> $j 4# }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cfromEnum ::
     Block3.LivingPersons -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
@@ -467,7 +467,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> Block3.$fEnumDay12
                    Block3.Three -> Block3.$fEnumDay11
                    Block3.Four -> Block3.$fEnumDay10 }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$cpred ::
     Block3.LivingPersons -> Block3.LivingPersons
   {- Arity: 1, Strictness: <S,1*U>,
@@ -478,7 +478,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> Block3.One
                    Block3.Three -> Block3.Two
                    Block3.Four -> Block3.Three }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$csucc ::
     Block3.LivingPersons -> Block3.LivingPersons
   {- Arity: 1, Strictness: <S,1*U>,
@@ -489,7 +489,7 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Two -> Block3.Three
                    Block3.Three -> Block3.Four
                    Block3.Four -> Block3.$fEnumLivingPersons1 }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_$ctoEnum ::
     GHC.Types.Int -> Block3.LivingPersons
   {- Arity: 1, Strictness: <S(S),1*U(1*U)>,
@@ -502,22 +502,22 @@ b449762fea2f899ac11419d7d2748742
                    2# -> Block3.Two
                    3# -> Block3.Three
                    4# -> Block3.Four } }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_go :: GHC.Prim.Int# -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <L,U>m2 -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_go1 :: GHC.Prim.Int# -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <L,U>m2 -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_go2 :: GHC.Prim.Int# -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <L,U>m2 -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_go3 :: GHC.Prim.Int# -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <L,U>m2 -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fEnumLivingPersons_go4 :: GHC.Prim.Int# -> [Block3.LivingPersons]
   {- Arity: 1, Strictness: <L,U>m2 -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat :: GHC.Enum.Enum Block3.Nat
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -531,17 +531,17 @@ b449762fea2f899ac11419d7d2748742
                   Block3.$fEnumNat_$cenumFromThen
                   Block3.$fEnumNat_$cenumFromTo
                   Block3.$fEnumNat_$cenumFromThenTo -}
-2093fbdc6a5f3f37991d4853d88d1e54
+a42dab1bdd365bb40d6fbd99af8559a6
   $fEnumNat1 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (0) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cenumFrom :: Block3.Nat -> [Block3.Nat]
   {- Arity: 1, Strictness: <S,1*U>m2,
      Unfolding: (\ (x :: Block3.Nat) ->
                  case GHC.Integer.Type.integerToInt
                         (Block3.$fEnumNat_iter1 x Block3.$fEnumNat1) of wild { DEFAULT ->
                  Block3.$fEnumNat_go wild }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cenumFromThen ::
     Block3.Nat -> Block3.Nat -> [Block3.Nat]
   {- Arity: 2, Strictness: <S,1*U><S,1*U>,
@@ -555,7 +555,7 @@ b449762fea2f899ac11419d7d2748742
                    @ Block3.Nat
                    Block3.$fEnumNat_$ctoEnum
                    (GHC.Enum.efdInt wild wild1) } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cenumFromThenTo ::
     Block3.Nat -> Block3.Nat -> Block3.Nat -> [Block3.Nat]
   {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
@@ -643,7 +643,7 @@ b449762fea2f899ac11419d7d2748742
                                   (Block3.$w$ctoEnum1 wild)
                                   (GHC.Types.[] @ Block3.Nat)
                              1# -> GHC.Types.[] @ Block3.Nat } } } } } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cenumFromTo :: Block3.Nat -> Block3.Nat -> [Block3.Nat]
   {- Arity: 2, Strictness: <S,1*U><S,1*U>,
      Unfolding: (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
@@ -666,7 +666,7 @@ b449762fea2f899ac11419d7d2748742
                       } in
                       go wild
                    1# -> GHC.Types.[] @ Block3.Nat } } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cfromEnum :: Block3.Nat -> GHC.Types.Int
   {- Arity: 1, Strictness: <S,1*U>m,
      Unfolding: InlineRule (1, True, False)
@@ -674,36 +674,36 @@ b449762fea2f899ac11419d7d2748742
                  case GHC.Integer.Type.integerToInt
                         (Block3.$fEnumNat_iter1 a Block3.$fEnumNat1) of wild { DEFAULT ->
                  GHC.Types.I# wild }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$cpred :: Block3.Nat -> Block3.Nat
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.Nat) ->
                  case ds of wild { Block3.Z -> Block3.Z Block3.S a -> a }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_$ctoEnum :: GHC.Types.Int -> Block3.Nat
   {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: GHC.Types.Int) ->
                  case w of ww { GHC.Types.I# ww1 -> Block3.$w$ctoEnum1 ww1 }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_go :: GHC.Prim.Int# -> [Block3.Nat]
   {- Arity: 1, Strictness: <L,U>m2 -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_iter ::
     GHC.Integer.Type.Integer -> Block3.Nat -> Block3.Nat
   {- Arity: 2, Strictness: <S,U><L,U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEnumNat_iter1 ::
     Block3.Nat -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEqNat :: GHC.Classes.Eq Block3.Nat
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
      Unfolding: DFun:.
                   @ Block3.Nat Block3.$fEqNat_$c== Block3.$fEqNat_$c/= -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEqNat_$c/= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Inline: (sat-args=2),
@@ -711,17 +711,17 @@ b449762fea2f899ac11419d7d2748742
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEqNat_$c== :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (a :: Block3.Nat) (b :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare a b of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.EQ -> GHC.Types.True }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fEqNat_$ccompare :: Block3.Nat -> Block3.Nat -> GHC.Types.Ordering
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree :: Data.Foldable.Foldable Block3.Tree
   DFunId
   {- Inline: CONLIKE,
@@ -759,7 +759,7 @@ b77616921f126580cc676023b6e47b3d
                    <GHC.Num.Num a>_R
                    ->_R <Block3.Tree a>_R
                    ->_R Data.Semigroup.Internal.N:Product[0] <a>_R) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree1 ::
     GHC.Num.Num a => Block3.Tree a -> Data.Semigroup.Internal.Product a
   {- Arity: 2, HasNoCafRefs,
@@ -773,7 +773,7 @@ b77616921f126580cc676023b6e47b3d
                    (Block3.$fFoldableTree2 @ a)
                      `cast`
                    (<a>_R ->_R Sym (Data.Semigroup.Internal.N:Product[0] <a>_R))) -}
-7dde331e617e710232dbd3284aad200d
+581e658931d69da459b26a843edb78e5
   $fFoldableTree10 ::
     Data.Semigroup.Internal.Dual
       (Data.Semigroup.Internal.Endo (GHC.Maybe.Maybe a))
@@ -801,7 +801,7 @@ b77616921f126580cc676023b6e47b3d
 623fad2d5841afce727e2813a94990f4
   $fFoldableTree11 :: a
   {- Strictness: x -}
-bbbb9abd7e58e0be57d9e5c38298846a
+a7bd715aae194b7dd88c79bdbc2afe54
   $fFoldableTree12 ::
     Data.Semigroup.Internal.Dual
       (Data.Semigroup.Internal.Endo (b -> b))
@@ -831,7 +831,7 @@ bbbb9abd7e58e0be57d9e5c38298846a
   $fFoldableTree2 :: a -> a
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, True) (\ @ a (v :: a) -> v) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree3 ::
     GHC.Num.Num a => Block3.Tree a -> Data.Semigroup.Internal.Sum a
   {- Arity: 2, HasNoCafRefs,
@@ -851,7 +851,7 @@ b77616921f126580cc676023b6e47b3d
 f3f8c7b0f6c12b410da6252932f4db1a
   $fFoldableTree5 :: a
   {- Strictness: x -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree6 ::
     GHC.Classes.Eq a =>
     a -> Block3.Tree a -> Data.Semigroup.Internal.Any
@@ -886,7 +886,7 @@ b77616921f126580cc676023b6e47b3d
 7133c8b3e755b712907673035481ba17
   $fFoldableTree9 :: a
   {- Strictness: x -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfold :: GHC.Base.Monoid m => Block3.Tree m -> m
   {- Arity: 2, HasNoCafRefs,
      Strictness: <S,1*U(A,U,C(C1(U)),A)><S,1*U>,
@@ -897,7 +897,7 @@ b77616921f126580cc676023b6e47b3d
                    @ m
                    $dMonoid
                    (GHC.Base.id @ m)) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldMap ::
     GHC.Base.Monoid m => (a -> m) -> Block3.Tree a -> m
   {- Arity: 3, HasNoCafRefs,
@@ -910,7 +910,7 @@ b77616921f126580cc676023b6e47b3d
                    (w2 :: Block3.Tree a) ->
                  case w of ww { GHC.Base.C:Monoid ww1 ww2 ww3 ww4 ->
                  Block3.$w$cfoldMap @ m @ a ww2 ww3 w1 w2 }) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldl :: (b -> a -> b) -> b -> Block3.Tree a -> b
   {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
      Unfolding: InlineRule (3, True, False)
@@ -929,7 +929,7 @@ b77616921f126580cc676023b6e47b3d
                  (Data.Semigroup.Internal.N:Dual[0]
                       (Data.Semigroup.Internal.N:Endo[0] <b>_R))
                    z) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldl' :: (b -> a -> b) -> b -> Block3.Tree a -> b
   {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
      Unfolding: (\ @ b
@@ -945,7 +945,7 @@ b77616921f126580cc676023b6e47b3d
                    (GHC.Base.id @ b)
                    xs
                    z0) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldl1 :: (a -> a -> a) -> Block3.Tree a -> a
   {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
      Unfolding: (\ @ a (f2 :: a -> a -> a) (xs :: Block3.Tree a) ->
@@ -981,11 +981,11 @@ b77616921f126580cc676023b6e47b3d
                         (GHC.Maybe.Nothing @ a) of wild {
                    GHC.Maybe.Nothing -> Block3.$fFoldableTree9 @ a
                    GHC.Maybe.Just v -> v }) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldr :: (a -> b -> b) -> b -> Block3.Tree a -> b
   {- Arity: 3, HasNoCafRefs,
      Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldr' :: (a -> b -> b) -> b -> Block3.Tree a -> b
   {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
      Unfolding: (\ @ a
@@ -1021,7 +1021,7 @@ b77616921f126580cc676023b6e47b3d
                       (Data.Semigroup.Internal.N:Endo[0] <b -> b>_R))
                    (GHC.Base.id @ b)
                    z0) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cfoldr1 :: (a -> a -> a) -> Block3.Tree a -> a
   {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
      Unfolding: (\ @ a (f2 :: a -> a -> a) (xs :: Block3.Tree a) ->
@@ -1037,7 +1037,7 @@ b77616921f126580cc676023b6e47b3d
                         xs of wild {
                    GHC.Maybe.Nothing -> Block3.$fFoldableTree11 @ a
                    GHC.Maybe.Just v -> v }) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$clength :: Block3.Tree a -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -1049,7 +1049,7 @@ b77616921f126580cc676023b6e47b3d
                    (GHC.Base.id @ GHC.Types.Int)
                    xs
                    Block3.$fEnumDay_z) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cmaximum :: GHC.Classes.Ord a => Block3.Tree a -> a
   {- Arity: 2, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,1*U>,
      Unfolding: (\ @ a
@@ -1070,7 +1070,7 @@ b77616921f126580cc676023b6e47b3d
                       (Data.Functor.Utils.N:Max[0] <a>_N) of wild {
                    GHC.Maybe.Nothing -> Block3.$fFoldableTree5 @ a
                    GHC.Maybe.Just v -> v }) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cminimum :: GHC.Classes.Ord a => Block3.Tree a -> a
   {- Arity: 2, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,1*U>,
      Unfolding: (\ @ a
@@ -1091,7 +1091,7 @@ b77616921f126580cc676023b6e47b3d
                       (Data.Functor.Utils.N:Min[0] <a>_N) of wild {
                    GHC.Maybe.Nothing -> Block3.$fFoldableTree4 @ a
                    GHC.Maybe.Just v -> v }) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$cnull :: Block3.Tree a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs,
      Unfolding: (\ @ a ->
@@ -1100,7 +1100,7 @@ b77616921f126580cc676023b6e47b3d
                    @ GHC.Types.Bool
                    (Block3.$fFoldableTree8 @ a)
                    GHC.Types.True) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$ctoList :: Block3.Tree a -> [a]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Inline: (sat-args=1),
@@ -1110,7 +1110,7 @@ b77616921f126580cc676023b6e47b3d
                    @ a
                    (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
                     Block3.$fFoldableTree_$cfoldr @ a @ b c n t1)) -}
-717e9f0a1bce904437d702506535f814
+2605d42bf5b839c88fc371747545c7bf
   $fFoldableTree_$dMonoid ::
     GHC.Base.Monoid
       (Data.Semigroup.Internal.Dual (Data.Semigroup.Internal.Endo b))
@@ -1118,12 +1118,12 @@ b77616921f126580cc676023b6e47b3d
                  Data.Semigroup.Internal.$fMonoidDual
                    @ (Data.Semigroup.Internal.Endo b)
                    (Data.Semigroup.Internal.$fMonoidEndo @ b)) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fFoldableTree_$s$cfoldMap ::
     (a -> Data.Semigroup.Internal.Any)
     -> Block3.Tree a -> Data.Semigroup.Internal.Any
   {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat :: GHC.Real.Integral Block3.Nat
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1138,10 +1138,10 @@ b77616921f126580cc676023b6e47b3d
                   Block3.$fIntegralNat_$cquotRem
                   Block3.$fIntegralNat_$cquotRem
                   Block3.$fIntegralNat_$ctoInteger -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat1 :: (Block3.Nat, Block3.Nat)
   {- Strictness: x -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$cdiv :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
      Unfolding: InlineRule (2, False, False)
@@ -1154,7 +1154,7 @@ b77616921f126580cc676023b6e47b3d
                              wild
                              Block3.Z of wild1 { (,) q ds ->
                       q } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$cmod :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
      Unfolding: InlineRule (2, False, False)
@@ -1167,7 +1167,7 @@ b77616921f126580cc676023b6e47b3d
                              wild
                              Block3.Z of wild1 { (,) ds r ->
                       r } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$cquot :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
      Unfolding: InlineRule (2, False, False)
@@ -1180,7 +1180,7 @@ b77616921f126580cc676023b6e47b3d
                              wild
                              Block3.Z of wild1 { (,) q ds ->
                       q } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$cquotRem ::
     Block3.Nat -> Block3.Nat -> (Block3.Nat, Block3.Nat)
   {- Arity: 2, Strictness: <S,U><S,1*U>m,
@@ -1189,7 +1189,7 @@ b77616921f126580cc676023b6e47b3d
                  case ds1 of wild {
                    Block3.Z -> Block3.$fIntegralNat1
                    Block3.S ipv -> Block3.$fIntegralNat_iter ds wild Block3.Z }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$crem :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: (sat-args=2),
      Unfolding: InlineRule (2, False, False)
@@ -1202,13 +1202,13 @@ b77616921f126580cc676023b6e47b3d
                              wild
                              Block3.Z of wild1 { (,) ds r ->
                       r } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_$ctoInteger :: Block3.Nat -> GHC.Integer.Type.Integer
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (a :: Block3.Nat) ->
                  Block3.$fEnumNat_iter1 a Block3.$fEnumNat1) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fIntegralNat_iter ::
     Block3.Nat -> Block3.Nat -> Block3.Nat -> (Block3.Nat, Block3.Nat)
   {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><L,U>m,
@@ -1217,7 +1217,7 @@ b77616921f126580cc676023b6e47b3d
                 (\ (w :: Block3.Nat) (w1 :: Block3.Nat) (w2 :: Block3.Nat) ->
                  case Block3.$witer w w1 w2 of ww { (#,#) ww1 ww2 ->
                  (ww1, ww2) }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat :: GHC.Num.Num Block3.Nat
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1230,10 +1230,10 @@ b77616921f126580cc676023b6e47b3d
                   Block3.$fNumNat_$cabs
                   Block3.$fNumNat_$csignum
                   Block3.$fNumNat_$cfromInteger -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat1 :: Block3.Nat
   {- HasNoCafRefs, Strictness: m2, Unfolding: (Block3.S Block3.Z) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$c* :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -1244,41 +1244,41 @@ b77616921f126580cc676023b6e47b3d
                    -> case ds of wild1 {
                         Block3.Z -> Block3.Z
                         Block3.S ipv1 -> Block3.$fNumNat_iter wild1 wild1 wild } }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$c+ :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$c- :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$cabs :: Block3.Nat -> Block3.Nat
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, True) (\ (a :: Block3.Nat) -> a) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$cfromInteger :: GHC.Integer.Type.Integer -> Block3.Nat
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (a :: GHC.Integer.Type.Integer) ->
                  case GHC.Integer.Type.leInteger# a Block3.$fEnumNat1 of wild {
                    DEFAULT -> Block3.$fEnumNat_iter a Block3.Z 1# -> Block3.Z }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$cnegate :: Block3.Nat -> Block3.Nat
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Inline: (sat-args=1),
      Unfolding: InlineRule (1, False, False)
                 (\ (x :: Block3.Nat) -> Block3.$fNumNat_$c- Block3.Z x) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_$csignum :: Block3.Nat -> Block3.Nat
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.Nat) ->
                  case ds of wild {
                    Block3.Z -> Block3.Z Block3.S ipv -> Block3.$fNumNat1 }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fNumNat_iter ::
     Block3.Nat -> Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><S,1*U> -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat :: GHC.Classes.Ord Block3.Nat
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
@@ -1292,49 +1292,49 @@ b77616921f126580cc676023b6e47b3d
                   Block3.$fOrdNat_$c>=
                   Block3.$fOrdNat_$cmax
                   Block3.$fOrdNat_$cmin -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$c< :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$c<= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$c> :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$c>= :: Block3.Nat -> Block3.Nat -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$cmax :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> y GHC.Types.GT -> x }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fOrdNat_$cmin :: Block3.Nat -> Block3.Nat -> Block3.Nat
   {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: Block3.Nat) (y :: Block3.Nat) ->
                  case Block3.$fEqNat_$ccompare x y of wild {
                    DEFAULT -> x GHC.Types.GT -> y }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fRealNat :: GHC.Real.Real Block3.Nat
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1343,10 +1343,10 @@ b77616921f126580cc676023b6e47b3d
                   Block3.$fNumNat
                   Block3.$fOrdNat
                   Block3.$fRealNat_$ctoRational -}
-f3383e681b19339977855bf82a4ae6ad
+40bcaf4a7925d61bc0b09d5bbd5af1e8
   $fRealNat1 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (1) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fRealNat_$ctoRational :: Block3.Nat -> GHC.Real.Rational
   {- Arity: 1, Strictness: <S,1*U>m,
      Unfolding: InlineRule (1, True, False)
@@ -1355,7 +1355,7 @@ f3383e681b19339977855bf82a4ae6ad
                         (Block3.$fEnumNat_iter1 a Block3.$fEnumNat1)
                         Block3.$fRealNat1 of ww { (#,#) ww1 ww2 ->
                  GHC.Real.:% @ GHC.Integer.Type.Integer ww1 ww2 }) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   $fShowCastle :: GHC.Show.Show Block3.Castle
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1364,7 +1364,7 @@ bd5792d1b2e39d642e69426f7416a51d
                   Block3.$fShowCastle_$cshowsPrec
                   Block3.$fShowCastle_$cshow
                   Block3.$fShowCastle_$cshowList -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   $fShowCastle1 :: Block3.Castle -> GHC.Show.ShowS
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
      Unfolding: (\ (w :: Block3.Castle) ->
@@ -1382,7 +1382,7 @@ e4f87730a026b52fdfacd206ce3ab584
 2862353d3edaacb5f1c20f61ff8db3b0
   $fShowCastle5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Castle {"#) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   $fShowCastle_$cshow :: Block3.Castle -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -1391,13 +1391,13 @@ bd5792d1b2e39d642e69426f7416a51d
                    Block3.$fEnumDay_z
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   $fShowCastle_$cshowList :: [Block3.Castle] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.Castle]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.Castle Block3.$fShowCastle1 ls s) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   $fShowCastle_$cshowsPrec ::
     GHC.Types.Int -> Block3.Castle -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)>,
@@ -1407,7 +1407,7 @@ bd5792d1b2e39d642e69426f7416a51d
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { Block3.Castle ww3 ww4 ->
                  Block3.$w$cshowsPrec ww1 ww3 ww4 } }) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   $fShowCity :: GHC.Show.Show Block3.City
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1416,7 +1416,7 @@ bd5792d1b2e39d642e69426f7416a51d
                   Block3.$fShowCity_$cshowsPrec
                   Block3.$fShowCity_$cshow
                   Block3.$fShowCity_$cshowList -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   $fShowCity1 :: Block3.City -> GHC.Show.ShowS
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U(U,U))>,
      Unfolding: (\ (w :: Block3.City) ->
@@ -1434,7 +1434,7 @@ e673fa7333b5dd34a5deb770065f3739
 05883f29bb7c395c3581beed63eb22ae
   $fShowCity5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("City {"#) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   $fShowCity_$cshow :: Block3.City -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U(U,U))>,
      Unfolding: InlineRule (1, True, False)
@@ -1443,13 +1443,13 @@ e673fa7333b5dd34a5deb770065f3739
                    Block3.$fEnumDay_z
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   $fShowCity_$cshowList :: [Block3.City] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.City]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.City Block3.$fShowCity1 ls s) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   $fShowCity_$cshowsPrec ::
     GHC.Types.Int -> Block3.City -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U(U,U))>,
@@ -1459,7 +1459,7 @@ e673fa7333b5dd34a5deb770065f3739
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { Block3.City ww3 ww4 ww5 ->
                  Block3.$w$cshowsPrec1 ww1 ww3 ww4 ww5 } }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fShowDay :: GHC.Show.Show Block3.Day
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1510,7 +1510,7 @@ e1d7472dd37741a2b313d6e1a5ba99e6
 309413d8d978ac9308bc536b1ab8cd5e
   $fShowDay9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3.$fShowDay10) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fShowDay_$cshow :: Block3.Day -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -1523,13 +1523,13 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> Block3.$fShowDay5
                    Block3.Saturday -> Block3.$fShowDay3
                    Block3.Sunday -> Block3.$fShowDay1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fShowDay_$cshowList :: [Block3.Day] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.Day]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.Day Block3.$w$cshowsPrec4 ls s) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $fShowDay_$cshowsPrec ::
     GHC.Types.Int -> Block3.Day -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
@@ -1538,7 +1538,7 @@ b449762fea2f899ac11419d7d2748742
                    (w1 :: Block3.Day)
                    (w2 :: GHC.Base.String) ->
                  Block3.$w$cshowsPrec4 w1 w2) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $fShowHouse :: GHC.Show.Show Block3.House
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1547,7 +1547,7 @@ b449762fea2f899ac11419d7d2748742
                   Block3.$fShowHouse_$cshowsPrec
                   Block3.$fShowHouse_$cshow
                   Block3.$fShowHouse_$cshowList -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $fShowHouse1 :: Block3.House -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,1*U><L,U>,
      Unfolding: (\ (w :: Block3.House) (w1 :: GHC.Base.String) ->
@@ -1585,7 +1585,7 @@ ca349c289fb629d21926d6098d5f22cf
 5a6b930e57e970068a518147efb7abea
   $fShowHouse9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("One"#) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $fShowHouse_$cshow :: Block3.House -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
      Unfolding: (\ (x :: Block3.House) ->
@@ -1596,13 +1596,13 @@ ca349c289fb629d21926d6098d5f22cf
                       (Block3.$w$cshowsPrec3
                          x `cast` (Block3.N:House[0])
                          Block3.$fShowHouse12))) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $fShowHouse_$cshowList :: [Block3.House] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.House]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.House Block3.$fShowHouse1 ls s) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $fShowHouse_$cshowsPrec ::
     GHC.Types.Int -> Block3.House -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>, Inline: [2],
@@ -1612,7 +1612,7 @@ ca349c289fb629d21926d6098d5f22cf
                    (w2 :: GHC.Base.String) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Block3.$w$cshowsPrec2 ww1 w1 w2 }) -}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   $fShowLandmark :: GHC.Show.Show Block3.Landmark
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1621,7 +1621,7 @@ ca349c289fb629d21926d6098d5f22cf
                   Block3.$fShowLandmark_$cshowsPrec
                   Block3.$fShowLandmark_$cshow
                   Block3.$fShowLandmark_$cshowList -}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   $fShowLandmark1 :: Block3.Landmark -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -1657,7 +1657,7 @@ d63d61e0d89c4ac87d31896a39f6f078
 cc34af5540c529bfba9b29ad9bbbdb46
   $fShowLandmark5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Church"#) -}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   $fShowLandmark_$cshow :: Block3.Landmark -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -1665,7 +1665,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                  case x of wild {
                    Block3.Church -> Block3.$fShowLandmark4
                    Block3.Library -> Block3.$fShowLandmark2 }) -}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   $fShowLandmark_$cshowList :: [Block3.Landmark] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
@@ -1675,7 +1675,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                    Block3.$fShowLandmark1
                    ls
                    s) -}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   $fShowLandmark_$cshowsPrec ::
     GHC.Types.Int -> Block3.Landmark -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
@@ -1700,7 +1700,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                            (n :: b)[OneShot] ->
                          GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLandmark2)
                         eta }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fShowLivingPersons :: GHC.Show.Show Block3.LivingPersons
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1709,7 +1709,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                   Block3.$fShowLivingPersons_$cshowsPrec
                   Block3.$fShowLivingPersons_$cshow
                   Block3.$fShowLivingPersons_$cshowList -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fShowLivingPersons_$cshow ::
     Block3.LivingPersons -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -1720,7 +1720,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                    Block3.Two -> Block3.$fShowHouse6
                    Block3.Three -> Block3.$fShowHouse4
                    Block3.Four -> Block3.$fShowHouse2 }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fShowLivingPersons_$cshowList ::
     [Block3.LivingPersons] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -1731,7 +1731,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                    Block3.$w$cshowsPrec3
                    ls
                    s) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $fShowLivingPersons_$cshowsPrec ::
     GHC.Types.Int -> Block3.LivingPersons -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
@@ -1740,7 +1740,7 @@ cc34af5540c529bfba9b29ad9bbbdb46
                    (w1 :: Block3.LivingPersons)
                    (w2 :: GHC.Base.String) ->
                  Block3.$w$cshowsPrec3 w1 w2) -}
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   $fShowLord :: GHC.Show.Show Block3.Lord
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1749,7 +1749,7 @@ a51c635a1ebc8f1c0e5d957b4567dd18
                   Block3.$fShowLord_$cshowsPrec
                   Block3.$fShowLord_$cshow
                   Block3.$fShowLord_$cshowList -}
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   $fShowLord1 :: Block3.Lord -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*H><L,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -1768,19 +1768,19 @@ ea4e69511b6509567b0f127677e38959
 52c4ff57df0576f5fb12313eb4c5814c
   $fShowLord3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Lord"#) -}
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   $fShowLord_$cshow :: Block3.Lord -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*H>,
      Unfolding: InlineRule (1, True, False)
                 (\ (x :: Block3.Lord) ->
                  case x of wild { Block3.Lord -> Block3.$fShowLord2 }) -}
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   $fShowLord_$cshowList :: [Block3.Lord] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.Lord]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.Lord Block3.$fShowLord1 ls s) -}
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   $fShowLord_$cshowsPrec ::
     GHC.Types.Int -> Block3.Lord -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
@@ -1796,7 +1796,7 @@ a51c635a1ebc8f1c0e5d957b4567dd18
                       (n :: b)[OneShot] ->
                     GHC.Base.foldr @ GHC.Types.Char @ b c n Block3.$fShowLord2)
                    eta }) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fShowNat :: GHC.Show.Show Block3.Nat
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1805,11 +1805,11 @@ a51c635a1ebc8f1c0e5d957b4567dd18
                   Block3.$fShowNat_$cshowsPrec
                   Block3.$fShowNat_$cshow
                   Block3.$fShowNat_$cshowList -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fShowNat1 :: Block3.Nat -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Block3.$fShowNat_$cshowsPrec Block3.$fEnumDay_z) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fShowNat_$cshow :: Block3.Nat -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -1818,17 +1818,17 @@ a51c635a1ebc8f1c0e5d957b4567dd18
                    Block3.$fEnumDay_z
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fShowNat_$cshowList :: [Block3.Nat] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.Nat]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.Nat Block3.$fShowNat1 ls s) -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $fShowNat_$cshowsPrec ::
     GHC.Types.Int -> Block3.Nat -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fShowTree :: GHC.Show.Show a => GHC.Show.Show (Block3.Tree a)
   DFunId
   {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))>m,
@@ -1838,7 +1838,7 @@ b77616921f126580cc676023b6e47b3d
                   (Block3.$fShowTree_$cshowsPrec @ a v)
                   (Block3.$fShowTree_$cshow @ a v)
                   (Block3.$fShowTree_$cshowList @ a v) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fShowTree_$cshow ::
     GHC.Show.Show a => Block3.Tree a -> GHC.Base.String
   {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S,1*U>,
@@ -1850,7 +1850,7 @@ b77616921f126580cc676023b6e47b3d
                    Block3.$fEnumDay_z
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fShowTree_$cshowList ::
     GHC.Show.Show a => [Block3.Tree a] -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><S,1*U><L,U>,
@@ -1864,12 +1864,12 @@ b77616921f126580cc676023b6e47b3d
                    (Block3.$fShowTree_$cshowsPrec @ a $dShow Block3.$fEnumDay_z)
                    ls
                    s) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $fShowTree_$cshowsPrec ::
     GHC.Show.Show a => GHC.Types.Int -> Block3.Tree a -> GHC.Show.ShowS
   {- Arity: 3,
      Strictness: <L,U(C(C1(C(U))),A,C(C(U)))><L,1*U(U)><S,1*U> -}
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   $fShowWalls :: GHC.Show.Show Block3.Walls
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1878,7 +1878,7 @@ c66a9b8cf368b6e0d812ef8b1a0f972f
                   Block3.$fShowWalls_$cshowsPrec
                   Block3.$fShowWalls_$cshow
                   Block3.$fShowWalls_$cshowList -}
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   $fShowWalls1 :: Block3.Walls -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*H><L,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -1897,19 +1897,19 @@ c66a9b8cf368b6e0d812ef8b1a0f972f
 5227e8b650f61488d9d7b9f623fb68e7
   $fShowWalls3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Walls"#) -}
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   $fShowWalls_$cshow :: Block3.Walls -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*H>,
      Unfolding: InlineRule (1, True, False)
                 (\ (x :: Block3.Walls) ->
                  case x of wild { Block3.Walls -> Block3.$fShowWalls2 }) -}
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   $fShowWalls_$cshowList :: [Block3.Walls] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (ls :: [Block3.Walls]) (s :: GHC.Base.String) ->
                  GHC.Show.showList__ @ Block3.Walls Block3.$fShowWalls1 ls s) -}
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   $fShowWalls_$cshowsPrec ::
     GHC.Types.Int -> Block3.Walls -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
@@ -2574,11 +2574,11 @@ d282c6a64cf2dfc69760561af0ff7e2e
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("hw1-0.1.0.0-FwKVBnVJc3p7EC5iMGwF1O"#) -}
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   $w$cfoldMap :: m -> (m -> m -> m) -> (a -> m) -> Block3.Tree a -> m
   {- Arity: 4, HasNoCafRefs,
      Strictness: <L,U><L,C(C1(U))><L,C(U)><S,1*U>, Inline: [2] -}
-9a5f4848cacc1d5f5f3d93402f800b03
+4659fbb780418644676c7a4061602b02
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> GHC.Maybe.Maybe Block3.Lord
@@ -2643,7 +2643,7 @@ b77616921f126580cc676023b6e47b3d
                                                 @ GHC.Types.Char
                                                 GHC.Show.$fShow(,)2
                                                 x)))))))) }) -}
-716ce65770195c6d24fa0e6697134ecc
+ed1a001c67b65fc3b926a773161313a5
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> GHC.Maybe.Maybe Block3.Castle
@@ -2733,7 +2733,7 @@ b77616921f126580cc676023b6e47b3d
                                                          @ GHC.Types.Char
                                                          GHC.Show.$fShow(,)2
                                                          x))))))))))) }) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   $w$cshowsPrec2 ::
     GHC.Prim.Int# -> Block3.House -> GHC.Base.String -> GHC.Base.String
   {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
@@ -2762,7 +2762,7 @@ b77616921f126580cc676023b6e47b3d
                                  (GHC.CString.unpackAppendCString#
                                     Block3.$fShowCastle2
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }) -}
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   $w$cshowsPrec3 ::
     Block3.LivingPersons -> GHC.Base.String -> GHC.Base.String
   {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
@@ -2774,7 +2774,7 @@ b77616921f126580cc676023b6e47b3d
                    Block3.Three -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse4 w1
                    Block3.Four
                    -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowHouse2 w1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $w$cshowsPrec4 :: Block3.Day -> GHC.Base.String -> GHC.Base.String
   {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
      Unfolding: (\ (w :: Block3.Day) (w1 :: GHC.Base.String) ->
@@ -2791,10 +2791,10 @@ b449762fea2f899ac11419d7d2748742
                    -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay3 w1
                    Block3.Sunday
                    -> GHC.Base.++ @ GHC.Types.Char Block3.$fShowDay1 w1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   $w$ctoEnum :: GHC.Prim.Int# -> Block3.Day
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $w$ctoEnum1 :: GHC.Prim.Int# -> Block3.Nat
   {- Arity: 1, Strictness: <S,U>, Inline: [2],
      Unfolding: (\ (ww :: GHC.Prim.Int#) ->
@@ -2803,7 +2803,7 @@ b449762fea2f899ac11419d7d2748742
                  } in
                  case GHC.Integer.Type.leInteger# a Block3.$fEnumNat1 of wild {
                    DEFAULT -> Block3.$fEnumNat_iter a Block3.Z 1# -> Block3.Z }) -}
-c55e69ca64656409440db9b96ccb08f3
+fde098b17b675a2f1ac98b75c8a47fca
   $wafterDays :: GHC.Prim.Int# -> Block3.Day -> Block3.Day
   {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,1*U>, Inline: [2],
      Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: Block3.Day) ->
@@ -2815,7 +2815,7 @@ c55e69ca64656409440db9b96ccb08f3
                    Block3.Friday -> Block3.$w$ctoEnum (GHC.Prim.+# 4# ww)
                    Block3.Saturday -> Block3.$w$ctoEnum (GHC.Prim.+# 5# ww)
                    Block3.Sunday -> Block3.$w$ctoEnum (GHC.Prim.+# 6# ww) }) -}
-db221888cda85347cb876aecbcac1f51
+27afd69297eaf873099bb12d62e90416
   $wbuildLandmark ::
     GHC.Maybe.Maybe Block3.Castle
     -> GHC.Maybe.Maybe Block3.Landmark
@@ -2842,7 +2842,7 @@ db221888cda85347cb876aecbcac1f51
                            (case ipv of wild1 {
                               Block3.Church -> Block3.$fShowLandmark4
                               Block3.Library -> Block3.$fShowLandmark2 })) }) -}
-8daa0d022e9e0d5c0dc767b52cb5f123
+ac211139ea45eedcdfa09246b8a3d5c1
   $wbuildWalls ::
     GHC.Maybe.Maybe Block3.Castle
     -> GHC.Maybe.Maybe Block3.Landmark
@@ -2882,7 +2882,7 @@ db221888cda85347cb876aecbcac1f51
                              1#
                              -> Block3.Failure
                                   (Block3.City wild ww1 ww3, Block3.buildWalls1) } } } } } }) -}
-cfa00a295bb7d8b2414e5b1d2ad923bf
+2bff6ed2450ed2f60648d56f0f34fd28
   $wcitizens :: Block3.House -> [Block3.House] -> GHC.Prim.Int#
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>, Inline: [2],
      Unfolding: (\ (ww :: Block3.House) (ww1 :: [Block3.House]) ->
@@ -2931,7 +2931,7 @@ cfa00a295bb7d8b2414e5b1d2ad923bf
                            (Data.Semigroup.Internal.N:Sum[0]
                                 <GHC.Types.Int>_R) of wild1 { GHC.Types.I# y ->
                       GHC.Prim.+# 4# y } }) -}
-52d2460d1cedbbe88585adac6dad7b99
+60f6d785b8362834fc26a244dffe1949
   $winsert ::
     GHC.Classes.Ord a =>
     a
@@ -2940,13 +2940,13 @@ cfa00a295bb7d8b2414e5b1d2ad923bf
   {- Arity: 3, HasNoCafRefs,
      Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>,
      Inline: [2] -}
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   $witer ::
     Block3.Nat
     -> Block3.Nat -> Block3.Nat -> (# Block3.Nat, Block3.Nat #)
   {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><L,U>,
      Inline: [2] -}
-96642c4623111f5e86a406169ab8a920
+613eba1d5e55fd41dcde82cf4c161429
   $wsetLord ::
     GHC.Maybe.Maybe Block3.Castle
     -> GHC.Maybe.Maybe Block3.Landmark
@@ -2976,19 +2976,19 @@ cfa00a295bb7d8b2414e5b1d2ad923bf
                         GHC.Maybe.Just ipv1
                         -> Block3.Failure
                              (Block3.City wild ww1 ww2, Block3.setLord1) } } }) -}
-a35b8b9411cab33ebcef0dd5ad306679
+42ec6ab3757b49668b78d37360de61f7
   $wsize :: Block3.Tree a -> GHC.Prim.Int#
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   data Castle
     = Castle {lord :: GHC.Maybe.Maybe Block3.Lord,
               walls :: GHC.Maybe.Maybe Block3.Walls}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   data City
     = City {castle :: GHC.Maybe.Maybe Block3.Castle,
             landmark :: GHC.Maybe.Maybe Block3.Landmark,
             houses :: GHC.Base.NonEmpty Block3.House}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   data Day
     = Monday
     | Tuesday
@@ -2997,33 +2997,33 @@ b449762fea2f899ac11419d7d2748742
     | Friday
     | Saturday
     | Sunday
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   newtype House = House {livingPersons :: Block3.LivingPersons}
-048847b6a9d15f099995c4a67c1156d0
+3d0ca009e8202840ff13d621c89d26d0
   data Landmark = Church | Library
-2b9e228cdf06d5ed35fd0ae6c1941d2e
+9baf0c7e8311da6703e6f28236a2e23a
   data LivingPersons = One | Two | Three | Four
-a51c635a1ebc8f1c0e5d957b4567dd18
+de64d7f72413de5f3eb2ce96d2398f02
   data Lord = Lord
-11428480cd746b86ccea6a79e22aeff2
+41f9c78db4990e7167237dbdec373b3f
   data Nat = Z | S Block3.Nat
-6b64abca8e01c973efd4f24d553a6634
+ec1f27f602262f8e478252088dade5de
   data OperationResult
     = Success (Block3.City, GHC.Base.String)
     | Failure (Block3.City, GHC.Base.String)
-b77616921f126580cc676023b6e47b3d
+8d8fa3777ca58496a3ea69755f0fd263
   data Tree a
     = Leaf | Node (GHC.Base.NonEmpty a) (Block3.Tree a) (Block3.Tree a)
-c66a9b8cf368b6e0d812ef8b1a0f972f
+d9af6f8fb8013661fe8646409e218d4c
   data Walls = Walls
-8991514108fbbc38e6e7a24d6c45f5ff
+884a827bbe0b700fd258ec05e4c6c6cc
   afterDays :: GHC.Types.Int -> Block3.Day -> Block3.Day
   {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U>,
      Inline: [2],
      Unfolding: InlineRule (2, True, False)
                 (\ (w :: GHC.Types.Int) (w1 :: Block3.Day) ->
                  case w of ww { GHC.Types.I# ww1 -> Block3.$wafterDays ww1 w1 }) -}
-8ab1648e5dde32b9467b9eba96361f74
+00310ff05822529915ab51fb83631fe3
   buildCastle :: Block3.City -> Block3.OperationResult
   {- Arity: 1, Strictness: <S(SLL),1*U(U,U,U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3047,11 +3047,11 @@ d56c4cdc2dfb7fe2991d4003f48877cc
 34bef83f1711652e20470df81d734e23
   buildCastle4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("castle built"#) -}
-4152f0a43b69dbdef79b15a66e0be3bb
+81e2fda1706222f1e409d929ca1e0ed9
   buildCastle5 :: GHC.Maybe.Maybe Block3.Castle
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Maybe.Just @ Block3.Castle Block3.emptyCastle) -}
-d6d9fa60410294db59bd5ab19f8bd6c9
+9cca2753237e427b938301c7b1035bc8
   buildHouse ::
     Block3.City -> Block3.LivingPersons -> Block3.OperationResult
   {- Arity: 2, Strictness: <L,1*U(U,U,U(1*U,1*U))><L,U>m1,
@@ -3076,7 +3076,7 @@ de0a6bfa54ade56f9e4857bbbdbcea34
 deb7fc0ce4590b38d88953fffc39c48c
   buildHouse2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("new house was built"#) -}
-e97f85b615cab318b6bfbc621374c8c1
+59f20e76351fa6f03c955832e04cee28
   buildLandmark ::
     Block3.City -> Block3.Landmark -> Block3.OperationResult
   {- Arity: 2, Strictness: <S(LSL),1*U(U,1*U,U)><L,U>, Inline: [2],
@@ -3105,7 +3105,7 @@ a326d6cabe77ae1b000fa0eb47cc3a92
                    @ GHC.Types.Char
                    Block3.$fShowLandmark4
                    Block3.buildLandmark3) -}
-4ccd4b9becd5ebd82a8ff4669c4e1ae2
+af7e12308fe18b8011c7da0c0e6d47dc
   buildWalls :: Block3.City -> Block3.OperationResult
   {- Arity: 1, Strictness: <S(SLL),1*U(1*U,U,U(U,U))>, Inline: [2],
      Unfolding: InlineRule (1, True, False)
@@ -3133,11 +3133,11 @@ a484fe24ad59160fe2768e761f8d7f95
 4f9ebd6dca1f4e3cb9c1a06771c887c0
   buildWalls6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("walls were built"#) -}
-8ff6e7e1db9e21fc229595891d8d3781
+d85b1a6f9370f3a996872b917f6ef38d
   buildWalls7 :: GHC.Maybe.Maybe Block3.Walls
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Maybe.Just @ Block3.Walls Block3.Walls) -}
-211b4565753c43a2907cc1937acac7b2
+f7e4d28e52ee63db1ddaf3203a4211db
   buildWalls8 :: Block3.House -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
      Unfolding: InlineRule (1, True, False)
@@ -3150,18 +3150,18 @@ a484fe24ad59160fe2768e761f8d7f95
 63c0c25b3c824dd78b403496f477bb3e
   buildWalls9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3.buildWalls10) -}
-f2627dfe5655dcd3cb1d63898487d47d
+432b2852b8085bfab37a4da070380a4d
   buildWalls_go ::
     [GHC.Types.Int] -> Data.Semigroup.Internal.Sum GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   castle :: Block3.City -> GHC.Maybe.Maybe Block3.Castle
   RecSel Left Block3.City
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.City) ->
                  case ds of wild { Block3.City ds1 ds2 ds3 -> ds1 }) -}
-21600c778024ff1ae3127384f82e12ff
+795b2df1a67b00f1d21358bbce5cdbd5
   checkFoldable :: GHC.Classes.Ord a => [a] -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(1*U(C(C1(U)),A),1*C(C1(U)),C(C1(U)),A,C(C1(U)),A,A,A)><S,U>,
@@ -3189,7 +3189,7 @@ f2627dfe5655dcd3cb1d63898487d47d
                       (GHC.Types.[] @ a)
                       (go eta))
                    (Data.OldList.sortBy @ a (GHC.Classes.compare @ a $dOrd) eta)) -}
-3d2dcf08fb2b0df0cf5fcdea8cacd047
+f10895a6b9749b707d73de5b94b88d95
   citizens :: Block3.City -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(LLS(SS)),1*U(A,A,1*U(1*U,1*U))>m, Inline: [2],
@@ -3199,7 +3199,7 @@ f2627dfe5655dcd3cb1d63898487d47d
                  case ww3 of ww4 { GHC.Base.:| ww5 ww6 ->
                  case Block3.$wcitizens ww5 ww6 of ww7 { DEFAULT ->
                  GHC.Types.I# ww7 } } }) -}
-ad2b6de72b91dd5709137df0dab0bbdc
+a09a884006ace1e03a9a13512051821c
   cityLord :: Block3.City -> GHC.Maybe.Maybe Block3.Lord
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
      Unfolding: InlineRule (1, True, False)
@@ -3209,7 +3209,7 @@ ad2b6de72b91dd5709137df0dab0bbdc
                    GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ Block3.Lord
                    GHC.Maybe.Just v
                    -> case v of wild2 { Block3.Castle ds3 ds4 -> ds3 } } }) -}
-9be0dd389565512d5a6bb72c89a58cb4
+f873c85814e91c070e9bb361a286cc99
   cityWalls :: Block3.City -> GHC.Maybe.Maybe Block3.Walls
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
      Unfolding: InlineRule (1, True, False)
@@ -3219,7 +3219,7 @@ ad2b6de72b91dd5709137df0dab0bbdc
                    GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ Block3.Walls
                    GHC.Maybe.Just v
                    -> case v of wild2 { Block3.Castle ds3 ds4 -> ds4 } } }) -}
-343357d920811e47cff8a77776da0c0b
+4a09bb8ac788756b0d17a656f6c78918
   daysToParty :: Block3.Day -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
      Unfolding: InlineRule (1, True, False)
@@ -3232,17 +3232,17 @@ ad2b6de72b91dd5709137df0dab0bbdc
                    Block3.Friday -> GHC.Types.I# 0#
                    Block3.Saturday -> GHC.Types.I# 6#
                    Block3.Sunday -> GHC.Types.I# 5# }) -}
-71ea3ff01805c3f26fe1029bc3c61e9a
+4a19400c7b41040c17f62d3cfceb1452
   emptyCastle :: Block3.Castle
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Block3.Castle
                    (GHC.Maybe.Nothing @ Block3.Lord)
                    (GHC.Maybe.Nothing @ Block3.Walls)) -}
-72d0b5ce96087f2ab91b38bfb7ed5ff8
+57e9d61a239ae0cb1bd8c77dbfa3d7aa
   find :: GHC.Classes.Ord a => a -> Block3.Tree a -> GHC.Types.Bool
   {- Arity: 3, HasNoCafRefs,
      Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
-88991ea25a3d54a588e7914c858a694b
+80eddfd38183702b8e766a61b47b0f5b
   fromList :: GHC.Classes.Ord a => [a] -> Block3.Tree a
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U>,
@@ -3261,7 +3261,7 @@ ad2b6de72b91dd5709137df0dab0bbdc
                           Block3.Node @ a ww1 ww2 ww3 } }
                  } in
                  go eta) -}
-4992a27ca2515d2d5dfcc2e28247e905
+f711cbd7d415e1d0ef7d8383baa60471
   getResult :: Block3.OperationResult -> Block3.City
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -3271,14 +3271,14 @@ ad2b6de72b91dd5709137df0dab0bbdc
                    -> Data.Tuple.fst @ Block3.City @ GHC.Base.String x
                    Block3.Failure x
                    -> Data.Tuple.fst @ Block3.City @ GHC.Base.String x }) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   houses :: Block3.City -> GHC.Base.NonEmpty Block3.House
   RecSel Left Block3.City
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.City) ->
                  case ds of wild { Block3.City ds1 ds2 ds3 -> ds3 }) -}
-d235f669ecb83412695804f3471ccaa1
+3c6aaf18e9be0347abc6d091995ad951
   insert :: GHC.Classes.Ord a => a -> Block3.Tree a -> Block3.Tree a
   {- Arity: 3, HasNoCafRefs,
      Strictness: <L,U(A,A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>m2,
@@ -3287,7 +3287,7 @@ d235f669ecb83412695804f3471ccaa1
                 (\ @ a (w :: GHC.Classes.Ord a) (w1 :: a) (w2 :: Block3.Tree a) ->
                  case Block3.$winsert @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
                  Block3.Node @ a ww1 ww2 ww3 }) -}
-52ed85dbd691b21e804379bbc2360607
+024034d5e09d7812d54052d6abdbaf60
   isEmpty :: Block3.Tree a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -3295,7 +3295,7 @@ d235f669ecb83412695804f3471ccaa1
                  case ds of wild {
                    Block3.Leaf -> GHC.Types.True
                    Block3.Node ipv ipv1 ipv2 -> GHC.Types.False }) -}
-7b40abec0c45e20f2688f47463c681f2
+eb72671b9f99f3fe37c1ad19ca3b078a
   isWeekend :: Block3.Day -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -3304,14 +3304,14 @@ d235f669ecb83412695804f3471ccaa1
                    DEFAULT -> GHC.Types.False
                    Block3.Saturday -> GHC.Types.True
                    Block3.Sunday -> GHC.Types.True }) -}
-62a881e4d1c4805239fb008343214aaf
+82cd7901974b45ad536cdb250367d378
   landmark :: Block3.City -> GHC.Maybe.Maybe Block3.Landmark
   RecSel Left Block3.City
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.City) ->
                  case ds of wild { Block3.City ds1 ds2 ds3 -> ds2 }) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   livingPersons :: Block3.House -> Block3.LivingPersons
   RecSel Left Block3.House
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
@@ -3319,19 +3319,19 @@ d235f669ecb83412695804f3471ccaa1
                 Block3.livingPersons1
                   `cast`
                 (<Block3.House>_R ->_R Block3.N:House[0]) -}
-7689b436c3d20fbe3be53fd627060bc4
+ebb80dac721ef9fa799098bba4adcce2
   livingPersons1 :: Block3.House -> Block3.House
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, True)
                 (\ (ds :: Block3.House) -> ds) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   lord :: Block3.Castle -> GHC.Maybe.Maybe Block3.Lord
   RecSel Left Block3.Castle
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Block3.Castle) ->
                  case ds of wild { Block3.Castle ds1 ds2 -> ds1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   nextDay :: Block3.Day -> Block3.Day
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (x :: Block3.Day) ->
@@ -3343,17 +3343,17 @@ b449762fea2f899ac11419d7d2748742
                    Block3.Friday -> Block3.$fEnumDay14
                    Block3.Saturday -> Block3.nextDay2
                    Block3.Sunday -> Block3.nextDay1 }) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   nextDay1 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 7#) -}
-b449762fea2f899ac11419d7d2748742
+7c93b35709d450220253dcaa53183575
   nextDay2 :: Block3.Day
   {- Unfolding: (Block3.$w$ctoEnum 6#) -}
-b2fe50bb659a6217b2f8c500c2afdbbc
+4d6efa6498933010435fec9e018b6c05
   remove :: GHC.Classes.Ord a => a -> Block3.Tree a -> Block3.Tree a
   {- Arity: 3,
      Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
-b4c69f135a981a32a89c430a9d6d45a0
+85585d6886d2c7256b5f320c30f5f55f
   setLord :: Block3.City -> Block3.OperationResult
   {- Arity: 1, Strictness: <S(SLL),1*U(1*U,U,U)>, Inline: [2],
      Unfolding: InlineRule (1, True, False)
@@ -3372,7 +3372,7 @@ c2b8415e16803f0524ff05363878eca2
 55b1f6f7e2ae8a2d51e71751b785ac66
   setLord4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("lord was set"#) -}
-004c64d0ae2525ae884745e72943389f
+de00cde73c7e0a874cd7f210ae77f371
   setLord5 :: GHC.Maybe.Maybe Block3.Lord
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Maybe.Just @ Block3.Lord Block3.Lord) -}
@@ -3382,7 +3382,7 @@ c2b8415e16803f0524ff05363878eca2
 422fd7008560c0a90b7bb5fa123e6bb9
   setLord7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("there is no castle for lord"#) -}
-1fed6226266cf5623c615b7a457bd880
+e18f7bf3eb213e291d738ef6186467fe
   showResult :: Block3.OperationResult -> GHC.Base.String
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: (\ (ds :: Block3.OperationResult) ->
@@ -3401,13 +3401,13 @@ c2b8415e16803f0524ff05363878eca2
 05c86f11668ba2098b85f79a338cb744
   showResult2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Success: "#) -}
-3759313ad711fd934b8117af3fa64ab5
+14fc4144da9ee9dec4131522d8552714
   size :: Block3.Tree a -> GHC.Types.Int
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
      Unfolding: InlineRule (1, True, False)
                 (\ @ a (w :: Block3.Tree a) ->
                  case Block3.$wsize @ a w of ww { DEFAULT -> GHC.Types.I# ww }) -}
-bd5792d1b2e39d642e69426f7416a51d
+fbf563ce79fd5dd31030395ac5618ac3
   walls :: Block3.Castle -> GHC.Maybe.Maybe Block3.Walls
   RecSel Left Block3.Castle
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,

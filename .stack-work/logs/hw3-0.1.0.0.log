@@ -1,0 +1,11 @@
+Configuring hw3-0.1.0.0...
+Preprocessing library for hw3-0.1.0.0..
+Building library for hw3-0.1.0.0..
+[1 of 1] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Lib.o )
+Preprocessing executable 'hw3' for hw3-0.1.0.0..
+Building executable 'hw3' for hw3-0.1.0.0..
+[1 of 1] Compiling Main             ( app/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/hw3/hw3-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/hw3/hw3 ...
+Installing library in /home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw3-0.1.0.0-E8MNFszuINRCC8i4xv6kcP
+Installing executable hw3 in /home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/bin
+Registering library for hw3-0.1.0.0..
