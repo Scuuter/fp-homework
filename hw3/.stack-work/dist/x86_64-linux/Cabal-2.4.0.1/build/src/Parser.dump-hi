@@ -1,0 +1,155 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-24 20:17:35.900762123 UTC
+
+interface hw3-0.1.0.0-G39ZpNL6V3F5fHzJRgfa83:Parser 8064
+  interface hash: 01f81f2e59920309e2d32a8101da81e5
+  ABI hash: 6d89ebc6247a305e19cdc2352e1e759b
+  export-list hash: 81e45e56d1b320b57d41db7d6703dc82
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b176a7fae7e4488ae62dd9b3f12b8417
+  opt_hash: d0a78e7b344f95c7406be35c9b75e196
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Parser.parseCommand
+  Parser.Command{Parser.Assign Parser.Cd Parser.Echo Parser.Exit Parser.Pwd Parser.Read}
+  Parser.Ref{Parser.Arg Parser.Var}
+  Parser.Value{Parser.Ref Parser.Str}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 containers-0.6.0.1
+                      deepseq-1.4.4.0 ghc-prim-0.5.3 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      megaparsec-7.0.4 mtl-2.2.2 parser-combinators-1.0.1 text-1.2.3.1
+                      transformers-0.5.6.2
+orphans: transformers-0.5.6.2:Control.Monad.Trans.Error
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         megaparsec-7.0.4:Text.Megaparsec.Error
+                         megaparsec-7.0.4:Text.Megaparsec.Pos
+                         megaparsec-7.0.4:Text.Megaparsec.State
+                         megaparsec-7.0.4:Text.Megaparsec.Stream text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.12.0.0:Control.Applicative a884b39a373986c495ad27c23242ec88
+import  -/  base-4.12.0.0:Data.Char 74f67fe9150a102afa18766e840f6832
+import  -/  base-4.12.0.0:Data.Foldable 5f70351366640f007be66681d2212df8
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.Void 30c7426b8eea17cc3887213cac3cd8fb
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:GHC.Unicode 87726eb81a3f9c9b22160a0afd5dc56a
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:Text.Read 87f80fc2538a174aea915dd98f74fc0a
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  megaparsec-7.0.4:Text.Megaparsec a2c7c2fd9999dbf0c17f706a256705cc
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Char c1978f27a87056157f7d7143f8bb1855
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Class ab016113f13df3fcae1041564ff0f7be
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Common d927f3f70b4d00c08c4aa24aff7360ca
+import  -/  parser-combinators-1.0.1:Control.Applicative.Combinators d19945400b3e61640857982cad926de5
+import  -/  parser-combinators-1.0.1:Control.Monad.Combinators 2a2f065d7483aa0fab185bb3fd8f5737
+28bba0e29b1b0f93bf5d267278e4a3fd
+  $fEqRef :: GHC.Classes.Eq Parser.Ref
+  DFunId
+7046768e0acbd5ae2144fa01ee9a5681
+  $fEqValue :: GHC.Classes.Eq Parser.Value
+  DFunId
+14c47140dd9ac73f615d31829b95e793
+  $fShowCommand :: GHC.Show.Show Parser.Command
+  DFunId
+fe16f9fae456d7c48369205d8fa59917
+  $fShowNOption :: GHC.Show.Show Parser.NOption
+  DFunId
+28bba0e29b1b0f93bf5d267278e4a3fd
+  $fShowRef :: GHC.Show.Show Parser.Ref
+  DFunId
+7046768e0acbd5ae2144fa01ee9a5681
+  $fShowValue :: GHC.Show.Show Parser.Value
+  DFunId
+24c92556f931f5d26c276fb114069fb2
+  $tc'Arg :: GHC.Types.TyCon
+0ec663fc9f1da173e617effaf13311e5
+  $tc'Assign :: GHC.Types.TyCon
+b8044190ec9ccb4687575d16ee2f6bfa
+  $tc'Cd :: GHC.Types.TyCon
+70113ee5366f563e06a083f2fd87b119
+  $tc'Echo :: GHC.Types.TyCon
+f64da5bd9da65349abfc4d24d0446944
+  $tc'Exit :: GHC.Types.TyCon
+3bfe28184640b9bf0e5571cc3c4ed7f5
+  $tc'NOption :: GHC.Types.TyCon
+4f64fe336dd026780a144db08a495318
+  $tc'Pwd :: GHC.Types.TyCon
+d3b7aab9c42b7f44ab8a8b4b5c9340f7
+  $tc'Read :: GHC.Types.TyCon
+f5579209408807f19134dd7a04bef5ed
+  $tc'Ref :: GHC.Types.TyCon
+249a9d1b456ce2bd57c18553519aedd6
+  $tc'Str :: GHC.Types.TyCon
+12e93f37e86fba3f7b88292148c3de7c
+  $tc'Var :: GHC.Types.TyCon
+4d4455ea73bea816fd87ccdea3a472f8
+  $tcCommand :: GHC.Types.TyCon
+eba11392540fc7154360e3a10ab15bcc
+  $tcNOption :: GHC.Types.TyCon
+8464af9edbd816641b7ff8b81a84f743
+  $tcRef :: GHC.Types.TyCon
+619a18c2e2dee755a8d7a92017377254
+  $tcValue :: GHC.Types.TyCon
+05c6d4f555305b83a32271b19c50fb08
+  $trModule :: GHC.Types.Module
+14c47140dd9ac73f615d31829b95e793
+  data Command
+    = Assign GHC.Base.String Parser.Quote
+    | Read [GHC.Base.String]
+    | Echo (GHC.Maybe.Maybe Parser.NOption) Parser.Quote
+    | Pwd
+    | Cd GHC.IO.FilePath
+    | Exit (GHC.Maybe.Maybe GHC.Types.Int)
+fe16f9fae456d7c48369205d8fa59917
+  data NOption = NOption
+e8e4f311cb88e313bde38b8995853c42
+  type Parser =
+    Text.Megaparsec.Parsec Data.Void.Void GHC.Base.String :: * -> *
+af259b8e1e80db4d0f1c83e06698e03d
+  type Quote = [Parser.Value]
+28bba0e29b1b0f93bf5d267278e4a3fd
+  data Ref = Arg GHC.Types.Int | Var GHC.Base.String
+7046768e0acbd5ae2144fa01ee9a5681
+  data Value = Str GHC.Base.String | Ref Parser.Ref
+fcd42b84ece48b50d7d30658f91a6421
+  parseCommand :: Parser.Parser Parser.Command
+instance GHC.Classes.Eq [Parser.Ref] = Parser.$fEqRef
+instance GHC.Classes.Eq [Parser.Value] = Parser.$fEqValue
+instance GHC.Show.Show [Parser.Command] = Parser.$fShowCommand
+instance GHC.Show.Show [Parser.NOption] = Parser.$fShowNOption
+instance GHC.Show.Show [Parser.Ref] = Parser.$fShowRef
+instance GHC.Show.Show [Parser.Value] = Parser.$fShowValue
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

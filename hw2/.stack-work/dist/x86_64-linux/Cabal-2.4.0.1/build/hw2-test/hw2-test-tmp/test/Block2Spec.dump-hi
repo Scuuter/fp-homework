@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-27 16:43:59.067107025 UTC
+2019-03-27 21:03:56.945595874 UTC
 
 interface main:Block2Spec 8064
-  interface hash: 0c204c1e295afa6d9182706dd2818316
+  interface hash: a02219fd21d3e83b87daceaac3cc6a95
   ABI hash: 0bdacc16c942d07135441734701106e0
   export-list hash: 1c3f08a95d6d863224cccf30423248e4
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -53,7 +53,7 @@ family instance modules: base-4.12.0.0:Control.Applicative
 import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
 import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
 import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
-import  -/  hw2-0.1.0.0:Block2 7ca2d03b2b20fb38dd283c89ef6dae95
+import  -/  hw2-0.1.0.0:Block2 6954a17086386d0ba8df5d9d37a92d2a
 import  -/  tasty-1.2:Test.Tasty 3267efb6b9a17be2b049053c1cdaff08
 import  -/  tasty-1.2:Test.Tasty.Core c931ee0793d03a746d590fb679c52fc6
 import  -/  tasty-hunit-0.10.0.1:Test.Tasty.HUnit 485b522d6b0c9a08b413dcdab322cf64

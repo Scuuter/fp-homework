@@ -1,14 +1,14 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-17 13:41:00.705120864 UTC
+2019-04-24 19:31:06.139658075 UTC
 
-interface hw3-0.1.0.0-E8MNFszuINRCC8i4xv6kcP:Lib 8064
-  interface hash: 201a25158fa24c545ce6b9877f7d45da
-  ABI hash: 4a573e9bb2074e6845f6375ad4c2874c
-  export-list hash: 411c069e95d10c0071e54c13f0f8dfb8
+interface hw3-0.1.0.0-G39ZpNL6V3F5fHzJRgfa83:Lib 8064
+  interface hash: 32bb0dbcb6bc860f7ca95e59d64ba166
+  ABI hash: da0b70ab3876ba67d0294c83dca0f5f6
+  export-list hash: 5e07a0c3f6c9ce486ee092109a859112
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: d59a86fc39dabe8754ebbfb830e37f1e
-  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  opt_hash: d0a78e7b344f95c7406be35c9b75e196
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   plugin_hash: ad164012d6b1e14942349d58b1132007
   sig of: Nothing
@@ -28,38 +28,10 @@ family instance modules: base-4.12.0.0:Control.Applicative
 import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
 import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
 import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
-e1c0154b863f04e2f9e958b89311b82e
+27c15ea5daf566b9f0c708f142a2ddd0
   $trModule :: GHC.Types.Module
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
-77ac7f3bf354c8ad90e505fd5cb3ce19
-  $trModule1 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
-51ec4322911bad834cdbc7a34c801506
-  $trModule2 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
-86bd75dce7db482b8bcabda0dc517dd7
-  $trModule3 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
-afeb4a5357a97ff1e0292819fec252a7
-  $trModule4 :: GHC.Prim.Addr#
-  {- HasNoCafRefs,
-     Unfolding: ("hw3-0.1.0.0-E8MNFszuINRCC8i4xv6kcP"#) -}
-a0105dbbddd76d7bbdad4f3f03954a39
+53bcbe277c9c75b5fe31abd261f1ee8c
   someFunc :: GHC.Types.IO ()
-  {- Arity: 1,
-     Unfolding: (GHC.IO.Handle.Text.hPutStr'
-                   GHC.IO.Handle.FD.stdout
-                   Lib.someFunc1
-                   GHC.Types.True) -}
-10b6c9ca53c4a59a4cb769b15bee6298
-  someFunc1 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Lib.someFunc2) -}
-2d65e721a4ec0e97bc32f9e1bd91749b
-  someFunc2 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("someFunc"#) -}
 trusted: safe
 require own pkg trusted: False
 module header:

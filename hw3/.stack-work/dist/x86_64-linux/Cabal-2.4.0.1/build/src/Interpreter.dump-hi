@@ -1,0 +1,131 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-24 20:17:36.29128458 UTC
+
+interface hw3-0.1.0.0-G39ZpNL6V3F5fHzJRgfa83:Interpreter 8064
+  interface hash: 2160b9a2a5eb1e0750519a5d890e255b
+  ABI hash: 71bf6530414befc3ff808ddbec07eaf3
+  export-list hash: 05a29dec9208555441c745a2bf922cd8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9d156e2ccc398f2f187b19220f36d2ba
+  opt_hash: d0a78e7b344f95c7406be35c9b75e196
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpreter.run
+module dependencies: Parser
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 containers-0.6.0.1
+                      deepseq-1.4.4.0 directory-1.3.3.0 filepath-1.4.2.1 ghc-prim-0.5.3
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 megaparsec-7.0.4 mtl-2.2.2
+                      parser-combinators-1.0.1 text-1.2.3.1 time-1.8.0.2
+                      transformers-0.5.6.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+orphans: hashable-1.2.7.0:Data.Hashable.Generic
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         megaparsec-7.0.4:Text.Megaparsec.Error
+                         megaparsec-7.0.4:Text.Megaparsec.Pos
+                         megaparsec-7.0.4:Text.Megaparsec.State
+                         megaparsec-7.0.4:Text.Megaparsec.Stream text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+import  -/  base-4.12.0.0:Control.Monad 728c9526f38369d3ad3bf7824b06e87e
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable 5f70351366640f007be66681d2212df8
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO.Exception 450806ae9fed7fcace0a23ab62a9d604
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  directory-1.3.3.0:System.Directory 204c2db6d71c61e5c7493d371aa2d48c
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  Parser 6d89ebc6247a305e19cdc2352e1e759b
+  exports: 81e45e56d1b320b57d41db7d6703dc82
+  Arg e74b81678e00e00adcfdc4aaab1f123b
+  Assign ae8c493b7d94206480b9f84877563b66
+  Cd f99d0673e70d0c655e44f0ff03eaf958
+  Command 14c47140dd9ac73f615d31829b95e793
+  Echo 2e0a7df723567a5aa4dd61a39a4bb2ec
+  Exit 3ecb43f1cbe9b4950108b0399f6f57fa
+  Pwd 79d01ed6746a77b60e2ed3eff536c30c
+  Read 30fb0fd649ee2cb465d2f1d4131201ee
+  Ref d683082987645f1e0582bf57271a0db1
+  Str de79d59bc3a6b468f7b5c62e0faf8417
+  Value 7046768e0acbd5ae2144fa01ee9a5681
+  Var 44a562b1e4040d80a505d91b21b3c7d7
+  parseCommand fcd42b84ece48b50d7d30658f91a6421
+import  -/  megaparsec-7.0.4:Text.Megaparsec a2c7c2fd9999dbf0c17f706a256705cc
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Error 47fb452bbe45bcfac775d8b771004168
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Pos e620e5c63ca725e85451aabf9a49671d
+import  -/  megaparsec-7.0.4:Text.Megaparsec.State 16c76f6a4031b2386f3d7996f38a38b5
+import  -/  mtl-2.2.2:Control.Monad.Reader d5c3a33f1c95bb71f4ae02f87a7048ff
+import  -/  mtl-2.2.2:Control.Monad.Reader.Class 56d676c7504f5007ee5b66906716abcc
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Reader 56f58e64ea149219b98233a32ddd4759
+import  -/  unordered-containers-0.2.9.0:Data.HashMap.Base d0a0bcb29d8ea116e825d2d0343e9562
+import  -/  unordered-containers-0.2.9.0:Data.HashMap.Strict 889d2e19ace576adcd3f29cc45c10b01
+5433711e74f9ab028c683442ee382432
+  $fShowCtx :: GHC.Show.Show Interpreter.Ctx
+  DFunId
+75dd4abcc3f7f3d976ce923f262b09ba
+  $tc'Ctx :: GHC.Types.TyCon
+3ca80de86466cb48572d4c4e0560b569
+  $tcCtx :: GHC.Types.TyCon
+60513a44e91bce73d7d1b4dba26a4ad1
+  $trModule :: GHC.Types.Module
+5433711e74f9ab028c683442ee382432
+  data Ctx
+    = Ctx {input :: GHC.Base.String,
+           args :: [GHC.Base.String],
+           vars :: Data.HashMap.Base.HashMap GHC.Base.String GHC.Base.String}
+5433711e74f9ab028c683442ee382432
+  args :: Interpreter.Ctx -> [GHC.Base.String]
+  RecSel Left Interpreter.Ctx
+5433711e74f9ab028c683442ee382432
+  input :: Interpreter.Ctx -> GHC.Base.String
+  RecSel Left Interpreter.Ctx
+f55ae0cda0be05baf689a338658324d3
+  run :: GHC.Types.IO ()
+5433711e74f9ab028c683442ee382432
+  vars ::
+    Interpreter.Ctx
+    -> Data.HashMap.Base.HashMap GHC.Base.String GHC.Base.String
+  RecSel Left Interpreter.Ctx
+instance GHC.Show.Show [Interpreter.Ctx] = Interpreter.$fShowCtx
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-03-27 20:40:59.409248884 UTC
+2019-03-27 21:03:57.906825611 UTC
 
 interface main:Block3Spec 8064
-  interface hash: 2ff88601f93d8e64c7012c12aa90e1f7
-  ABI hash: 4cdddda8732b2d2ffed3e72f3f449383
+  interface hash: adf1c7748633f9e00906cb432dd885ad
+  ABI hash: c8eead5f2228b440aaa9ad60fae7b52f
   export-list hash: 8512f93646db5bc85bb22f8e83661b48
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: d89b93d683606808bcc69427a2374468
@@ -81,225 +81,188 @@ d3d28965a025ac6ae3ca7bdd4b853fad
 20e1713a18c52206058084ae3b515eec
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-7bd6201c7b13db6fcbd795625adea317
+f411c2fa8ceefd705f7f13a7802fa1db
   block1 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
                    Block3Spec.block2
                    (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
-ddfd2d5bb9134d20b48ccafec58522e4
+ea4f76e66539629cc8a9dc627de35143
   block10 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block142
+                   Block3Spec.block138
                    Block3Spec.block11) -}
-62b1a2ba86d12020e346c8220cd58c37
-  block100 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <B,U>x -}
-4468b2af28732c7fb5d778425d86bb81
-  block101 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block102) -}
-95d4893ebb5df41c7e130efd4cba4577
-  block102 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Freak you"#) -}
-f8331963b1959630ae223fcdd14c1872
-  block103 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block104) -}
-7212bbdd974c2a674ea33839f7fdf23e
-  block104 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("stream 'Freak' on 'Freak you'"#) -}
-34d26df7cf178bb616c220efe0eb0588
-  block105 :: Test.Tasty.Core.TestTree
-  {- Unfolding: (Test.Tasty.Core.SingleTest
-                   @ Test.Tasty.HUnit.TestCase
-                   Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block110
-                   Block3Spec.block106
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0]
-                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-73ca6cc91b6f6c3f2f7b41b9d7231b01
-  block106 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3.stream1
-                        @ GHC.Types.Char
-                        GHC.Classes.$fEqChar
-                        Block3Spec.block108
-                        Block3Spec.block101 of wild {
-                   GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
-                   GHC.Maybe.Just a1
-                   -> case Block3Spec.block107 s wild
-                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
-                      of {} }) -}
-c8eb1e7ad78b51bb6aff307d43d49c57
-  block107 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 2, Strictness: <B,U><B,U>x -}
-00f2b4e1c50482506f64fd0e85210b5e
-  block108 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block109) -}
-ac451ea168da6461ef9db4c4e7a01eb3
-  block109 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("reak"#) -}
-94946f359f34c623b30f245d551e19c1
-  block11 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block135
-                   Block3Spec.block12) -}
-f3fb470ff5580b04679d49a4ad8e4f57
-  block110 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block111) -}
-16a43523ae5ac6d9c7cda9c72da398bd
-  block111 :: GHC.Prim.Addr#
+c38bc2a6a0ee3eb65b20bd7db639a463
+  block100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block101) -}
+a4e98c38972f80753a67c804e871e60e
+  block101 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("stream 'reak' on 'Freak you'"#) -}
-fe620e999ab37d05045b5f855fd995bd
-  block112 :: Test.Tasty.Core.TestTree
+c9afb5627b2c32220f9f8cc985c41f34
+  block102 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
+                   Block3Spec.block109
                    Block3Spec.block103
-                   Block3Spec.block113
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-b278d1aac05421dff1e552731bc2e918
-  block113 ::
+2d6ab4b3620d67d7646a6e9ac2a10f13
+  block103 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3Spec.block3_w6 of wild {
+                 case Block3Spec.block3_w5 of wild {
                    GHC.Maybe.Nothing
-                   -> case Block3Spec.block114 s
+                   -> case Block3Spec.block108 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Maybe.Just a1
                    -> case a1 of ww3 { (,) ww4 ww5 ->
                       case GHC.Classes.$fEqModule_$s$c==
                              ww4
-                             Block3Spec.block98 of wild1 {
+                             Block3Spec.block106 of wild1 {
                         GHC.Types.False
-                        -> case Block3Spec.block114 s
+                        -> case Block3Spec.block108 s
                            ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                            of {}
                         GHC.Types.True
-                        -> case GHC.Base.eqString ww5 Block3Spec.block96 of wild2 {
+                        -> case GHC.Base.eqString ww5 Block3Spec.block104 of wild2 {
                              GHC.Types.False
-                             -> case Block3Spec.block114 s
+                             -> case Block3Spec.block108 s
                                 ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                 of {}
                              GHC.Types.True
                              -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } }) -}
-4571878c505a72cb866e0969629ac4bd
-  block114 ::
+2742a5724dbe1a7ae4755661de0c4370
+  block104 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block105) -}
+f5dc43eb4555656a4e344e0abb77743c
+  block105 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" you"#) -}
+424fd636f097bd2e941538554237b554
+  block106 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block107) -}
+cb64c34989d06bb64820863e9f871cae
+  block107 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Freak"#) -}
+f776f06a46733d8de18c18fe99c5fa5f
+  block108 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-0b91435374a0b4210e1d7d2864bbea3b
-  block115 :: Test.Tasty.Core.TestTree
+d2bb6f7eea825984aa8b62fcd09e5d16
+  block109 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block110) -}
+163646906e830380a3bccd644d7ca282
+  block11 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Block3Spec.block131
+                   Block3Spec.block12) -}
+6951db32a8931a10466154f0f7dc5ca6
+  block110 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("stream 'Freak' on 'Freak you'"#) -}
+0733a8540554539d69c855d0a98b802c
+  block111 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block118
-                   Block3Spec.block116
+                   Block3Spec.block114
+                   Block3Spec.block112
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-e29cd41ec95a840b12b371bc98046fa4
-  block116 ::
+06fef4533840dada712583976e90b60b
+  block112 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case GHC.Base.eqString
-                        Block3Spec.block108
-                        Block3Spec.block108 of wild {
+                        Block3Spec.block98
+                        Block3Spec.block98 of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block117 s
+                   -> case Block3Spec.block113 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-82f17f03141dd8a6a23a5ed75119a6c6
-  block117 ::
+c5bb22b8ea587bafdb05d1c4bc39b3f6
+  block113 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-1084e32c8db04995c6f670932d56a5db
-  block118 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block119) -}
-452c4acee289634ef62f5259fa1606b2
-  block119 :: GHC.Prim.Addr#
+7261eec0fee5ea95717ffbbb17490ca3
+  block114 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block115) -}
+aae855a16631e7ebd1fffec1df9c7b4d
+  block115 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("element F on 'Freak'"#) -}
-dc8566080d3b97829ac2e960727670ea
-  block12 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block127
-                   Block3Spec.block13) -}
-6ae3036fe5cc885b2b5f340e58f1ffad
-  block120 :: Test.Tasty.Core.TestTree
+0d13c13a0a1f2c9581a0454d5507b038
+  block116 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block122
-                   Block3Spec.block121
+                   Block3Spec.block118
+                   Block3Spec.block117
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-3c82c013f2174738ae3943fae7b631aa
-  block121 ::
+b2f179fdfada183719cfbdab06602468
+  block117 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  (# s, GHC.Types.[] @ GHC.Types.Char #)) -}
-84a40d8a074145d6518332b4a59926f9
-  block122 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block123) -}
-5f458b8ffe514f047e85ec589f2a4a1c
-  block123 :: GHC.Prim.Addr#
+13f7123560b87257fdb3d61fd62b9c88
+  block118 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block119) -}
+de1216d05308585e8849df042ea1216c
+  block119 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("element a on 'bbb'"#) -}
-c171c9616d1a12fa81d8cca5f9a14489
-  block124 :: Test.Tasty.Core.TestTree
+c1cca7a4ce7ff874ecccde57de017448
+  block12 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Block3Spec.block123
+                   Block3Spec.block13) -}
+734fc90c8fb1a00695eb3463f3ede456
+  block120 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block125
                    Block3Spec.block121
+                   Block3Spec.block117
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-5fce51add9a916a0b784eed40d881a0d
-  block125 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block126) -}
-72ff290383229657584d024541f16258
-  block126 :: GHC.Prim.Addr#
+23e454a93fe3676ab3238507dfa69d2c
+  block121 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block122) -}
+f6d84f19421e74ab0cd70890e60cfd6f
+  block122 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("element Nothing"#) -}
-56c96a7721c5bcfe0572260b491675fb
-  block127 :: Test.Tasty.Core.TestTree
+22aa74a8a0eca29dc4713ad576730cd8
+  block123 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block133
-                   Block3Spec.block128
+                   Block3Spec.block129
+                   Block3Spec.block124
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-291fb1c20a74036549e61e891392dcc3
-  block128 ::
+fb2b0db6709fea1871cdeac327025c7d
+  block124 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <L,U>,
@@ -318,7 +281,7 @@ c171c9616d1a12fa81d8cca5f9a14489
                                 (GHC.Types.Char, [GHC.Types.Char]))[OneShot] ->
                      case w2 of wild {
                        GHC.Maybe.Nothing
-                       -> case Block3Spec.block132
+                       -> case Block3Spec.block128
                                  s
                                  (GHC.Maybe.Nothing @ (GHC.Types.Char, [GHC.Types.Char]))
                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
@@ -328,151 +291,151 @@ c171c9616d1a12fa81d8cca5f9a14489
                           case ww4 of wild2 { GHC.Types.C# x ->
                           case x of wild3 {
                             DEFAULT
-                            -> case Block3Spec.block132 s wild
+                            -> case Block3Spec.block128 s wild
                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                of {}
                             'F'#
-                            -> case GHC.Base.eqString ww5 Block3Spec.block108 of wild4 {
+                            -> case GHC.Base.eqString ww5 Block3Spec.block98 of wild4 {
                                  GHC.Types.False
-                                 -> case Block3Spec.block132 s wild
+                                 -> case Block3Spec.block128 s wild
                                     ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
                                               [GHC.Types.Char] #)
                                     of {}
                                  GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } } }
                  } in
                  case ds1 of wild2 {
-                   DEFAULT -> $j Block3Spec.block129
+                   DEFAULT -> $j Block3Spec.block125
                    0#
                    -> $j
                         (GHC.Maybe.Nothing @ (GHC.Types.Char, [GHC.Types.Char])) } }) -}
-a97563e4654b7db4092c08bf9c168071
-  block129 :: GHC.Maybe.Maybe (GHC.Types.Char, [GHC.Types.Char])
+7cd73956ab46d7744d1eefc4cdfce9b3
+  block125 :: GHC.Maybe.Maybe (GHC.Types.Char, [GHC.Types.Char])
   {- Strictness: m2,
      Unfolding: (GHC.Maybe.Just
                    @ (GHC.Types.Char, [GHC.Types.Char])
-                   Block3Spec.block130) -}
-deff6383276683d855c5b405230f6e42
-  block13 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block124
-                   Block3Spec.block14) -}
-4f163286df729dfc7566a4eadb5789c2
-  block130 :: (GHC.Types.Char, [GHC.Types.Char])
+                   Block3Spec.block126) -}
+870fe67938248396e860364565b69bdb
+  block126 :: (GHC.Types.Char, [GHC.Types.Char])
   {- Strictness: m,
-     Unfolding: ((Block3Spec.block131, Block3Spec.block108)) -}
-2aaa45544a312ffbc57d255bb8a7644b
-  block131 :: GHC.Types.Char
+     Unfolding: ((Block3Spec.block127, Block3Spec.block98)) -}
+fc86e9c150bf8fe21b510fef1bfd4788
+  block127 :: GHC.Types.Char
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'F'#) -}
-329fec0de3a1b43114747d0257a4b15c
-  block132 ::
+664327367905e60b485381a50d27d101
+  block128 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> GHC.Maybe.Maybe (GHC.Types.Char, [GHC.Types.Char])
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <B,U><B,U>x -}
-58089bdca84f4d58b70b08be7785afe7
-  block133 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block134) -}
-c5e76df58589919836e8b3108bcd572f
-  block134 :: GHC.Prim.Addr#
+39bc18f13576d13724f86109583075d8
+  block129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block130) -}
+3f062d281f7131f4435e2ce3d3a590fe
+  block13 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Block3Spec.block120
+                   Block3Spec.block14) -}
+c6fe1e0321847c9ab29618c2854b5ef5
+  block130 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("satisfy isUpper"#) -}
-1549a549af38d1b1eaee44dafa907377
-  block135 :: Test.Tasty.Core.TestTree
+a4adc19f198d58d2fae2241e2918b607
+  block131 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block140
                    Block3Spec.block136
+                   Block3Spec.block132
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-c11c7dc16d48a8a775c7a9278ddb8391
-  block136 ::
+0c93461a2278fdb3f5d169cd46b86339
+  block132 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case GHC.Classes.$fEq[]_$s$c==
-                        Block3Spec.block138
-                        Block3Spec.block138 of wild {
+                        Block3Spec.block134
+                        Block3Spec.block134 of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block137 s
+                   -> case Block3Spec.block133 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-22c1d6e0f881912e2db7e55c0dafa1da
-  block137 ::
+f0ffc286917695692d56ece50dd32d8c
+  block133 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-e983c6426a967551af0455d525ded8ea
-  block138 :: [GHC.Types.Int]
+639457b425e006435e65384d046f5f78
+  block134 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
-                   Block3Spec.block139
+                   Block3Spec.block135
                    (GHC.Types.[] @ GHC.Types.Int)) -}
-f9a2250a76d5e5116bfbe0a436ac6a61
-  block139 :: GHC.Types.Int
+481df5baf6ecbed98167897f4e1db482
+  block135 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
-fe75c98a919e0145c95688b666f26257
+050223e10d33baa8c4d3c7b2283e0d97
+  block136 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block137) -}
+d83199a3fe552f3491f3b38a38f560d9
+  block137 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("satisfy (>3)"#) -}
+5af946bccadc377304934535086dd026
+  block138 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Block3Spec.block139
+                   Block3Spec.block117
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
+dea28cf0e98bf5c90cabefcff3ccc4f4
+  block139 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block140) -}
+a980acbd197f8bcbed86edb4a0e2970a
   block14 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block120
+                   Block3Spec.block116
                    Block3Spec.block15) -}
-31a4258e67d07c312e87e154359be2d0
-  block140 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block141) -}
-0e8512a1d121a1f2a53c06291c710ab0
-  block141 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("satisfy (>3)"#) -}
-83686e3bfb543c2f79c10aa33fbae051
-  block142 :: Test.Tasty.Core.TestTree
-  {- Unfolding: (Test.Tasty.Core.SingleTest
-                   @ Test.Tasty.HUnit.TestCase
-                   Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block143
-                   Block3Spec.block121
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0]
-                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-37b97cd9878cbc01ef4395c107105c5c
-  block143 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block144) -}
-c1ad77d943beaac78cc2eecd35755404
-  block144 :: GHC.Prim.Addr#
+90104dad38ebfaff26a7fb86bf878557
+  block140 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("satisfy Nothing []"#) -}
-f976fe83230993fb359a98d851d0c5aa
-  block145 :: Test.Tasty.Core.TestTree
+8626981b32b899628bd2a9e13add8586
+  block141 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block146
-                   Block3Spec.block121
+                   Block3Spec.block142
+                   Block3Spec.block117
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-10405d2888c864c1a524841478f94241
-  block146 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block147) -}
-a246ab38c31d88fb70637ac59992625d
-  block147 :: GHC.Prim.Addr#
+a4e3dd06019c5be0a7ab04eaeed039c4
+  block142 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block143) -}
+88771c798f152d208e430044d64d7c34
+  block143 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("satisfy Nothing [Int]"#) -}
-a81c1fa95fd110e100d51bc784fe0db7
-  block148 :: Test.Tasty.Core.TestTree
+0f7c2ac9e127f96b880a1bf4ef2def3c
+  block144 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block151
-                   Block3Spec.block149
+                   Block3Spec.block147
+                   Block3Spec.block145
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-3c9b67a89afb26aa017866df979cb819
-  block149 ::
+246e4d24649aa00a9018b7c6143dc93d
+  block145 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
@@ -481,40 +444,40 @@ a81c1fa95fd110e100d51bc784fe0db7
                         (GHC.Types.[] @ GHC.Types.Char)
                         (GHC.Types.[] @ GHC.Types.Char) of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block150 s
+                   -> case Block3Spec.block146 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-d8bfcfe25c3bb049cc419ce96f02ef3f
+d9822bca8ad7bb61875d4f9ce446ea8d
+  block146 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x -}
+7f4cc6ff7c457ec7e2e6bded96c89029
+  block147 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block148) -}
+7239f012505c7373100eb1240e6aa027
+  block148 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("eof 2"#) -}
+5381edb526a8124053b76282614f2c5c
+  block149 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Block3Spec.block152
+                   Block3Spec.block150
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
+58575f0b1539e590be0208d4433e19a9
   block15 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block115
+                   Block3Spec.block111
                    Block3Spec.block16) -}
-83b6af14d13f64e5b0689378da17c64d
+5ce55ec84bf448da4b2c621979c85be4
   block150 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <B,U>x -}
-234ee1a23d337bf3ffdeb48e136e5aff
-  block151 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block152) -}
-3a4ed83397a058a7fa4d1eca65721940
-  block152 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("eof 2"#) -}
-ef35598d6192be84c68b8bb87d45441e
-  block153 :: Test.Tasty.Core.TestTree
-  {- Unfolding: (Test.Tasty.Core.SingleTest
-                   @ Test.Tasty.HUnit.TestCase
-                   Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block156
-                   Block3Spec.block154
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0]
-                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-6cdc36e63ded6b285149b5d3d02520d7
-  block154 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
@@ -523,473 +486,459 @@ ef35598d6192be84c68b8bb87d45441e
                         (GHC.Types.[] @ GHC.Types.Int)
                         (GHC.Types.[] @ GHC.Types.Int) of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block155 s
+                   -> case Block3Spec.block151 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-0cb41380fcda56e37b8616497ed4f03a
-  block155 ::
+be6b38d9a447e258946226423d37da89
+  block151 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-9522f344d288575500799274ee01fe60
-  block156 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block157) -}
-074913ef8d3818542929bdedd47ec764
-  block157 :: GHC.Prim.Addr#
+55ea2c398a52c5a7d89c6ece418f4216
+  block152 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block153) -}
+ed81bb2d88d7ff22891ceee3835de845
+  block153 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("eof 1"#) -}
-875d7349bfca879942fcb0cee74f4421
-  block158 :: Test.Tasty.Core.TestTree
+230909b2a7d6ee9e02dda6afa0c71d1a
+  block154 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block159
-                   Block3Spec.block121
+                   Block3Spec.block155
+                   Block3Spec.block117
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-1c595b3b6ae0a8c2f0399985e296777e
-  block159 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block160) -}
-1de4061065ccc837ce32a30802e586ce
-  block16 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block112
-                   Block3Spec.block17) -}
-ac5695b0f244b775c93274cd07928e52
-  block160 :: GHC.Prim.Addr#
+95718a87ef0bd4843e448e11236e5e09
+  block155 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block156) -}
+0e08fb63a0e37d0f0848de7761bad558
+  block156 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("eof Nothing"#) -}
-77c3ff40efcfe2abc89fe475de7e9d04
-  block161 :: Test.Tasty.Core.TestTree
+830bcf2dc4c13c2034edb3f9d063e6b7
+  block157 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block171
-                   Block3Spec.block162
+                   Block3Spec.block167
+                   Block3Spec.block158
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-6df5739b03fad36ce643e90f3531f1bc
-  block162 ::
+dd68e5f50008937cb6d5d5772096c7f3
+  block158 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case GHC.Classes.$fEq[]_$s$c==
-                        Block3Spec.block164
-                        Block3Spec.block164 of wild {
+                        Block3Spec.block160
+                        Block3Spec.block160 of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block163 s
+                   -> case Block3Spec.block159 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-14a51038075a6cb98ff3ee9e61623460
-  block163 ::
+211aced2dfa0f3ae24ad19764aa09558
+  block159 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-521a62362bcdb7c9732c56ca2043bdb6
-  block164 :: [GHC.Types.Int]
+129b8e83fdf6c63b0d30af908935e567
+  block16 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Block3Spec.block102
+                   Block3Spec.block17) -}
+fa2c13fa98e86427b06ae5169379ee95
+  block160 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
-                   Block3Spec.block170
-                   Block3Spec.block165) -}
-2c300423442be073fe3104443771dbe1
-  block165 :: [GHC.Types.Int]
+                   Block3Spec.block166
+                   Block3Spec.block161) -}
+61b7af4f17dde9f447d27c66c23eea3a
+  block161 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
-                   Block3Spec.block139
-                   Block3Spec.block166) -}
-21c8dd78b53952785e462528078aaaa0
-  block166 :: [GHC.Types.Int]
+                   Block3Spec.block135
+                   Block3Spec.block162) -}
+1d45c1c27c96cd3b2b2656b688fa0dc1
+  block162 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
-                   Block3Spec.block169
-                   Block3Spec.block167) -}
-190cf8386e4fd85e1d3d87f2e514f9cd
-  block167 :: [GHC.Types.Int]
+                   Block3Spec.block165
+                   Block3Spec.block163) -}
+ec2c74d8a18a8cddb74cc6fb27b164c3
+  block163 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
-                   Block3Spec.block168
+                   Block3Spec.block164
                    (GHC.Types.[] @ GHC.Types.Int)) -}
-54829e59a24c0d5359672c5579c5b812
-  block168 :: GHC.Types.Int
+2120c4b0f201aa698ad545683cb7296a
+  block164 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
-31a3b08dc5e0fffc5ec0896362d2c0d9
-  block169 :: GHC.Types.Int
+3e2a1f2cd2f87cf824835c8e0d16c5e7
+  block165 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
-b0bfcb7a475d15c82268c4d39d1741ea
+7e329c8973f44207765bc18ef8167f40
+  block166 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+6c32e965093bd91de3507e89af4ebe58
+  block167 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block168) -}
+dc829cd15644fd95ba7c56eab8efc4fd
+  block168 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ok 2"#) -}
+dcd2227e17d3b9dfdb91cb047066e276
+  block169 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Block3Spec.block174
+                   Block3Spec.block170
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
+33f4bebd0a9ebca6d9bb567e27f009bb
   block17 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block105
+                   Block3Spec.block93
                    Block3Spec.block18) -}
-8332423de9b178c93163b07ae8ec93dd
-  block170 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
-608dd1caf1db95976a538ae4a367ba48
-  block171 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block172) -}
-f4a0b142179d82e696d407cf609a4cf2
-  block172 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("ok 2"#) -}
-ea945b25d445a744626a7ca92f02ce1d
-  block173 :: Test.Tasty.Core.TestTree
-  {- Unfolding: (Test.Tasty.Core.SingleTest
-                   @ Test.Tasty.HUnit.TestCase
-                   Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block178
-                   Block3Spec.block174
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0]
-                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-0bbc0cc1ae8f5f7b6e608e89907330f9
-  block174 ::
+3fd1f504815ebfb9f4dd80920f0f4341
+  block170 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case GHC.Base.eqString
-                        Block3Spec.block176
-                        Block3Spec.block176 of wild {
+                        Block3Spec.block172
+                        Block3Spec.block172 of wild {
                    GHC.Types.False
-                   -> case Block3Spec.block175 s
+                   -> case Block3Spec.block171 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Types.True -> (# s, GHC.Types.[] @ GHC.Types.Char #) }) -}
-4b6cb6f2eec121c71e4bf28d129e4074
-  block175 ::
+83fc97060a8c19a9cebfc015309db584
+  block171 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-b36cc46ea42219641af1fd730f28763d
+e696ca8bd4235433af14d0ed2f8cb956
+  block172 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block173) -}
+add3ba9935433a4f0fbc698feb8b4e1d
+  block173 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("kek"#) -}
+01a0278e112cf4639966e4757217c3f3
+  block174 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block175) -}
+0887fb42418e35e0817f052a1fa5f1b2
+  block175 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ok 1"#) -}
+35b6c637e56a264ed7d5aedc69fddcba
   block176 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block177) -}
-510ecd42ca498d1287763d3adaa25977
+21a5b79531a10f8bfea969fd5b420a87
   block177 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("kek"#) -}
-852d5041cb26e51a1e243a296cb11afa
+  {- HasNoCafRefs, Unfolding: ("Test parsers and combinators"#) -}
+269e72ba94a25a60a7a85d6240326416
   block178 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block179) -}
-ce9103072f43c4a63863734b9a408335
+b12abcbcc1856d4bed68f0b04dcbb88f
   block179 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("ok 1"#) -}
-bd1614c688c76f65d50bfcaf52f28261
+  {- HasNoCafRefs, Unfolding: ("Block3"#) -}
+50d365fe1c4e695b2f5b7ef8b487d53f
   block18 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block94
+                   Block3Spec.block87
                    Block3Spec.block19) -}
-bb848b20f45eb5518f4371e190a5e987
-  block180 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block181) -}
-fb1efc7e38726ca3a86ad5243e5637a7
-  block181 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Test parsers and combinators"#) -}
-2cf3d2c9a3dba655c85b480662c38c8e
-  block182 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block183) -}
-e4e77a189894cd14a85007dc1e7c201e
-  block183 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Block3"#) -}
-013de71b84779c959f24b80e54a25f34
+a76b50961800ae8f7c67265193359575
   block19 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block88
+                   Block3Spec.block79
                    Block3Spec.block20) -}
-2d13c20776c710fc3e328b8d633b59c3
+08c5e76124c14a1cf7a4a890a1171600
   block2 :: Test.Tasty.Core.TestTree
   {- Strictness: m2,
      Unfolding: (Test.Tasty.Core.TestGroup
-                   Block3Spec.block180
+                   Block3Spec.block176
                    Block3Spec.block4) -}
-75716b44ed352bf465e5681fb794af4f
+51912838a45826c03a4468cc21957442
   block20 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block80
+                   Block3Spec.block73
                    Block3Spec.block21) -}
-8d607762d24780b9eed16e00d4c1f030
+6a69cd9e1c0d565300423bed93bf72d1
   block21 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block74
+                   Block3Spec.block67
                    Block3Spec.block22) -}
-d6fe097d8d56eace8873ab26e733317c
+7def36fcb13e696379c6744868a739ed
   block22 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block68
+                   Block3Spec.block62
                    Block3Spec.block23) -}
-9c474de1ff746378b4de7e2a96d5d9b1
+eeb24310aa679e1568d6aaa1e8947462
   block23 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block63
+                   Block3Spec.block52
                    Block3Spec.block24) -}
-d2305910eb5d62f48a6ad5ec1c5f1df2
+fae029d3fc3d52689397af46e96534d1
   block24 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block53
+                   Block3Spec.block44
                    Block3Spec.block25) -}
-af8e92e4092ace5cf4e44cf617f6ad70
+8463a129147e13fcba80e87110b2e5ce
   block25 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block45
+                   Block3Spec.block36
                    Block3Spec.block26) -}
-272e04db66f5cb2c6f376012378c3063
+e1448728f887e0507703e446b6105c9c
   block26 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block37
-                   Block3Spec.block27) -}
-9873939f4e69259a0ebb17c73d04a928
-  block27 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block28
+                   Block3Spec.block27
                    (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
-faa157ffcd876fce83e70e5b17e06d1b
-  block28 :: Test.Tasty.Core.TestTree
+3a7db2b3a9b167001646d7a7af84672f
+  block27 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block35
-                   Block3Spec.block29
+                   Block3Spec.block34
+                   Block3Spec.block28
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-70309da4403e42af5014e60b365d96d5
-  block29 ::
+54d0a0232635837447786fc99609dc45
+  block28 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3.psp3 Block3.psp2 Block3Spec.block31 of wild {
+                 case Block3.psp3 Block3.psp2 Block3Spec.block30 of wild {
                    GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case Block3Spec.block30 s wild
+                   -> case Block3Spec.block29 s wild
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {} }) -}
-33eeacd64949e6a6594652b9f6cc2bf4
+c0eeab075089309e8bf216eaabc51b07
+  block29 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+51183cf3306256f8daa9ba5a3289500e
   block3 :: Test.Tasty.Core.TestTree
   {- Strictness: m2,
      Unfolding: (Test.Tasty.Core.TestGroup
-                   Block3Spec.block182
+                   Block3Spec.block178
                    Block3Spec.block1) -}
-80c3e5014bf7ffadea795cba3bcf40d0
-  block30 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 2, Strictness: <B,U><B,U>x -}
-0827d67c64f3c88c29c844a5c8bce855
-  block31 :: [GHC.Types.Char]
+e661522f9b7d894f6e328c250cf0fb35
+  block30 :: [GHC.Types.Char]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
-                   Block3Spec.block34
-                   Block3Spec.block32) -}
-435da5980c7dd30dbb3fdd9f7c6c85e1
-  block32 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block33) -}
-375d90f935afd14ed4213536dd7428dc
-  block33 :: GHC.Prim.Addr#
+                   Block3Spec.block33
+                   Block3Spec.block31) -}
+830ed912d972c87fd5fafd6260023fe9
+  block31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block32) -}
+3939b5d6a4b7047fc63e740bcd640b08
+  block32 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("())() a"#) -}
-b4aaf6b07938fb73cec392b7d5dd8c25
-  block34 :: GHC.Types.Char
+ccfbd48e6ca749de2911f648ac2e3ad7
+  block33 :: GHC.Types.Char
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '('#) -}
-3d45edd496fcd5ef419c921593343384
-  block35 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block36) -}
-0a4b045f325d8e43bb539935fc77b283
-  block36 :: GHC.Prim.Addr#
+6b88490e2c19b7f522777c5b58b25252
+  block34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block35) -}
+49cc580226b29ac7e9603fec00efeadb
+  block35 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("psp '(())() a' == Nothing"#) -}
-8379848cbbbd7eeb66de001f7d896723
-  block37 :: Test.Tasty.Core.TestTree
+024b4a52809691ad6a7f4d3eec1836f7
+  block36 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block43
-                   Block3Spec.block38
+                   Block3Spec.block42
+                   Block3Spec.block37
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-a88c73806a200c9c0c385bae6fd79d2e
-  block38 ::
+dd9f0eb1898489fa93b48aa521911532
+  block37 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3.psp3 Block3.psp2 Block3Spec.block40 of wild {
+                 case Block3.psp3 Block3.psp2 Block3Spec.block39 of wild {
                    GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case Block3Spec.block39 s wild
+                   -> case Block3Spec.block38 s wild
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {} }) -}
-8a9e036fa81e76cdb3eb0a812459d8a8
-  block39 ::
+b24b05825c29bf5818f0785ee2231a1d
+  block38 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <B,U><B,U>x -}
-1b71e0134e6260a99343da1d4dcdd9b7
+f11ed74010fa94a7930c22b5f4135477
+  block39 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Block3Spec.block33
+                   Block3Spec.block40) -}
+f674d8428839ca22b7c4375a1f49118b
   block3_w1 :: GHC.Maybe.Maybe (GHC.Types.Int, [GHC.Types.Char])
   {- Unfolding: (Block3.signedInt1
-                   (GHC.CString.unpackCString# Block3Spec.block77)) -}
-e653e3f4e9e2ab1b5732848107d801af
+                   (GHC.CString.unpackCString# Block3Spec.block76)) -}
+2bf968de93bb4cf67504705ec10e4cbf
   block3_w2 :: GHC.Maybe.Maybe (GHC.Base.String, [GHC.Types.Char])
-  {- Unfolding: (Block3.psp3 Block3.psp2 Block3Spec.block58) -}
-4ca7ead0d64e39f7b99d3e09553f1bcc
+  {- Unfolding: (Block3.psp3 Block3.psp2 Block3Spec.block57) -}
+281e4051276305cda29b90f69c871095
   block3_w3 :: GHC.Maybe.Maybe (GHC.Types.Int, [GHC.Types.Char])
   {- Unfolding: (Block3.signedInt1
-                   (GHC.CString.unpackCString# Block3Spec.block85)) -}
-3b6db639cf3386b4382bd5ea3f2316ff
+                   (GHC.CString.unpackCString# Block3Spec.block84)) -}
+7b453cb5da7cce4087f22de74df0510d
   block3_w4 :: GHC.Maybe.Maybe (GHC.Types.Int, [GHC.Types.Char])
   {- Unfolding: (Block3.signedInt1
-                   (GHC.CString.unpackCString# Block3Spec.block91)) -}
-d31655367278925609489d5f8a880f39
+                   (GHC.CString.unpackCString# Block3Spec.block90)) -}
+c7918319fb829094e7b74644a83e82e7
   block3_w5 :: GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
   {- Unfolding: (Block3.stream1
                    @ GHC.Types.Char
                    GHC.Classes.$fEqChar
-                   Block3Spec.block98
-                   Block3Spec.block101) -}
-9c21d736d5290627868c6e047ec1259a
-  block3_w6 :: GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
-  {- Unfolding: (Block3.stream1
-                   @ GHC.Types.Char
-                   GHC.Classes.$fEqChar
-                   (GHC.CString.unpackCString# Block3Spec.block99)
-                   Block3Spec.block101) -}
-de46e517c0cd1ccda875ad2fc9660023
+                   (GHC.CString.unpackCString# Block3Spec.block107)
+                   Block3Spec.block96) -}
+824e1c3f2458fb3449a91f25a5eafcb5
   block4 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block173
+                   Block3Spec.block169
                    Block3Spec.block5) -}
-dfe102dc0e7fe2cdbbc06b83db299c10
+89172b13f42fcb9574951c4b6417f608
   block40 :: [GHC.Types.Char]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
-                   Block3Spec.block34
-                   Block3Spec.block41) -}
-10275c98dfe1334b87537bfbfb5968bc
-  block41 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block42) -}
-c95457884e8b47da2c789ed4dda024ce
-  block42 :: GHC.Prim.Addr#
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block41) -}
+bcc657b2d6860d82cc0e30c0521c2c20
+  block41 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("())(()"#) -}
-e9e021719c6ef7c12dfc13669c7e9f50
-  block43 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block44) -}
-0e605d923d74446fa179f112c482b583
-  block44 :: GHC.Prim.Addr#
+de7f4370b8b9e09cb9f97f911e03242e
+  block42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block43) -}
+29c0c89525b1209b2b3b5623303792eb
+  block43 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("psp '(())(()' == Nothing"#) -}
-813c6b5fabbc113030f40a84703211db
-  block45 :: Test.Tasty.Core.TestTree
+f1e46e8df743f8ce53754f373337735f
+  block44 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block51
-                   Block3Spec.block46
+                   Block3Spec.block50
+                   Block3Spec.block45
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-c5d48af5070984eeb8224bdf97665f06
-  block46 ::
+1de324bbb9db3c05e7754577338f5bd3
+  block45 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3.psp3 Block3.psp2 Block3Spec.block48 of wild {
+                 case Block3.psp3 Block3.psp2 Block3Spec.block47 of wild {
                    GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case Block3Spec.block47 s wild
+                   -> case Block3Spec.block46 s wild
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {} }) -}
-c5e70c472960f429e00f09eba57d4b78
-  block47 ::
+d5a9d7bc13d364e06d84fc5cdcb1bd65
+  block46 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <B,U><B,U>x -}
-053f1b5e6f22b94cda6b18f56928487e
-  block48 :: [GHC.Types.Char]
+48d49c11e091a8f11dc322541a555084
+  block47 :: [GHC.Types.Char]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
-                   Block3Spec.block34
-                   Block3Spec.block49) -}
-9f6b865463a0a8edede138a0a87a9498
-  block49 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block50) -}
-64d50db72e004a776cad7f0516b09ddf
+                   Block3Spec.block33
+                   Block3Spec.block48) -}
+7104cb979f0552f160b4342d997756b5
+  block48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block49) -}
+db7909fc586cca5b89be0a12843656bc
+  block49 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("()))"#) -}
+8ab251306a3092ae343f3f8f2ab488e4
   block5 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block161
+                   Block3Spec.block157
                    Block3Spec.block6) -}
-23f5eeff85c4e257539225acb1524ee9
-  block50 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("()))"#) -}
-b6fe3ad32b7170495d41cd55c51c78a1
-  block51 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block52) -}
-8dd149001ad22dd8edb749b1746832f4
-  block52 :: GHC.Prim.Addr#
+80ff4d89d82355d5817d0e6d535bac54
+  block50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block51) -}
+4ecf10f1fdb48bd28afbe9f8c0d8863b
+  block51 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("psp '(()))' == Nothing"#) -}
-c43e561b6886bca9749486f624e664a7
-  block53 :: Test.Tasty.Core.TestTree
+0d1bbc0067039d41079ea12f82bf3b9d
+  block52 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block61
-                   Block3Spec.block54
+                   Block3Spec.block60
+                   Block3Spec.block53
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-c54fc4cc9b4f4d2f4e42acffdfeb9d07
-  block54 ::
+bf427f17f570cc83b1f1d5c5c30d0dc3
+  block53 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case Block3Spec.block3_w2 of wild {
                    GHC.Maybe.Nothing
-                   -> case Block3Spec.block57 s
+                   -> case Block3Spec.block56 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Maybe.Just a1
                    -> case a1 of ww3 { (,) ww4 ww5 ->
                       case GHC.Classes.$fEqModule_$s$c==
                              ww4
-                             Block3Spec.block55 of wild1 {
+                             Block3Spec.block54 of wild1 {
                         GHC.Types.False
-                        -> case Block3Spec.block57 s
+                        -> case Block3Spec.block56 s
                            ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                            of {}
                         GHC.Types.True
@@ -997,60 +946,60 @@ c54fc4cc9b4f4d2f4e42acffdfeb9d07
                                   ww5
                                   (GHC.Types.[] @ GHC.Types.Char) of wild2 {
                              GHC.Types.False
-                             -> case Block3Spec.block57 s
+                             -> case Block3Spec.block56 s
                                 ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                 of {}
                              GHC.Types.True
                              -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } }) -}
-8f62292c12d511d7e4681a465365a618
-  block55 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block56) -}
-053d8c3a11907a8e19b3301b367d079b
-  block56 :: GHC.Prim.Addr#
+2b00f711f8dfc5ee4588843a4083eb6f
+  block54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block55) -}
+4bca320a8b7ab6a12bd970770dc1ce95
+  block55 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("(())()"#) -}
-8a3fc67674caa0fff4e6656da99aa63e
-  block57 ::
+355dd0d5a12c7da03f3b6986f620a412
+  block56 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-0368d8ad46888e4893a7f4cf2f04f577
-  block58 :: [GHC.Types.Char]
+d12a1bc639c4a365e89b6d01e3a97311
+  block57 :: [GHC.Types.Char]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
-                   Block3Spec.block34
-                   Block3Spec.block59) -}
-7f87a19dbf243a85241030a788020802
-  block59 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block60) -}
-2be169d737bb95ea7fbc0bac23406629
+                   Block3Spec.block33
+                   Block3Spec.block58) -}
+e720470e9cff25221f3644fa04e48a72
+  block58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block59) -}
+a0d72c666130294df3567ceb203aeba7
+  block59 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("())()"#) -}
+85771f5f76eba6a1357bf1156e5d7bce
   block6 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block158
+                   Block3Spec.block154
                    Block3Spec.block7) -}
-9df4d2422147b3b3121aadd6373c0009
-  block60 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("())()"#) -}
-cbf5ad111f00b6a16ebe307132f13d9a
-  block61 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block62) -}
-df009c7e27e2cd919a330661c270019c
-  block62 :: GHC.Prim.Addr#
+aaf89410596940b38984f0b799ae41a7
+  block60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block61) -}
+990292ed92d93332e9c05ef8f21ad1ff
+  block61 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("psp '(())()'"#) -}
-9b4b9c24deb520954772a2ec5878f04d
-  block63 :: Test.Tasty.Core.TestTree
+9b145eb0c5ee067f41eff8317cc7a861
+  block62 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block66
-                   Block3Spec.block64
+                   Block3Spec.block65
+                   Block3Spec.block63
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-551d26a04bbf29aba9281553a52e3fe4
-  block64 ::
+2057e130d2ce37b2e376b4539d824cec
+  block63 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
@@ -1058,85 +1007,85 @@ df009c7e27e2cd919a330661c270019c
                  case Block3.signedInt1 (GHC.Types.[] @ GHC.Types.Char) of wild {
                    GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case Block3Spec.block65 s wild
+                   -> case Block3Spec.block64 s wild
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {} }) -}
-fea6d25c60dcf012d750bff0c1567bd6
-  block65 ::
+2533d727d24954c638529d13bbce3bb2
+  block64 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> GHC.Maybe.Maybe (GHC.Types.Int, [GHC.Types.Char])
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <B,U><B,U>x -}
-1d7f810a2067be7987cb5dd1211275ef
-  block66 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block67) -}
-c3339729fcbee4b6f0f20926c8e827bb
-  block67 :: GHC.Prim.Addr#
+db9eac461233621b2576167378d8c0e1
+  block65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block66) -}
+025b3c560f6c019dba2a2ef81df384a4
+  block66 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("signedInt ''"#) -}
-46fbe663b69c4b32ad2b84aefe17ef12
-  block68 :: Test.Tasty.Core.TestTree
+c4f639286d276d4561a12fc9eda30d82
+  block67 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block72
-                   Block3Spec.block69
+                   Block3Spec.block71
+                   Block3Spec.block68
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-9932b630bb0046189aaa2f49774337de
-  block69 ::
+e3d147551969ab4bf111f244f761f6d0
+  block68 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case Block3.signedInt1
-                        (GHC.CString.unpackCString# Block3Spec.block71) of wild {
+                        (GHC.CString.unpackCString# Block3Spec.block70) of wild {
                    GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case Block3Spec.block70 s wild
+                   -> case Block3Spec.block69 s wild
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {} }) -}
-88962437d5d74aa2068ea1fc6336772f
-  block7 :: [Test.Tasty.Core.TestTree]
-  {- Strictness: m2,
-     Unfolding: (GHC.Types.:
-                   @ Test.Tasty.Core.TestTree
-                   Block3Spec.block153
-                   Block3Spec.block8) -}
-3ae80034fd0541fb3e314a1c3d842263
-  block70 ::
+7f0f931f91be300cdd4b782adf9beeac
+  block69 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> GHC.Maybe.Maybe (GHC.Types.Int, [GHC.Types.Char])
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <B,U><B,U>x -}
-d154e77b485c9ed0ba08a4f359b34444
-  block71 :: GHC.Prim.Addr#
+342a8672c5c878227b6149b90bf3c871
+  block7 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Block3Spec.block149
+                   Block3Spec.block8) -}
+a7ebcdbb7cc3edc89abcce78634325a2
+  block70 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("nope"#) -}
-9dd3fe70863ce65140edd8247a69be65
-  block72 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block73) -}
-043fb67124ea3ce6f3f24c9293e47ea7
-  block73 :: GHC.Prim.Addr#
+58bea4d8e956ffd78cf10b596bb298a1
+  block71 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block72) -}
+ebde9287936dd547568345d75a5e0d53
+  block72 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("signedInt 'nope'"#) -}
-bb6663274b9008a1ae742acec3849087
-  block74 :: Test.Tasty.Core.TestTree
+4584d42bc30b4a88d7a3199f1accfa7b
+  block73 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block78
-                   Block3Spec.block75
+                   Block3Spec.block77
+                   Block3Spec.block74
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-3454764e3279c649221fb865b38983d2
-  block75 ::
+737877884eb0b9c9e92374ee7d10bc9b
+  block74 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case Block3Spec.block3_w1 of wild {
                    GHC.Maybe.Nothing
-                   -> case Block3Spec.block76 s
+                   -> case Block3Spec.block75 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Maybe.Just a1
@@ -1144,7 +1093,7 @@ bb6663274b9008a1ae742acec3849087
                       case ww4 of wild1 { GHC.Types.I# x ->
                       case x of wild2 {
                         DEFAULT
-                        -> case Block3Spec.block76 s
+                        -> case Block3Spec.block75 s
                            ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                            of {}
                         -1234#
@@ -1152,51 +1101,51 @@ bb6663274b9008a1ae742acec3849087
                                   ww5
                                   (GHC.Types.[] @ GHC.Types.Char) of wild3 {
                              GHC.Types.False
-                             -> case Block3Spec.block76 s
+                             -> case Block3Spec.block75 s
                                 ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                 of {}
                              GHC.Types.True
                              -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } } }) -}
-b42b238e8517e006be44294f69f487b7
-  block76 ::
+4a2eefe68a2a532087a796831db3478b
+  block75 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-5b7445284cfde3106a8d53c6ab18e8b7
-  block77 :: GHC.Prim.Addr#
+340a481490ca709c5ee9cec276d83bb1
+  block76 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("-1234"#) -}
-d423a702c2eeec7945737047ec5517a7
-  block78 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block79) -}
-d979a3b0e855330c173f0eb54094a1ce
-  block79 :: GHC.Prim.Addr#
+72199af9eedf5c6473ea68a4932ad029
+  block77 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block78) -}
+819ea27b24a49280b8d2922441aef6c2
+  block78 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("signedInt '-1234'"#) -}
-a6d92a0a0b8745bb241b11daf543e99b
+f8641887ec7119a92fa2a5adaa73e40c
+  block79 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Block3Spec.block85
+                   Block3Spec.block80
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
+37b73e0f84ca0745fa379e6961b3bcae
   block8 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block148
+                   Block3Spec.block144
                    Block3Spec.block9) -}
-5d3886724bff591db1c7e0eed41543bb
-  block80 :: Test.Tasty.Core.TestTree
-  {- Unfolding: (Test.Tasty.Core.SingleTest
-                   @ Test.Tasty.HUnit.TestCase
-                   Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block86
-                   Block3Spec.block81
-                     `cast`
-                   (Sym (GHC.Types.N:IO[0]
-                             <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-f26c4d554bf96aed2969d919e202c449
-  block81 ::
+88ce212983c66a8931aef41895493e2a
+  block80 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case Block3Spec.block3_w3 of wild {
                    GHC.Maybe.Nothing
-                   -> case Block3Spec.block84 s
+                   -> case Block3Spec.block83 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Maybe.Just a1
@@ -1204,57 +1153,57 @@ f26c4d554bf96aed2969d919e202c449
                       case ww4 of wild1 { GHC.Types.I# x ->
                       case x of wild2 {
                         DEFAULT
-                        -> case Block3Spec.block84 s
+                        -> case Block3Spec.block83 s
                            ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                            of {}
                         1234#
-                        -> case GHC.Base.eqString ww5 Block3Spec.block82 of wild3 {
+                        -> case GHC.Base.eqString ww5 Block3Spec.block81 of wild3 {
                              GHC.Types.False
-                             -> case Block3Spec.block84 s
+                             -> case Block3Spec.block83 s
                                 ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                 of {}
                              GHC.Types.True
                              -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } } }) -}
-33a3ddd0b8b32e8fd5e2736b32a889a4
-  block82 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block83) -}
-9062329fc747574ebbf0f4f75507d761
-  block83 :: GHC.Prim.Addr#
+14f4da46c6d7b0cec325fd29024fd79f
+  block81 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block82) -}
+0fa453f4d86c494ab1cc3d4bfd8666cf
+  block82 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (" a"#) -}
-36de0ff7f1de613c4ec2eeb388505c28
-  block84 ::
+339c420d2aa7858d6ad0742def5a107e
+  block83 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <B,U>x -}
-82d5dc9eaf7d9ab4967ae20105a7966e
-  block85 :: GHC.Prim.Addr#
+1d2050c6f2fcdcd5204941ee08a6e0e8
+  block84 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("1234 a"#) -}
-012bec14f0e66c703d43df3bd97319d0
-  block86 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block87) -}
-c9b56dcb3760ea4f36d2fb063dafa426
-  block87 :: GHC.Prim.Addr#
+c048c32a3f9e80acdabc99c3bba0dcfd
+  block85 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block86) -}
+5094c983dab1aedcf8d96f7e798a46a5
+  block86 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("signedInt '1234 a' == Just (1234. ' a')"#) -}
-68d500a6f1b524f541692ddda964dc66
-  block88 :: Test.Tasty.Core.TestTree
+d0b4c2f7d47aa90bbc0bb941d90c5c9e
+  block87 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block92
-                   Block3Spec.block89
+                   Block3Spec.block91
+                   Block3Spec.block88
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-dd0e0c26cee072408e726682c94df1a6
-  block89 ::
+8b1870f765d19ecf5e232de259396d7c
+  block88 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case Block3Spec.block3_w4 of wild {
                    GHC.Maybe.Nothing
-                   -> case Block3Spec.block90 s
+                   -> case Block3Spec.block89 s
                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                       of {}
                    GHC.Maybe.Just a1
@@ -1262,7 +1211,7 @@ dd0e0c26cee072408e726682c94df1a6
                       case ww4 of wild1 { GHC.Types.I# x ->
                       case x of wild2 {
                         DEFAULT
-                        -> case Block3Spec.block90 s
+                        -> case Block3Spec.block89 s
                            ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                            of {}
                         1234#
@@ -1270,82 +1219,76 @@ dd0e0c26cee072408e726682c94df1a6
                                   ww5
                                   (GHC.Types.[] @ GHC.Types.Char) of wild3 {
                              GHC.Types.False
-                             -> case Block3Spec.block90 s
+                             -> case Block3Spec.block89 s
                                 ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
                                 of {}
                              GHC.Types.True
                              -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } } }) -}
-6c4a93e209252b04120848f714d5a5b0
+7d5385894bb3722de371b88c3b24b319
+  block89 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x -}
+4d84f0d56f030a1d4e2f4ad91b5970da
   block9 :: [Test.Tasty.Core.TestTree]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.Tasty.Core.TestTree
-                   Block3Spec.block145
+                   Block3Spec.block141
                    Block3Spec.block10) -}
-facae809ba6407c2d5845218b44a9d39
-  block90 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <B,U>x -}
-34a4c4168c4bea09aa728eaf50dc15ad
-  block91 :: GHC.Prim.Addr#
+fd6e3a4b9ce9cf0ff08e699ebeb8f489
+  block90 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("+1234"#) -}
-d32ebecfb4748cb7594ce1ace1467980
-  block92 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block93) -}
-32ce7a52b70b461f2ed9bda04b7d9973
-  block93 :: GHC.Prim.Addr#
+e688c1b1acab2f80821770cc2b43c4bc
+  block91 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block92) -}
+3fd4d7cc26fa62580ff08e629408a290
+  block92 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("signedInt '+1234'"#) -}
-94a7481403cc67161a1b2d529c620816
-  block94 :: Test.Tasty.Core.TestTree
+87a4ef283277fed76b84f4d056c61289
+  block93 :: Test.Tasty.Core.TestTree
   {- Unfolding: (Test.Tasty.Core.SingleTest
                    @ Test.Tasty.HUnit.TestCase
                    Test.Tasty.HUnit.$fIsTestTestCase
-                   Block3Spec.block103
-                   Block3Spec.block95
+                   Block3Spec.block100
+                   Block3Spec.block94
                      `cast`
                    (Sym (GHC.Types.N:IO[0]
                              <[GHC.Types.Char]>_R) ; Sym (Test.Tasty.HUnit.N:TestCase[0]))) -}
-2a0cf95ca4c6c912f79c701045045969
-  block95 ::
+5799610a1cd6735ee33f2a35a7628e0a
+  block94 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Block3Spec.block3_w5 of wild {
-                   GHC.Maybe.Nothing
-                   -> case Block3Spec.block100 s
-                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
-                      of {}
+                 case Block3.stream1
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Block3Spec.block98
+                        Block3Spec.block96 of wild {
+                   GHC.Maybe.Nothing -> (# s, GHC.Types.[] @ GHC.Types.Char #)
                    GHC.Maybe.Just a1
-                   -> case a1 of ww3 { (,) ww4 ww5 ->
-                      case GHC.Classes.$fEqModule_$s$c==
-                             ww4
-                             Block3Spec.block98 of wild1 {
-                        GHC.Types.False
-                        -> case Block3Spec.block100 s
-                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
-                           of {}
-                        GHC.Types.True
-                        -> case GHC.Base.eqString ww5 Block3Spec.block96 of wild2 {
-                             GHC.Types.False
-                             -> case Block3Spec.block100 s
-                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
-                                of {}
-                             GHC.Types.True
-                             -> (# s, GHC.Types.[] @ GHC.Types.Char #) } } } }) -}
-fb25067e2d5a7a67d01180231d7fad30
+                   -> case Block3Spec.block95 s wild
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                      of {} }) -}
+17c2e340d0ab3689f90f40820ade8797
+  block95 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> GHC.Maybe.Maybe ([GHC.Types.Char], [GHC.Types.Char])
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+c8d9981c3ac5b24abb8ba45bef415324
   block96 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block97) -}
-ade12772330e2bf3d7eb8708433eab27
+5271fb8cb6710a4b32cc20cf9b62e1f7
   block97 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: (" you"#) -}
-a8cbc742272e97f52f6fe86a1f82a240
+  {- HasNoCafRefs, Unfolding: ("Freak you"#) -}
+728f518dffc4937cac0657f35a296d3d
   block98 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Block3Spec.block99) -}
-3a3e327b0ecb0cf016781c7502ab86d0
+328f89a4f30cdaa2971702e3efb393f0
   block99 :: GHC.Prim.Addr#
-  {- HasNoCafRefs, Unfolding: ("Freak"#) -}
+  {- HasNoCafRefs, Unfolding: ("reak"#) -}
 trusted: none
 require own pkg trusted: False
 module header:
