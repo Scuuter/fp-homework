@@ -144,9 +144,9 @@ parseQuote :: Parser Quote
 parseQuote = choice
   [
     pure . Str <$> singleQuote
+  , doubleQuote
   , pure . Ref <$> parseRef
   , pure . Str <$> nonEmpty word
-  , doubleQuote
   ]
 
 parseRef :: Parser Ref
@@ -159,7 +159,7 @@ singleQuote :: Parser String
 singleQuote = char '\'' *> takeWhileP Nothing (liftA2 (&&) (liftA2 (||) isPrint isSpace) (/='\'')) <* char '\''
 
 doubleQuote :: Parser Quote
-doubleQuote = char '\"' *> many (Str <$> liftA3 (\a b c -> a ++ b ++ c) allSpaces (nonEmpty word) allSpaces <|> Ref <$> parseRef) <* char '\"'
+doubleQuote = char '\"' *> many (Str <$> nonEmpty allSpaces <|> Ref <$> parseRef <|> Str <$> nonEmpty word) <* char '\"'
 
 parseEnd :: Parser Command
 parseEnd = do

@@ -2,8 +2,9 @@ a='aaa $1
 bb'
 b=csf
 
-
-e="  abacaba   $b \$f \"
+kkk='ad'df" $b"
+echo $kkk
+e="  abacaba   $b \$f \"'fsg'
 kek"
 c=$1
 d=$b
