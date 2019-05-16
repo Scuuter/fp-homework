@@ -1,0 +1,18 @@
+Configuring microstache-1.0.1.1...
+Preprocessing library for microstache-1.0.1.1..
+Building library for microstache-1.0.1.1..
+[1 of 5] Compiling Text.Microstache.Type ( src/Text/Microstache/Type.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Microstache/Type.o )
+
+[;1msrc/Text/Microstache/Type.hs:38:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m38 |[0m[0m [;1m[35mimport Data.Semigroup[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[2 of 5] Compiling Text.Microstache.Render ( src/Text/Microstache/Render.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Microstache/Render.o )
+[3 of 5] Compiling Text.Microstache.Parser ( src/Text/Microstache/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Microstache/Parser.o )
+[4 of 5] Compiling Text.Microstache.Compile ( src/Text/Microstache/Compile.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Microstache/Compile.o )
+[5 of 5] Compiling Text.Microstache ( src/Text/Microstache.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Microstache.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/microstache-1.0.1.1-21DrdvqZhVD7aoOFEMehgA
+Registering library for microstache-1.0.1.1..

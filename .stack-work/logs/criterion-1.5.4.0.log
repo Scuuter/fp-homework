@@ -1,0 +1,24 @@
+Configuring criterion-1.5.4.0...
+Preprocessing library for criterion-1.5.4.0..
+Building library for criterion-1.5.4.0..
+[ 1 of 12] Compiling Criterion.Types  ( Criterion/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Types.o )
+[ 2 of 12] Compiling Criterion.Monad.Internal ( Criterion/Monad/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Monad/Internal.o )
+[ 3 of 12] Compiling Criterion.Monad  ( Criterion/Monad.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Monad.o )
+[ 4 of 12] Compiling Criterion.IO.Printf ( Criterion/IO/Printf.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/IO/Printf.o )
+[ 5 of 12] Compiling Criterion.Analysis ( Criterion/Analysis.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Analysis.o )
+[ 6 of 12] Compiling Paths_criterion  ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/Paths_criterion.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Paths_criterion.o )
+[ 7 of 12] Compiling Criterion.Report ( Criterion/Report.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Report.o )
+[ 8 of 12] Compiling Criterion.Main.Options ( Criterion/Main/Options.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Main/Options.o )
+[ 9 of 12] Compiling Criterion.IO     ( Criterion/IO.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/IO.o )
+[10 of 12] Compiling Criterion.Internal ( Criterion/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Internal.o )
+[11 of 12] Compiling Criterion.Main   ( Criterion/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Main.o )
+[12 of 12] Compiling Criterion        ( Criterion.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion.o )
+Preprocessing executable 'criterion-report' for criterion-1.5.4.0..
+Building executable 'criterion-report' for criterion-1.5.4.0..
+[1 of 3] Compiling Paths_criterion  ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/criterion-report/autogen/Paths_criterion.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/criterion-report/criterion-report-tmp/Paths_criterion.o )
+[2 of 3] Compiling Options          ( app/Options.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/criterion-report/criterion-report-tmp/Options.o )
+[3 of 3] Compiling Main             ( app/Report.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/criterion-report/criterion-report-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/criterion-report/criterion-report ...
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/criterion-1.5.4.0-4RvXYPEdrdrh9RO1uAGGT
+Installing executable criterion-report in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/bin
+Registering library for criterion-1.5.4.0..

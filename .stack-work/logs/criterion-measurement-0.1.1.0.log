@@ -1,0 +1,8 @@
+Configuring criterion-measurement-0.1.1.0...
+Preprocessing library for criterion-measurement-0.1.1.0..
+Building library for criterion-measurement-0.1.1.0..
+[1 of 3] Compiling Criterion.Measurement.Types.Internal ( src/Criterion/Measurement/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Measurement/Types/Internal.o )
+[2 of 3] Compiling Criterion.Measurement.Types ( src/Criterion/Measurement/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Measurement/Types.o )
+[3 of 3] Compiling Criterion.Measurement ( src/Criterion/Measurement.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Criterion/Measurement.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/criterion-measurement-0.1.1.0-2nwZbxrXwdo6E3xdogRMFI
+Registering library for criterion-measurement-0.1.1.0..

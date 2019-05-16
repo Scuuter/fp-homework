@@ -22,6 +22,17 @@
   (major1) == 4 && (major2) == 12 && (minor) <= 0)
 #endif /* MIN_VERSION_base */
 
+/* package parallel-3.2.2.0 */
+#ifndef VERSION_parallel
+#define VERSION_parallel "3.2.2.0"
+#endif /* VERSION_parallel */
+#ifndef MIN_VERSION_parallel
+#define MIN_VERSION_parallel(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 2)
+#endif /* MIN_VERSION_parallel */
+
 /* tool alex-3.2.1 */
 #ifndef TOOL_VERSION_alex
 #define TOOL_VERSION_alex "3.2.1"
@@ -144,10 +155,10 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ"
+#define CURRENT_PACKAGE_KEY "hw4-0.1.0.0-3J8NcldCZRf6n10EzhVFJx"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ"
+#define CURRENT_COMPONENT_ID "hw4-0.1.0.0-3J8NcldCZRf6n10EzhVFJx"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

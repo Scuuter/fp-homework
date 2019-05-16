@@ -1,0 +1,74 @@
+Configuring statistics-0.15.0.0...
+Preprocessing library for statistics-0.15.0.0..
+Building library for statistics-0.15.0.0..
+[ 1 of 46] Compiling Statistics.Correlation.Kendall ( Statistics/Correlation/Kendall.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Correlation/Kendall.o )
+[ 2 of 46] Compiling Statistics.Distribution.Poisson.Internal ( Statistics/Distribution/Poisson/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Poisson/Internal.o )
+[ 3 of 46] Compiling Statistics.Function ( Statistics/Function.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Function.o )
+[ 4 of 46] Compiling Statistics.Internal ( Statistics/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Internal.o )
+[ 5 of 46] Compiling Statistics.Quantile ( Statistics/Quantile.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Quantile.o )
+
+[;1mStatistics/Quantile.hs:58:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Functor’ is redundant
+      except perhaps to import instances from ‘Data.Functor’
+    To import instances alone, use: import Data.Functor()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m58 |[0m[0m [;1m[35mimport           Data.Functor[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 6 of 46] Compiling Statistics.Sample.Histogram ( Statistics/Sample/Histogram.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/Histogram.o )
+
+[;1mStatistics/Sample/Histogram.hs:76:15: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for ‘bins’ shadows the existing binding
+      bound at Statistics/Sample/Histogram.hs:68:12[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m76 |[0m[0m        write' [;1m[35mbins[0m[0m b !e = GM.write bins b e
+[;1m[34m   |[0m[0m[;1m[35m               ^^^^[0m[0m
+[0m[0m[0m[ 7 of 46] Compiling Statistics.Sample.Internal ( Statistics/Sample/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/Internal.o )
+[ 8 of 46] Compiling Statistics.Distribution ( Statistics/Distribution.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution.o )
+[ 9 of 46] Compiling Statistics.Distribution.Uniform ( Statistics/Distribution/Uniform.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Uniform.o )
+[10 of 46] Compiling Statistics.Distribution.Transform ( Statistics/Distribution/Transform.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Transform.o )
+[11 of 46] Compiling Statistics.Distribution.StudentT ( Statistics/Distribution/StudentT.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/StudentT.o )
+[12 of 46] Compiling Statistics.Distribution.Poisson ( Statistics/Distribution/Poisson.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Poisson.o )
+[13 of 46] Compiling Statistics.Distribution.Hypergeometric ( Statistics/Distribution/Hypergeometric.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Hypergeometric.o )
+[14 of 46] Compiling Statistics.Distribution.Geometric ( Statistics/Distribution/Geometric.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Geometric.o )
+[15 of 46] Compiling Statistics.Distribution.Gamma ( Statistics/Distribution/Gamma.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Gamma.o )
+[16 of 46] Compiling Statistics.Distribution.FDistribution ( Statistics/Distribution/FDistribution.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/FDistribution.o )
+[17 of 46] Compiling Statistics.Distribution.DiscreteUniform ( Statistics/Distribution/DiscreteUniform.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/DiscreteUniform.o )
+[18 of 46] Compiling Statistics.Distribution.ChiSquared ( Statistics/Distribution/ChiSquared.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/ChiSquared.o )
+[19 of 46] Compiling Statistics.Distribution.CauchyLorentz ( Statistics/Distribution/CauchyLorentz.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/CauchyLorentz.o )
+[20 of 46] Compiling Statistics.Distribution.Binomial ( Statistics/Distribution/Binomial.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Binomial.o )
+[21 of 46] Compiling Statistics.Distribution.Beta ( Statistics/Distribution/Beta.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Beta.o )
+[22 of 46] Compiling Statistics.Sample.Powers ( Statistics/Sample/Powers.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/Powers.o )
+[23 of 46] Compiling Statistics.Test.Internal ( Statistics/Test/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/Internal.o )
+[24 of 46] Compiling Statistics.Transform ( Statistics/Transform.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Transform.o )
+[25 of 46] Compiling Statistics.Sample.KernelDensity ( Statistics/Sample/KernelDensity.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/KernelDensity.o )
+[26 of 46] Compiling Statistics.Types.Internal ( Statistics/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Types/Internal.o )
+[27 of 46] Compiling Statistics.Sample ( Statistics/Sample.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample.o )
+[28 of 46] Compiling Statistics.Sample.Normalize ( Statistics/Sample/Normalize.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/Normalize.o )
+[29 of 46] Compiling Statistics.Sample.KernelDensity.Simple ( Statistics/Sample/KernelDensity/Simple.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Sample/KernelDensity/Simple.o )
+[30 of 46] Compiling Statistics.Distribution.Normal ( Statistics/Distribution/Normal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Normal.o )
+[31 of 46] Compiling Statistics.Types ( Statistics/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Types.o )
+[32 of 46] Compiling Statistics.Test.Types ( Statistics/Test/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/Types.o )
+[33 of 46] Compiling Statistics.Test.StudentT ( Statistics/Test/StudentT.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/StudentT.o )
+[34 of 46] Compiling Statistics.Test.KruskalWallis ( Statistics/Test/KruskalWallis.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/KruskalWallis.o )
+[35 of 46] Compiling Statistics.Test.KolmogorovSmirnov ( Statistics/Test/KolmogorovSmirnov.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/KolmogorovSmirnov.o )
+[36 of 46] Compiling Statistics.Test.ChiSquared ( Statistics/Test/ChiSquared.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/ChiSquared.o )
+[37 of 46] Compiling Statistics.Resampling ( Statistics/Resampling.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Resampling.o )
+
+[;1mStatistics/Resampling.hs:39:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m39 |[0m[0m [;1m[35mimport Control.Applicative[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[38 of 46] Compiling Statistics.Regression ( Statistics/Regression.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Regression.o )
+[39 of 46] Compiling Statistics.ConfidenceInt ( Statistics/ConfidenceInt.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/ConfidenceInt.o )
+[40 of 46] Compiling Statistics.Test.WilcoxonT ( Statistics/Test/WilcoxonT.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/WilcoxonT.o )
+[41 of 46] Compiling Statistics.Test.MannWhitneyU ( Statistics/Test/MannWhitneyU.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Test/MannWhitneyU.o )
+[42 of 46] Compiling Statistics.Resampling.Bootstrap ( Statistics/Resampling/Bootstrap.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Resampling/Bootstrap.o )
+[43 of 46] Compiling Statistics.Distribution.Laplace ( Statistics/Distribution/Laplace.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Laplace.o )
+[44 of 46] Compiling Statistics.Distribution.Exponential ( Statistics/Distribution/Exponential.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Distribution/Exponential.o )
+[45 of 46] Compiling Statistics.Correlation ( Statistics/Correlation.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Correlation.o )
+[46 of 46] Compiling Statistics.Autocorrelation ( Statistics/Autocorrelation.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Autocorrelation.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/statistics-0.15.0.0-7BdIYhkPuTSGvUm4hAMnZ8
+Registering library for statistics-0.15.0.0..

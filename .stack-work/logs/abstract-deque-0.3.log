@@ -1,0 +1,16 @@
+Configuring abstract-deque-0.3...
+Preprocessing library for abstract-deque-0.3..
+Building library for abstract-deque-0.3..
+[1 of 4] Compiling Data.Concurrent.Deque.Class ( Data/Concurrent/Deque/Class.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Concurrent/Deque/Class.o )
+[2 of 4] Compiling Data.Concurrent.Deque.Debugger ( Data/Concurrent/Deque/Debugger.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Concurrent/Deque/Debugger.o )
+[3 of 4] Compiling Data.Concurrent.Deque.Reference ( Data/Concurrent/Deque/Reference.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Concurrent/Deque/Reference.o )
+
+[;1mData/Concurrent/Deque/Reference.hs:50:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wtabs[0m[0m[;1m][0m[0m[;1m
+    Tab character found here.
+    Please use spaces instead.[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m50 |[0m[0m [;1m[35m        [0m[0m  return $! DQ 0 r
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^[0m[0m
+[0m[0m[0m[4 of 4] Compiling Data.Concurrent.Deque.Reference.DequeInstance ( Data/Concurrent/Deque/Reference/DequeInstance.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Concurrent/Deque/Reference/DequeInstance.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/abstract-deque-0.3-HExmLwTiG44LCDV4tLj8DR
+Registering library for abstract-deque-0.3..

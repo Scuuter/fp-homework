@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/bin"
-libdir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw4-0.1.0.0-GdTQ62529138erOXK6gKqQ"
+libdir     = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/hw4-0.1.0.0-3J8NcldCZRf6n10EzhVFJx"
 dynlibdir  = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
 datadir    = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/hw4-0.1.0.0"
 libexecdir = "/home/scuuter/Desktop/Functional/fp-homework/.stack-work/install/x86_64-linux/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/hw4-0.1.0.0"

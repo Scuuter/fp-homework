@@ -1,0 +1,12 @@
+Configuring monad-par-0.3.4.8...
+Preprocessing library for monad-par-0.3.4.8..
+Building library for monad-par-0.3.4.8..
+[1 of 7] Compiling Control.Monad.Par.Scheds.DirectInternal ( Control/Monad/Par/Scheds/DirectInternal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/Scheds/DirectInternal.o )
+[2 of 7] Compiling Control.Monad.Par.Scheds.Direct ( Control/Monad/Par/Scheds/Direct.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/Scheds/Direct.o )
+[3 of 7] Compiling Control.Monad.Par.Scheds.Sparks ( Control/Monad/Par/Scheds/Sparks.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/Scheds/Sparks.o )
+[4 of 7] Compiling Control.Monad.Par.Scheds.TraceInternal ( Control/Monad/Par/Scheds/TraceInternal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/Scheds/TraceInternal.o )
+[5 of 7] Compiling Control.Monad.Par.Scheds.Trace ( Control/Monad/Par/Scheds/Trace.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/Scheds/Trace.o )
+[6 of 7] Compiling Control.Monad.Par ( Control/Monad/Par.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par.o )
+[7 of 7] Compiling Control.Monad.Par.IO ( Control/Monad/Par/IO.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Par/IO.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/monad-par-0.3.4.8-F4HXt7BOJ1p6FskaF9Yno1
+Registering library for monad-par-0.3.4.8..

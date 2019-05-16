@@ -1,0 +1,10 @@
+Configuring dense-linear-algebra-0.1.0.0...
+Preprocessing library for dense-linear-algebra-0.1.0.0..
+Building library for dense-linear-algebra-0.1.0.0..
+[1 of 5] Compiling Statistics.Matrix.Function ( src/Statistics/Matrix/Function.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Matrix/Function.o )
+[2 of 5] Compiling Statistics.Matrix.Types ( src/Statistics/Matrix/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Matrix/Types.o )
+[3 of 5] Compiling Statistics.Matrix.Mutable ( src/Statistics/Matrix/Mutable.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Matrix/Mutable.o )
+[4 of 5] Compiling Statistics.Matrix ( src/Statistics/Matrix.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Matrix.o )
+[5 of 5] Compiling Statistics.Matrix.Algorithms ( src/Statistics/Matrix/Algorithms.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Statistics/Matrix/Algorithms.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/dense-linear-algebra-0.1.0.0-A2lPfD2Sm3E28AZgQ6BMfn
+Registering library for dense-linear-algebra-0.1.0.0..

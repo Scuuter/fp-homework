@@ -1,0 +1,8 @@
+Configuring code-page-0.2...
+Preprocessing library for code-page-0.2..
+Building library for code-page-0.2..
+[1 of 3] Compiling System.IO.CodePage.Internal ( src/System/IO/CodePage/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/IO/CodePage/Internal.o )
+[2 of 3] Compiling System.IO.CodePage ( src/System/IO/CodePage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/IO/CodePage.o )
+[3 of 3] Compiling System.Win32.CodePage ( .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/Win32/CodePage.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/Win32/CodePage.o )
+Installing library in /home/scuuter/.stack/snapshots/x86_64-linux/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/code-page-0.2-3TjNtc9lu3RJN6poyFdQXs
+Registering library for code-page-0.2..
