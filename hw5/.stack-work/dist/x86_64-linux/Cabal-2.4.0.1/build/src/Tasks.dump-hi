@@ -1,0 +1,443 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-16 20:56:28.365522902 UTC
+
+interface hw4-0.1.0.0-3J8NcldCZRf6n10EzhVFJx:Tasks 8064
+  interface hash: dc5c4021dab0e94ce6fec4efa852ca3f
+  ABI hash: 97c9cbac1f2e887874f7dcb43d57714d
+  export-list hash: 20701998c8ef4438b868ce2650024829
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9d156e2ccc398f2f187b19220f36d2ba
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tasks.crossProduct
+  Tasks.doubleArea
+  Tasks.minus
+  Tasks.multiply
+  Tasks.perimeter
+  Tasks.plus
+  Tasks.scalarProduct
+  Tasks.slowMultiply
+  Tasks.Point{Tasks.Point}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      containers-0.6.0.1 deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0 parallel-3.2.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Set.Internal
+import  -/  base-4.12.0.0:Data.Foldable 5f70351366640f007be66681d2212df8
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Float ccb68fbeaab348f60d11c8132d51af5d
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  parallel-3.2.2.0:Control.Parallel.Strategies 2e11272c8e4189a04e70e528448a0ac5
+261dc2f2a9ea2c4e1d889b270c844646
+  $fShowPoint :: GHC.Show.Show Tasks.Point
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Tasks.Point
+                  Tasks.$fShowPoint_$cshowsPrec
+                  Tasks.$fShowPoint_$cshow
+                  Tasks.$fShowPoint_$cshowList -}
+261dc2f2a9ea2c4e1d889b270c844646
+  $fShowPoint1 :: Tasks.Point -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),1*U(U))><L,U>,
+     Unfolding: (\ (w :: Tasks.Point) (w1 :: GHC.Base.String) ->
+                 case w of ww { Tasks.Point ww1 ww2 ->
+                 Tasks.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
+1674bfa2dfe4afc51bc687d76130e113
+  $fShowPoint2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Tasks.$fShowPoint3) -}
+acb6e17e48ccce12123222222bca04e5
+  $fShowPoint3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Point "#) -}
+e0134d301344260f68db7577f7b23e87
+  $fShowPoint4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+261dc2f2a9ea2c4e1d889b270c844646
+  $fShowPoint_$cshow :: Tasks.Point -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Tasks.Point) ->
+                 Tasks.$fShowPoint_$cshowsPrec
+                   Tasks.$fShowPoint4
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+261dc2f2a9ea2c4e1d889b270c844646
+  $fShowPoint_$cshowList :: [Tasks.Point] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Tasks.Point]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Tasks.Point Tasks.$fShowPoint1 ls s) -}
+261dc2f2a9ea2c4e1d889b270c844646
+  $fShowPoint_$cshowsPrec ::
+    GHC.Types.Int -> Tasks.Point -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U(U),1*U(U))><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Tasks.Point)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Tasks.Point ww3 ww4 ->
+                 Tasks.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+e1aacc77c46a58db45da75edc34fa620
+  $tc'Point :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6359237522268930308##
+                   9435866260741924896##
+                   Tasks.$trModule
+                   Tasks.$tc'Point2
+                   0#
+                   Tasks.$tc'Point1) -}
+e01473ce66a3f1983d80fe46d7c49389
+  $tc'Point1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9ec92ee242bb0ed2f6b6529053ffcb69
+  $tc'Point2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tasks.$tc'Point3) -}
+f4e44d2ba45238225abe042a0242657a
+  $tc'Point3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Point"#) -}
+3544121aa55010c50d3e656809077aa7
+  $tcPoint :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8503507497724672049##
+                   27737500586628027##
+                   Tasks.$trModule
+                   Tasks.$tcPoint1
+                   0#
+                   GHC.Types.krep$*) -}
+d139baf75286ea7620cf634cf0ccac86
+  $tcPoint1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tasks.$tcPoint2) -}
+71c132f7e7aaa8cc9511c61907c9e891
+  $tcPoint2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Point"#) -}
+cd0235abaddd714803ac446afb3e9134
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Tasks.$trModule3 Tasks.$trModule1) -}
+11ebf8b22fd2fe93764636eff315721d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tasks.$trModule2) -}
+307a915a82213b1b490abbdff3d63cfa
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tasks"#) -}
+675fe8cbe89f48c3cc7d9b0dc4df5f1b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tasks.$trModule4) -}
+f92257258be4d81a9f79375bda4765b7
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hw4-0.1.0.0-3J8NcldCZRf6n10EzhVFJx"#) -}
+d03e4fc722334d508a5be0c6765dc6b0
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U(U)><L,1*U(U)><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     case ww1 of ww3 { GHC.Types.I# ww4 ->
+                     case GHC.Show.$wshowSignedInt
+                            11#
+                            ww4
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.showSpace1
+                               (case ww2 of ww5 { GHC.Types.I# ww6 ->
+                                case GHC.Show.$wshowSignedInt 11# ww6 x of ww7 { (#,#) ww8 ww9 ->
+                                GHC.Types.:
+                                  @ GHC.Types.Char
+                                  ww8
+                                  ww9 } })) of ww5 { (#,#) ww6 ww7 ->
+                     GHC.Types.: @ GHC.Types.Char ww6 ww7 } }
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> GHC.Base.++ @ GHC.Types.Char Tasks.$fShowPoint2 (g w)
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Tasks.$fShowPoint2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))) }) -}
+ea209a8f20139caf210b78eaabb25580
+  $wdoubleArea :: [Tasks.Point] -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: [Tasks.Point]) ->
+                 case w of wild {
+                   [] -> case Tasks.doubleArea2 ret_ty GHC.Prim.Int# of {}
+                   : x xs
+                   -> case GHC.List.$wlenAcc @ Tasks.Point xs 0# of ww2 { DEFAULT ->
+                      case GHC.Prim.<=# ww2 1# of lwild {
+                        DEFAULT
+                        -> case x of ww { Tasks.Point ww1 ww3 ->
+                           case ww1 of ww4 { GHC.Types.I# ww5 ->
+                           case ww3 of ww6 { GHC.Types.I# ww7 ->
+                           let {
+                             exit :: GHC.Prim.Int#
+                                     -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int#
+                               <join 3> {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+                             = \ (ww8 :: GHC.Prim.Int#)[OneShot]
+                                 (ww9 :: GHC.Prim.Int#)[OneShot]
+                                 (ww10 :: GHC.Prim.Int#)[OneShot] ->
+                               GHC.Prim.+#
+                                 ww10
+                                 (GHC.Prim.-# (GHC.Prim.*# ww8 ww7) (GHC.Prim.*# ww9 ww5))
+                           } in
+                           letrec {
+                             $wgo :: [Tasks.Point]
+                                     -> GHC.Prim.Int#
+                                     -> GHC.Prim.Int#
+                                     -> GHC.Prim.Int#
+                                     -> GHC.Prim.Int#
+                               <join 4> {- Arity: 4, Strictness: <S,1*U><S,U><S,U><S,U>,
+                                           Inline: [2] -}
+                             = \ (w1 :: [Tasks.Point])
+                                 (ww8 :: GHC.Prim.Int#)
+                                 (ww9 :: GHC.Prim.Int#)
+                                 (ww10 :: GHC.Prim.Int#) ->
+                               case w1 of wild1 {
+                                 [] -> exit ww8 ww9 ww10
+                                 : y ys
+                                 -> case y of ww11 { Tasks.Point ww12 ww13 ->
+                                    case ww12 of ww14 { GHC.Types.I# ww15 ->
+                                    case ww13 of ww16 { GHC.Types.I# ww17 ->
+                                    $wgo
+                                      ys
+                                      ww15
+                                      ww17
+                                      (GHC.Prim.+#
+                                         (GHC.Prim.-# (GHC.Prim.*# ww8 ww17) (GHC.Prim.*# ww9 ww15))
+                                         ww10) } } } }
+                           } in
+                           $wgo xs ww5 ww7 0# } } }
+                        1# -> case Tasks.doubleArea1 ret_ty GHC.Prim.Int# of {} } } }) -}
+0162ca6b41c5387e43efd9802ebc2c96
+  $wperimeter :: [Tasks.Point] -> GHC.Prim.Double#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: [Tasks.Point]) ->
+                 case w of wild {
+                   [] -> case Tasks.perimeter1 ret_ty GHC.Prim.Double# of {}
+                   : x xs
+                   -> case x of ww { Tasks.Point ww1 ww2 ->
+                      case ww1 of ww3 { GHC.Types.I# ww4 ->
+                      case ww2 of ww5 { GHC.Types.I# ww6 ->
+                      let {
+                        exit :: GHC.Prim.Int#
+                                -> GHC.Prim.Int# -> GHC.Prim.Double# -> GHC.Prim.Double#
+                          <join 3> {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+                        = \ (ww7 :: GHC.Prim.Int#)[OneShot]
+                            (ww8 :: GHC.Prim.Int#)[OneShot]
+                            (ww9 :: GHC.Prim.Double#)[OneShot] ->
+                          let {
+                            x1 :: GHC.Prim.Int# = GHC.Prim.-# ww7 ww4
+                          } in
+                          let {
+                            x2 :: GHC.Prim.Int# = GHC.Prim.-# ww8 ww6
+                          } in
+                          GHC.Prim.+##
+                            ww9
+                            (GHC.Prim.sqrtDouble#
+                               (GHC.Prim.int2Double#
+                                  (GHC.Prim.+# (GHC.Prim.*# x1 x1) (GHC.Prim.*# x2 x2))))
+                      } in
+                      letrec {
+                        $wgo :: [Tasks.Point]
+                                -> GHC.Prim.Int#
+                                -> GHC.Prim.Int#
+                                -> GHC.Prim.Double#
+                                -> GHC.Prim.Double#
+                          <join 4> {- Arity: 4, Strictness: <S,1*U><S,U><S,U><S,U>,
+                                      Inline: [2] -}
+                        = \ (w1 :: [Tasks.Point])
+                            (ww7 :: GHC.Prim.Int#)
+                            (ww8 :: GHC.Prim.Int#)
+                            (ww9 :: GHC.Prim.Double#) ->
+                          case w1 of wild1 {
+                            [] -> exit ww7 ww8 ww9
+                            : y ys
+                            -> case y of ww10 { Tasks.Point ww11 ww12 ->
+                               case ww11 of ww13 { GHC.Types.I# ww14 ->
+                               case ww12 of ww15 { GHC.Types.I# ww16 ->
+                               let {
+                                 x1 :: GHC.Prim.Int# = GHC.Prim.-# ww7 ww14
+                               } in
+                               let {
+                                 x2 :: GHC.Prim.Int# = GHC.Prim.-# ww8 ww16
+                               } in
+                               $wgo
+                                 ys
+                                 ww14
+                                 ww16
+                                 (GHC.Prim.+##
+                                    (GHC.Prim.sqrtDouble#
+                                       (GHC.Prim.int2Double#
+                                          (GHC.Prim.+# (GHC.Prim.*# x1 x1) (GHC.Prim.*# x2 x2))))
+                                    ww9) } } } }
+                      } in
+                      $wgo xs ww4 ww6 0.0## } } } }) -}
+261dc2f2a9ea2c4e1d889b270c844646
+  data Point = Point GHC.Types.Int GHC.Types.Int
+19f6f6c082fb08a9139f5fae3477f83f
+  crossProduct :: Tasks.Point -> Tasks.Point -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S(S(S)S(S)),1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Tasks.Point) (ds1 :: Tasks.Point) ->
+                 case ds of wild { Tasks.Point x1 y1 ->
+                 case ds1 of wild1 { Tasks.Point x2 y2 ->
+                 case x1 of wild2 { GHC.Types.I# x ->
+                 case y2 of wild3 { GHC.Types.I# y ->
+                 case y1 of wild4 { GHC.Types.I# x4 ->
+                 case x2 of wild5 { GHC.Types.I# y4 ->
+                 GHC.Types.I#
+                   (GHC.Prim.-# (GHC.Prim.*# x y) (GHC.Prim.*# x4 y4)) } } } } } }) -}
+8b20ee7fa1d4d44ab7ad66ca3c340f5a
+  doubleArea :: [Tasks.Point] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Tasks.Point]) ->
+                 case Tasks.$wdoubleArea w of ww { DEFAULT -> GHC.Types.I# ww }) -}
+cd5b8b169cb00125b2ca3ef0a168995a
+  doubleArea1 :: GHC.Types.Int
+  {- Strictness: x -}
+cf1ff5624f07b8cb965f672faf8e3164
+  doubleArea2 :: GHC.Types.Int
+  {- Strictness: x -}
+c6998294269c1f26e9e1ebbaccfa665a
+  minus :: Tasks.Point -> Tasks.Point -> Tasks.Point
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(U),1*U(U))><S,1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Tasks.Point) (ds1 :: Tasks.Point) ->
+                 case ds of wild { Tasks.Point x1 y1 ->
+                 case ds1 of wild1 { Tasks.Point x2 y2 ->
+                 Tasks.Point
+                   (GHC.Num.$fNumInt_$c- x1 x2)
+                   (GHC.Num.$fNumInt_$c- y1 y2) } }) -}
+b270b4ea90fa6babb42a000580aac496
+  mult' :: GHC.Num.Num a => [[a]] -> [[a]] -> [[a]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S,1*U><L,U> -}
+13a67f8f956b875756639ecb2ae8c868
+  multiply ::
+    GHC.Num.Num a => [[a]] -> [[a]] -> GHC.Maybe.Maybe [[a]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S,U><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (a1 :: [[a]])
+                   (b :: [[a]]) ->
+                 case GHC.List.$wlenAcc @ [a] a1 0# of ww2 { DEFAULT ->
+                 let {
+                   b' :: [[a]] = Data.OldList.transpose @ a b
+                 } in
+                 case GHC.List.$wlenAcc @ [a] b' 0# of ww1 { DEFAULT ->
+                 case GHC.Prim./=# ww2 ww1 of lwild {
+                   DEFAULT -> GHC.Maybe.Just @ [[a]] (Tasks.mult' @ a $dNum a1 b')
+                   1# -> GHC.Maybe.Nothing @ [[a]] } } }) -}
+37187a62711b8366d3102f7e8220220e
+  perimeter :: [Tasks.Point] -> GHC.Types.Double
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Tasks.Point]) ->
+                 case Tasks.$wperimeter w of ww { DEFAULT -> GHC.Types.D# ww }) -}
+56113579321f3c6f7ced602979d89ced
+  perimeter1 :: GHC.Types.Double
+  {- Strictness: x -}
+ecc3714a232f7dd91263faf6fb6235e4
+  plus :: Tasks.Point -> Tasks.Point -> Tasks.Point
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(U),1*U(U))><S,1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Tasks.Point) (ds1 :: Tasks.Point) ->
+                 case ds of wild { Tasks.Point x1 y1 ->
+                 case ds1 of wild1 { Tasks.Point x2 y2 ->
+                 Tasks.Point
+                   (GHC.Num.$fNumInt_$c+ x1 x2)
+                   (GHC.Num.$fNumInt_$c+ y1 y2) } }) -}
+7b00fe1b456aa19f51c5bf63e0e603d5
+  scalarProduct :: Tasks.Point -> Tasks.Point -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S(S(S)S(S)),1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Tasks.Point) (ds1 :: Tasks.Point) ->
+                 case ds of wild { Tasks.Point x1 y1 ->
+                 case ds1 of wild1 { Tasks.Point x2 y2 ->
+                 case x1 of wild2 { GHC.Types.I# x ->
+                 case x2 of wild3 { GHC.Types.I# y ->
+                 case y1 of wild4 { GHC.Types.I# x4 ->
+                 case y2 of wild5 { GHC.Types.I# y4 ->
+                 GHC.Types.I#
+                   (GHC.Prim.+# (GHC.Prim.*# x y) (GHC.Prim.*# x4 y4)) } } } } } }) -}
+5f5a9bd80448f13769a1277cfbb68c78
+  slowMult' :: GHC.Num.Num a => [[a]] -> [[a]] -> [[a]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S,1*U><L,U> -}
+03fb1aee1452bfaf67827631c304e2cb
+  slowMultiply ::
+    GHC.Num.Num a => [[a]] -> [[a]] -> GHC.Maybe.Maybe [[a]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))><S,U><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (a1 :: [[a]])
+                   (b :: [[a]]) ->
+                 case GHC.List.$wlenAcc @ [a] a1 0# of ww2 { DEFAULT ->
+                 let {
+                   b' :: [[a]] = Data.OldList.transpose @ a b
+                 } in
+                 case GHC.List.$wlenAcc @ [a] b' 0# of ww1 { DEFAULT ->
+                 case GHC.Prim./=# ww2 ww1 of lwild {
+                   DEFAULT -> GHC.Maybe.Just @ [[a]] (Tasks.slowMult' @ a $dNum a1 b')
+                   1# -> GHC.Maybe.Nothing @ [[a]] } } }) -}
+instance GHC.Show.Show [Tasks.Point] = Tasks.$fShowPoint
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

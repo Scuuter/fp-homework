@@ -1,0 +1,334 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-07 16:47:41.819236536 UTC
+
+interface hw5-0.1.0.0-9oSSfQmvC8yFV4QpnWueWq:BaseLenses 8064
+  interface hash: bbb50098a0993fd9405a2f783e947aec
+  ABI hash: 030878d9aa5a97f791e51190a6292abc
+  export-list hash: 1c3a9db54193c4cbbad16531017edad6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 522c00f2f77acd7ee2c181f617e99095
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BaseLenses.%~
+  BaseLenses..~
+  BaseLenses.^.
+  BaseLenses._1
+  BaseLenses._2
+  BaseLenses.choosing
+  BaseLenses.lens
+  BaseLenses.lens'
+  BaseLenses.over
+  BaseLenses.set
+  BaseLenses.view
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Functor.Const 820a1a270e0592d5b57f47c14a63efe1
+import  -/  base-4.12.0.0:Data.Functor.Identity 16a1755047ee64102cb308f86ee59346
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+512fc2a8bf980e1266836d4f55a828b2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BaseLenses.$trModule3
+                   BaseLenses.$trModule1) -}
+7b8b8e35469ebcc0bee822b5ef133905
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BaseLenses.$trModule2) -}
+f5a286a1cb468898618894b8a4a6ece6
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BaseLenses"#) -}
+1d5bcf5c2f77ad4e009da5709aeefd11
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BaseLenses.$trModule4) -}
+0b8db6b0538ce7114269b356cee88f56
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hw5-0.1.0.0-9oSSfQmvC8yFV4QpnWueWq"#) -}
+17a22989c202e443702864e5f94e1e80
+  $wchoosing ::
+    BaseLenses.Lens s1 t1 a b
+    -> BaseLenses.Lens s2 t2 a b
+    -> forall (f :: * -> *).
+       (forall a1 b1. (a1 -> b1) -> f a1 -> f b1)
+       -> (forall a1 b1. a1 -> f b1 -> f a1)
+       -> (a -> f b)
+       -> Data.Either.Either s1 s2
+       -> f (Data.Either.Either t1 t2)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*C1(C1(C1(U)))><L,1*C1(C1(C1(U)))><C(C(S)),U><L,U><L,U><S,1*U>,
+     Inline: [2],
+     Unfolding: (\ @ s1
+                   @ t1
+                   @ a
+                   @ b
+                   @ s2
+                   @ t2
+                   (w :: BaseLenses.Lens s1 t1 a b)
+                   (w1 :: BaseLenses.Lens s2 t2 a b)
+                   @ f :: * -> *
+                   (ww :: forall a1 b1. (a1 -> b1) -> f a1 -> f b1)
+                   (ww1 :: forall a1 b1. a1 -> f b1 -> f a1)
+                   (w2 :: a -> f b)
+                   (w3 :: Data.Either.Either s1 s2) ->
+                 case w3 of wild {
+                   Data.Either.Left a1
+                   -> ww
+                        @ t1
+                        @ (Data.Either.Either t1 t2)
+                        (Data.Either.Left @ t1 @ t2)
+                        (w @ f (GHC.Base.C:Functor @ f ww ww1) w2 a1)
+                   Data.Either.Right a1
+                   -> ww
+                        @ t2
+                        @ (Data.Either.Either t1 t2)
+                        (Data.Either.Right @ t1 @ t2)
+                        (w1 @ f (GHC.Base.C:Functor @ f ww ww1) w2 a1) }) -}
+be65382ed1fbe45498f09425e3faf2fc
+  (%~) :: BaseLenses.Lens' s a -> (a -> a) -> s -> s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses.%~1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <a -> a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <s>_R) -}
+f0133689b65d04cf6121857c8905f7e6
+  %~1 ::
+    BaseLenses.Lens' s a
+    -> (a -> a) -> s -> Data.Functor.Identity.Identity s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a
+                   (lns :: BaseLenses.Lens' s a)
+                   (fun :: a -> a)
+                   (s1 :: s) ->
+                 lns
+                   @ Data.Functor.Identity.Identity
+                   Data.Functor.Identity.$fFunctorIdentity
+                   (\ (x :: a) -> fun x)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Identity.N:Identity[0] <a>_R))
+                   s1) -}
+87781ae78d365e7e9e6a19c5a44b011b
+  (.~) :: BaseLenses.Lens' s a -> a -> s -> s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses..~1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <s>_R) -}
+f9f5bbb67537d6abb12b8fe672a1fb04
+  .~1 ::
+    BaseLenses.Lens' s a -> a -> s -> Data.Functor.Identity.Identity s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s @ a (lns :: BaseLenses.Lens' s a) (a1 :: a) (s1 :: s) ->
+                 lns
+                   @ Data.Functor.Identity.Identity
+                   Data.Functor.Identity.$fFunctorIdentity
+                   (\ (x :: a) -> a1)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Identity.N:Identity[0] <a>_R))
+                   s1) -}
+ba48a08c0fe604d5213301ee7ab7841e
+  type Lens s t a b =
+    forall (f :: * -> *). GHC.Base.Functor f => (a -> f b) -> s -> f t
+9272d588911dc4f8c1e362984cacc5ae
+  type Lens' s a = BaseLenses.Lens s s a a
+ef4874008152929d9d93461719b258cd
+  (^.) :: BaseLenses.Lens' s a -> s -> a
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses.^.1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Const.N:Const[0] <*>_N <a>_R <s>_P) -}
+bd1091c502e587cd67f64e7c040adf16
+  ^.1 :: BaseLenses.Lens' s a -> s -> Data.Functor.Const.Const a s
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s @ a (lns :: BaseLenses.Lens' s a) (s1 :: s) ->
+                 lns
+                   @ (Data.Functor.Const.Const a)
+                   (Data.Functor.Const.$fFunctorConst @ a)
+                   (BaseLenses.^.2 @ a)
+                     `cast`
+                   (<a>_R ->_R Sym (Data.Functor.Const.N:Const[0] <*>_N <a>_R <a>_P))
+                   s1) -}
+fd6646288a59fea10e710ccc08aee01f
+  ^.2 :: a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a (v :: a) -> v) -}
+fdfa36d3df12fdef5e02a1e756be2278
+  _1 :: BaseLenses.Lens (a, x) (b, x) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ x
+                   @ b
+                   @ f :: * -> *
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (fun :: a -> f b)
+                   (ds :: (a, x)) ->
+                 case ds of wild { (,) a1 x1 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ b
+                   @ (b, x)
+                   (\ (b1 :: b) -> (b1, x1))
+                   (fun a1) }) -}
+411f9dc736508d354c85aefec53cf60b
+  _2 :: BaseLenses.Lens (x, a) (x, b) a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ x
+                   @ a
+                   @ b
+                   @ f :: * -> *
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (fun :: a -> f b)
+                   (ds :: (x, a)) ->
+                 case ds of wild { (,) x1 a1 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ b
+                   @ (x, b)
+                   (\ (b1 :: b) -> (x1, b1))
+                   (fun a1) }) -}
+f55c7bc5fbfe1f741e840b0e4f61db1d
+  choosing ::
+    BaseLenses.Lens s1 t1 a b
+    -> BaseLenses.Lens s2 t2 a b
+    -> BaseLenses.Lens
+         (Data.Either.Either s1 s2) (Data.Either.Either t1 t2) a b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*C1(C1(C1(U)))><L,1*C1(C1(C1(U)))><S(C(C(S))L),1*U(U,U)><L,U><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s1
+                   @ t1
+                   @ a
+                   @ b
+                   @ s2
+                   @ t2
+                   (w :: BaseLenses.Lens s1 t1 a b)
+                   (w1 :: BaseLenses.Lens s2 t2 a b)
+                   @ f :: * -> *
+                   (w2 :: GHC.Base.Functor f)
+                   (w3 :: a -> f b)
+                   (w4 :: Data.Either.Either s1 s2) ->
+                 case w2 of ww { GHC.Base.C:Functor ww1 ww2 ->
+                 BaseLenses.$wchoosing
+                   @ s1
+                   @ t1
+                   @ a
+                   @ b
+                   @ s2
+                   @ t2
+                   w
+                   w1
+                   @ f
+                   ww1
+                   ww2
+                   w3
+                   w4 }) -}
+34449c3ab70de34112fa8373f31ebc2c
+  lens :: (s -> a) -> (s -> b -> t) -> BaseLenses.Lens s t a b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><L,1*C1(U)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   @ t
+                   (dk :: s -> a)
+                   (dk1 :: s -> b -> t)
+                   @ f :: * -> *
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (f1 :: a -> f b)
+                   (s1 :: s) ->
+                 GHC.Base.fmap @ f $dFunctor @ b @ t (dk1 s1) (f1 (dk s1))) -}
+69b3942d84ca5831af5b82a9718c74c3
+  lens' :: (s -> a) -> (s -> a -> s) -> BaseLenses.Lens' s a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><L,1*C1(U)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s
+                   @ a
+                   (dk :: s -> a)
+                   (dk1 :: s -> a -> s)
+                   @ f :: * -> *
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (f1 :: a -> f a)
+                   (s1 :: s) ->
+                 GHC.Base.fmap @ f $dFunctor @ a @ s (dk1 s1) (f1 (dk s1))) -}
+87ce73f6c3fb875221f264df739e5299
+  over :: BaseLenses.Lens' s a -> (a -> a) -> s -> s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses.%~1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <a -> a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <s>_R) -}
+9a03d698990023b27942149aee9eeede
+  set :: BaseLenses.Lens' s a -> a -> s -> s
+  {- Arity: 3, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses..~1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Identity.N:Identity[0] <s>_R) -}
+b8b812dcbba2b7e17e7df02e7a050a4a
+  view :: BaseLenses.Lens' s a -> s -> a
+  {- Arity: 2, Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                BaseLenses.^.1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <BaseLenses.Lens' s a>_R
+                 ->_R <s>_R
+                 ->_R Data.Functor.Const.N:Const[0] <*>_N <a>_R <s>_P) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

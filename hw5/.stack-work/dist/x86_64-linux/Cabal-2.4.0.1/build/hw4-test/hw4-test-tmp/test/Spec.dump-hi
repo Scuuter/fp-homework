@@ -1,0 +1,800 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-16 21:01:26.667972327 UTC
+
+interface main:Main 8064
+  interface hash: ad13274b1f1f2eac4365ce062bd46fc3
+  ABI hash: 153f3d7b8417bed9a6141f60e8a9a651
+  export-list hash: 3044a1824b01b70df7d39249c91ab572
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 86881879d8ee5f7ed9fe5d5890d65576
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.down
+  Main.kek
+  Main.lol
+  Main.main
+  Main.right
+  Main.up
+module dependencies:
+package dependencies: Glob-0.9.3 Only-0.1 abstract-par-0.3.3
+                      aeson-1.4.2.0 ansi-terminal-0.8.2 ansi-wl-pprint-0.6.8.2
+                      array-0.5.3.0 attoparsec-0.13.2.2 base-4.12.0.0 base-compat-0.10.5
+                      base-compat-batteries-0.10.5 base-orphans-0.8 binary-0.8.6.0
+                      bytestring-0.10.8.2 cassava-0.5.1.0 code-page-0.2 colour-2.3.4
+                      containers-0.6.0.1 criterion-1.5.4.0 criterion-measurement-0.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0
+                      dense-linear-algebra-0.1.0.0 directory-1.3.3.0 dlist-0.8.0.5
+                      exceptions-0.10.0 filepath-1.4.2.1 ghc-boot-th-8.6.4 ghc-prim-0.5.3
+                      hashable-1.2.7.0 hw4-0.1.0.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.2 js-flot-0.8.3 js-jquery-3.3.1
+                      math-functions-0.3.1.0 microstache-1.0.1.1 monad-par-0.3.4.8
+                      monad-par-extras-0.3.3 mtl-2.2.2 mwc-random-0.14.0.0
+                      optparse-applicative-0.14.3.0 parallel-3.2.2.0 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0 random-1.1
+                      scientific-0.3.6.2 statistics-0.15.0.0 stm-2.5.0.0 tagged-0.8.6
+                      template-haskell-2.14.0.0 text-1.2.3.1 text-short-0.1.2
+                      time-1.8.0.2 time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      unix-2.7.2.2 unordered-containers-0.2.9.0 uuid-types-1.0.3
+                      vector-0.12.0.2 vector-algorithms-0.8.0.1
+                      vector-binary-instances-0.2.5.1 vector-th-unbox-0.2.1.6
+orphans: stm-2.5.0.0:Control.Monad.STM
+         monad-par-0.3.4.8:Control.Monad.Par.Scheds.Trace
+         vector-binary-instances-0.2.5.1:Data.Vector.Binary
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Show
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         vector-0.12.0.2:Data.Vector.Unboxed
+         vector-0.12.0.2:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         colour-2.3.4:Data.Colour time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: Only-0.1:Data.Tuple.Only
+                         aeson-1.4.2.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         criterion-1.5.4.0:Criterion.Main.Options
+                         criterion-1.5.4.0:Criterion.Report
+                         criterion-1.5.4.0:Criterion.Types
+                         criterion-measurement-0.1.1.0:Criterion.Measurement
+                         criterion-measurement-0.1.1.0:Criterion.Measurement.Types
+                         dlist-0.8.0.5:Data.DList ghc-boot-th-8.6.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.4:GHC.LanguageExtensions.Type
+                         math-functions-0.3.1.0:Numeric.RootFinding
+                         math-functions-0.3.1.0:Numeric.Sum
+                         microstache-1.0.1.1:Text.Microstache.Type
+                         mwc-random-0.14.0.0:System.Random.MWC
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         statistics-0.15.0.0:Statistics.Distribution.Normal
+                         statistics-0.15.0.0:Statistics.Quantile
+                         statistics-0.15.0.0:Statistics.Resampling
+                         statistics-0.15.0.0:Statistics.Types tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         text-short-0.1.2:Data.Text.Short.Internal
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.2:Data.Vector vector-0.12.0.2:Data.Vector.Primitive
+                         vector-0.12.0.2:Data.Vector.Storable
+                         vector-0.12.0.2:Data.Vector.Unboxed
+                         vector-0.12.0.2:Data.Vector.Unboxed.Base
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  criterion-1.5.4.0:Criterion.Main b1d6002a29bd320cc9350eea85960179
+import  -/  criterion-measurement-0.1.1.0:Criterion.Measurement.Types 59a412662ab58fd763cd2397e48a51e9
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  hw4-0.1.0.0:Tasks 97c9cbac1f2e887874f7dcb43d57714d
+be86c9d078d3acbf19ba91fe74a24273
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+b09d86f2c49dd5176b544d8d13ddb6c5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+23b03bd7d075a00f5ad1ee10e6add7b8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+6f27b1b81b43875a2ca2450be214f2cf
+  $wdown :: GHC.Prim.Int# -> (# Tasks.Point, [Tasks.Point] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2] -}
+1fc83890894cf0e28788b3bd478756fb
+  $wkek :: GHC.Prim.Int# -> [[GHC.Types.Int]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# 0# ww of lwild {
+                   DEFAULT -> GHC.Types.[] @ [GHC.Types.Int]
+                   1#
+                   -> let {
+                        x :: [GHC.Types.Int] = Main.$wxs ww
+                      } in
+                      let {
+                        lvl4 :: [[GHC.Types.Int]]
+                        = GHC.Types.: @ [GHC.Types.Int] x (GHC.Types.[] @ [GHC.Types.Int])
+                      } in
+                      letrec {
+                        $wxs1 :: GHC.Prim.Int# -> [[GHC.Types.Int]]
+                          {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+                        = \ (ww1 :: GHC.Prim.Int#) ->
+                          case ww1 of ds1 {
+                            DEFAULT
+                            -> GHC.Types.: @ [GHC.Types.Int] x ($wxs1 (GHC.Prim.-# ds1 1#))
+                            1# -> lvl4 }
+                      } in
+                      $wxs1 ww }) -}
+36411f71c0c3509b53575b93d659b6cf
+  $wlol :: GHC.Prim.Int# -> [Tasks.Point]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>m2, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case Main.$wdown ww of ww1 { (#,#) ww2 ww3 ->
+                 GHC.Base.++_$s++
+                   @ Tasks.Point
+                   (case Main.$wright Main.lol1 ww of ww4 { (#,#) ww5 ww6 ->
+                    GHC.Base.++_$s++
+                      @ Tasks.Point
+                      (case Main.$wup
+                              (GHC.Prim.-# ww 1#)
+                              Main.lol1 of ww7 { (#,#) ww8 ww9 ->
+                       GHC.Types.: @ Tasks.Point ww8 ww9 })
+                      ww5
+                      ww6 })
+                   ww2
+                   ww3 }) -}
+8cab71af2ce342633dcd92a5c7376417
+  $wright ::
+    GHC.Types.Int -> GHC.Prim.Int# -> (# Tasks.Point, [Tasks.Point] #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>,
+     Inline: [2] -}
+e22e94035362dab63100e9c8aa279269
+  $wup ::
+    GHC.Prim.Int# -> GHC.Types.Int -> (# Tasks.Point, [Tasks.Point] #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U(U)>,
+     Inline: [2] -}
+15dd132babc8c63345bd19d72ffca468
+  $wxs :: GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [2] -}
+45bc3e3cae9ca01c2769a12b32cbc8ec
+  down :: GHC.Types.Int -> [Tasks.Point]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m2,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Main.$wdown ww1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ Tasks.Point ww3 ww4 } }) -}
+c2799dbf7a960218ad54cd5ba44acc67
+  kek :: GHC.Types.Int -> [[GHC.Types.Int]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$wkek ww1 }) -}
+759fd9d524189102d4527f996fd14c58
+  lol :: GHC.Types.Int -> [Tasks.Point]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m2,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Main.$wlol ww1 }) -}
+c729e135edd863d5730fac2c3999917b
+  lol1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+73bfedc82550b644501270cd45b708e3
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+b44cf5805e4db8ebaa48e0e4710b508f
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Criterion.Main.defaultMain2
+                   Criterion.Main.Options.defaultConfig
+                   Main.main2) -}
+439387d5fa9db02308af11859dfd6020
+  main10 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [Tasks.Point]
+                    @ GHC.Types.Int
+                    Tasks.doubleArea
+                    Main.main_x
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+1605d6c1b99e7556ca0795d20c69b3f5
+  main11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main12) -}
+39b60b52e6e5b2b0e6083d75b9bd5c53
+  main12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("2"#) -}
+58c8609b2c1a76b78e42e816951c62f1
+  main13 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main16
+                   Main.main14) -}
+b5d4f8a1ae6437bd0c050d40fe240d5f
+  main14 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main15
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+b54045e56d2448f41d823f7e791da11a
+  main15 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [Tasks.Point]
+                    @ GHC.Types.Int
+                    Tasks.doubleArea
+                    Main.main_x1
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+43848f98fa94a82a40d945c0a94ebed4
+  main16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main17) -}
+2ea43f577be84c62ad4d24d924233908
+  main17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("1"#) -}
+265832d9d52e794b8ebf0674033418d9
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main19) -}
+7ef758ee150c2b8754babbb25d7e5b7b
+  main19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("doubleArea"#) -}
+0487596e4f9e2ce874db74671e77c212
+  main2 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main31
+                   Main.main3) -}
+3dc29e9e181975d8e1b3b6718818d0d3
+  main20 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m3,
+     Unfolding: (Criterion.Measurement.Types.BenchGroup
+                   Main.main29
+                   Main.main21) -}
+c87e9fc25288d5796316d4b609bffc9f
+  main21 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main26
+                   Main.main22) -}
+04801aa1cf0bbd972ff8fd83c361769b
+  main22 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main23
+                   (GHC.Types.[] @ Criterion.Measurement.Types.Benchmark)) -}
+065acb7b79e5adbde89c00fcb6df41f9
+  main23 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main11
+                   Main.main24) -}
+afa3559724aa27c3d708b3fa1df1e03f
+  main24 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main25
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+ea4af0d86b97fa602381e1b794361ff7
+  main25 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [Tasks.Point]
+                    @ GHC.Types.Double
+                    Tasks.perimeter
+                    Main.main_x
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+ba6a87097b8bd1dba96c71e9537ecaa9
+  main26 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main16
+                   Main.main27) -}
+2d5490093d85565cf7ba541022a187de
+  main27 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main28
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+15f76d62e7b4df9600675985f170f8b1
+  main28 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [Tasks.Point]
+                    @ GHC.Types.Double
+                    Tasks.perimeter
+                    Main.main_x1
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+74bea07c13c8b940c15506b5d874c4b1
+  main29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main30) -}
+385166c6d59ee599c912ca5cab656fe3
+  main3 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main20
+                   Main.main4) -}
+e0377566b5287e8a88e18cdf775f1ed2
+  main30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perimeter"#) -}
+a2319b467848eff365c6ae5bad417227
+  main31 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m3,
+     Unfolding: (Criterion.Measurement.Types.BenchGroup
+                   Main.main58
+                   Main.main32) -}
+6b4473a378c66de8a8ea4def8f6abaac
+  main32 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main53
+                   Main.main33) -}
+02e4dcda3d5701b4a2972f46fc052dbb
+  main33 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main47
+                   Main.main34) -}
+87e1301f926582b5002ef96694fe2b38
+  main34 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main42
+                   Main.main35) -}
+a64b01215dcedbb70cc4b29785c53865
+  main35 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main36
+                   (GHC.Types.[] @ Criterion.Measurement.Types.Benchmark)) -}
+4cc245651a1e92a95bae12e82831efd1
+  main36 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main40
+                   Main.main37) -}
+83de773cc370c56dca1b19b31907cb26
+  main37 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main38
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+54407bd5c95530f2d4d50dc76da21926
+  main38 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [[GHC.Types.Int]]
+                    @ (GHC.Maybe.Maybe [[GHC.Types.Int]])
+                    Main.main_f
+                    Main.main39
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+88846a93306e76d8db8788feb8833bef
+  main39 :: [[GHC.Types.Int]]
+  {- Unfolding: (Main.$wkek 2000#) -}
+ee8fe6867f8c098532444af1066979c2
+  main4 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main5
+                   (GHC.Types.[] @ Criterion.Measurement.Types.Benchmark)) -}
+40ac68df00a582efd456c69f892b3789
+  main40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main41) -}
+8ab4aa044686cb0263228225ec9be34e
+  main41 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("naive multiply 2"#) -}
+c9fd22990c08640757d1e43ae7644ee1
+  main42 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main45
+                   Main.main43) -}
+2448b6e75d22ca757bbbd77efe9f7eb2
+  main43 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main44
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+39486f4981a6778d81dc8630dd0ab446
+  main44 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [[GHC.Types.Int]]
+                    @ (GHC.Maybe.Maybe [[GHC.Types.Int]])
+                    Main.main_f1
+                    Main.main39
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+fdb43731c8b46cb9729a9f73e9b0117b
+  main45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main46) -}
+1a2d123aff092098b66d24ef879828bb
+  main46 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("parallel multiply 2"#) -}
+9bcfea94626ba6d91883f661432b17e1
+  main47 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main51
+                   Main.main48) -}
+b43c4acdf5d246bc882fc38f2e300eb2
+  main48 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main49
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+cb3f95e769bc0f963bd05b12e54e05f4
+  main49 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [[GHC.Types.Int]]
+                    @ (GHC.Maybe.Maybe [[GHC.Types.Int]])
+                    Main.main_f2
+                    Main.main50
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+d48874d39d338b98e82a511da8e08a0f
+  main5 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m3,
+     Unfolding: (Criterion.Measurement.Types.BenchGroup
+                   Main.main18
+                   Main.main6) -}
+2e5dbe00b19c4d736c5ab30bdce8f919
+  main50 :: [[GHC.Types.Int]]
+  {- Unfolding: (Main.$wkek 1000#) -}
+fcfe1593f1379c2e279e74627c4721be
+  main51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main52) -}
+2f74fb38e1aac7329eaf4be4de230e7e
+  main52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("naive multiply 1"#) -}
+a56aaed9a87670c1f181886dad16ae20
+  main53 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main56
+                   Main.main54) -}
+c9e801268edf00ee32bef732a6420091
+  main54 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main55
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+56922751e506c3c032e5f6fb57d4b2f2
+  main55 ::
+    ()
+    -> GHC.Int.Int64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: ())
+                   (eta :: GHC.Int.Int64)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (Criterion.Measurement.Types.Internal.whnf'
+                    @ [[GHC.Types.Int]]
+                    @ (GHC.Maybe.Maybe [[GHC.Types.Int]])
+                    Main.main_f3
+                    Main.main50
+                    eta)
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   eta1) -}
+b0d210a1016198461f6fe82feb4f6ec4
+  main56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main57) -}
+8e450730e984d2b2e2d8241d462a9d77
+  main57 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("parallel multiply 1"#) -}
+013cf93b6fba8b56140aa7d7637daddf
+  main58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main59) -}
+ffcc84cb7c859a9c8a96c799d0b299c5
+  main59 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("multiply"#) -}
+65b27ef54f322ce46dacafae71f7738c
+  main6 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main13
+                   Main.main7) -}
+e6941b444cb6de1810faea0683227e3e
+  main60 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+20941afb006c0f9ba1c3de6e6ee407c3
+  main7 :: [Criterion.Measurement.Types.Benchmark]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Criterion.Measurement.Types.Benchmark
+                   Main.main8
+                   (GHC.Types.[] @ Criterion.Measurement.Types.Benchmark)) -}
+336b4a1fdc79d5fcb7bede01b6c72e1d
+  main8 :: Criterion.Measurement.Types.Benchmark
+  {- Strictness: m2,
+     Unfolding: (Criterion.Measurement.Types.Benchmark
+                   Main.main11
+                   Main.main9) -}
+63032a0da297c252b54789a27cab71d4
+  main9 :: Criterion.Measurement.Types.Benchmarkable
+  {- Unfolding: (Criterion.Measurement.Types.Benchmarkable
+                   @ ()
+                   (Control.DeepSeq.rwhnf @ ())
+                     `cast`
+                   (Sym (Control.DeepSeq.N:NFData[0] <()>_N))
+                   Criterion.Measurement.Types.nf2
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Criterion.Measurement.Types.nf1
+                     `cast`
+                   (<GHC.Int.Int64>_R ->_R <()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Main.main10
+                     `cast`
+                   (<()>_R ->_R <GHC.Int.Int64>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   GHC.Types.False) -}
+903f42030ac9b2474d3ce97b734ec27a
+  main_f :: [[GHC.Types.Int]] -> GHC.Maybe.Maybe [[GHC.Types.Int]]
+  {- Arity: 1,
+     Unfolding: (Tasks.slowMultiply
+                   @ GHC.Types.Int
+                   GHC.Num.$fNumInt
+                   Main.main39) -}
+15b7e31cf1594f7afdf1edf6988009d3
+  main_f1 :: [[GHC.Types.Int]] -> GHC.Maybe.Maybe [[GHC.Types.Int]]
+  {- Arity: 1,
+     Unfolding: (Tasks.multiply
+                   @ GHC.Types.Int
+                   GHC.Num.$fNumInt
+                   Main.main39) -}
+119963fa089346430ab4a2cb09b10ecf
+  main_f2 :: [[GHC.Types.Int]] -> GHC.Maybe.Maybe [[GHC.Types.Int]]
+  {- Arity: 1,
+     Unfolding: (Tasks.slowMultiply
+                   @ GHC.Types.Int
+                   GHC.Num.$fNumInt
+                   Main.main50) -}
+0d40791ded90ca8501025923fddc298b
+  main_f3 :: [[GHC.Types.Int]] -> GHC.Maybe.Maybe [[GHC.Types.Int]]
+  {- Arity: 1,
+     Unfolding: (Tasks.multiply
+                   @ GHC.Types.Int
+                   GHC.Num.$fNumInt
+                   Main.main50) -}
+431f66723618b3a786fef6a92472da88
+  main_x :: [Tasks.Point]
+  {- Unfolding: (Main.$wlol 10000#) -}
+e8221fdcf3c77f2cece75392da83cb15
+  main_x1 :: [Tasks.Point]
+  {- Unfolding: (Main.$wlol 1000#) -}
+2470d25c0cffc6c473a4c8591cb8b687
+  right :: GHC.Types.Int -> GHC.Types.Int -> [Tasks.Point]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S(S),1*U(1*U)>m2,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case Main.$wright w ww1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ Tasks.Point ww3 ww4 } }) -}
+765d04062afa85a0c94b494d71dc2c8d
+  up :: GHC.Types.Int -> GHC.Types.Int -> [Tasks.Point]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><L,U(U)>m2,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Main.$wup ww1 w1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ Tasks.Point ww3 ww4 } }) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

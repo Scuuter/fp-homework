@@ -1,0 +1,417 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-07 17:58:17.361552237 UTC
+
+interface hw5-0.1.0.0-9oSSfQmvC8yFV4QpnWueWq:FileSystem 8064
+  interface hash: 623cd8ae3dc73cb6f1f5e067c6970033
+  ABI hash: 12536b11f754c73c6c3933d9be14e760
+  export-list hash: 14227a354d8991d6718c88b77afa0d45
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 522c00f2f77acd7ee2c181f617e99095
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FileSystem.cd
+  FileSystem.file
+  FileSystem.ls
+  FileSystem.scan
+  FileSystem.FS
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0* deepseq-1.4.4.0
+                      directory-1.3.3.0 filepath-1.4.2.1 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0 microlens-0.4.10* time-1.8.0.2 unix-2.7.2.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception microlens-0.4.10:Lens.Micro.Internal
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Traversable 4daa1d90a0314e4c613623c0e24b9858
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 450806ae9fed7fcace0a23ab62a9d604
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  directory-1.3.3.0:System.Directory 204c2db6d71c61e5c7493d371aa2d48c
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 77c83b88db4e4ff38a6fc94d9f8e8133
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  microlens-0.4.10:Lens.Micro bbfdd329ff28c5aacf1f70b86774dcaf
+import  -/  microlens-0.4.10:Lens.Micro.Internal 030167be5966ab36204bac9e7c8b828c
+import  -/  microlens-0.4.10:Lens.Micro.Type 3c9b606cf48f75eef7d2407ac6c59a84
+8b8fbae09420d9ff41769aee8a81a349
+  $fShowFS :: GHC.Show.Show FileSystem.FS
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ FileSystem.FS
+                  FileSystem.$fShowFS_$cshowsPrec
+                  FileSystem.$fShowFS_$cshow
+                  FileSystem.$fShowFS_$cshowList -}
+8b8fbae09420d9ff41769aee8a81a349
+  $fShowFS1 :: FileSystem.FS -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (w :: FileSystem.FS) (w1 :: GHC.Base.String) ->
+                 FileSystem.$w$cshowsPrec 0# w w1) -}
+b0260c7a0197bdffcb3bc60efbf1b947
+  $fShowFS2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+8b8fbae09420d9ff41769aee8a81a349
+  $fShowFS_$cshow :: FileSystem.FS -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: FileSystem.FS) ->
+                 FileSystem.$fShowFS_$cshowsPrec
+                   FileSystem.$fShowFS2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8b8fbae09420d9ff41769aee8a81a349
+  $fShowFS_$cshowList :: [FileSystem.FS] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls1 :: [FileSystem.FS]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ FileSystem.FS FileSystem.$fShowFS1 ls1 s) -}
+8b8fbae09420d9ff41769aee8a81a349
+  $fShowFS_$cshowsPrec ::
+    GHC.Types.Int -> FileSystem.FS -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: FileSystem.FS)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 FileSystem.$w$cshowsPrec ww1 w1 w2 }) -}
+e00e22398bde59159b6c69e18b17937e
+  $tc'Dir :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1363183308535340195##
+                   3961300076495721492##
+                   FileSystem.$trModule
+                   FileSystem.$tc'Dir2
+                   0#
+                   FileSystem.$tc'Dir1) -}
+6f52eee015d62ee7e7289f55aebaf183
+  $tc'Dir1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bda29a63beca3c66358c171ec0beceff
+  $tc'Dir2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileSystem.$tc'Dir3) -}
+7a3f07795cc2633b811973a3731ffc17
+  $tc'Dir3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Dir"#) -}
+6d5ba24c745eafad8de75be9e4866df4
+  $tc'File :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1979055096353383089##
+                   17701347659342563895##
+                   FileSystem.$trModule
+                   FileSystem.$tc'File2
+                   0#
+                   FileSystem.$tc'File1) -}
+b40196bd9dd53e3068bbd47680d9d061
+  $tc'File1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+92ea3742a419015715ae06907d7266ee
+  $tc'File2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileSystem.$tc'File3) -}
+bbd021d4115fb999e754c6200e1513f4
+  $tc'File3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'File"#) -}
+4c7d6cfab5b2880f5fbd58e17f367f08
+  $tcFS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3795890206089463680##
+                   15206061428353830473##
+                   FileSystem.$trModule
+                   FileSystem.$tcFS1
+                   0#
+                   GHC.Types.krep$*) -}
+756beafcd192eeaff3a1c904966ea1fc
+  $tcFS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileSystem.$tcFS2) -}
+31990d6347fd3e44cd8b6fee78a5f806
+  $tcFS2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FS"#) -}
+7c1e92b755e40107f66e3eac66787f5a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileSystem.$trModule3
+                   FileSystem.$trModule1) -}
+27505e7d0987d4e214764f299efc3b4d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileSystem.$trModule2) -}
+af44c1dd970a794488ce95d1ab2ad73c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FileSystem"#) -}
+e0a3a56abdccac4a8e3dceb2e27ea66d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileSystem.$trModule4) -}
+f9cc53620e8447f0a78e737daa12eead
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hw5-0.1.0.0-9oSSfQmvC8yFV4QpnWueWq"#) -}
+8b8fbae09420d9ff41769aee8a81a349
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> FileSystem.FS -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2] -}
+8b8fbae09420d9ff41769aee8a81a349
+  data FS
+    = Dir {_name :: GHC.IO.FilePath, _contents :: [FileSystem.FS]}
+    | File {_name :: GHC.IO.FilePath}
+8b8fbae09420d9ff41769aee8a81a349
+  _contents :: FileSystem.FS -> [FileSystem.FS]
+  RecSel Left FileSystem.FS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileSystem.FS) ->
+                 case ds of wild {
+                   FileSystem.Dir ds1 ds2 -> ds2
+                   FileSystem.File ipv -> FileSystem._contents1 }) -}
+8b8fbae09420d9ff41769aee8a81a349
+  _contents1 :: [FileSystem.FS]
+  {- Strictness: x -}
+8b8fbae09420d9ff41769aee8a81a349
+  _name :: FileSystem.FS -> GHC.IO.FilePath
+  RecSel Left FileSystem.FS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: FileSystem.FS) ->
+                 case ds of wild {
+                   FileSystem.Dir ds1 ds2 -> ds1 FileSystem.File ds1 -> ds1 }) -}
+dda432168f8874a34c40eea5d8f87dd9
+  cd ::
+    GHC.IO.FilePath
+    -> Lens.Micro.Type.Traversal' FileSystem.FS FileSystem.FS
+  {- Arity: 3,
+     Strictness: <L,U><L,U(1*U(C(C1(U)),A),C(U),A,C(C1(C1(U))),A,A)><L,C(U)>,
+     Unfolding: (\ (dk :: GHC.IO.FilePath)
+                   @ f4 :: * -> *
+                   ($dApplicative :: GHC.Base.Applicative f4)
+                   (eta :: FileSystem.FS -> f4 FileSystem.FS) ->
+                 let {
+                   $dFunctor :: GHC.Base.Functor f4
+                   = GHC.Base.$p1Applicative @ f4 $dApplicative
+                 } in
+                 let {
+                   z :: f4 [FileSystem.FS]
+                   = GHC.Base.pure
+                       @ f4
+                       $dApplicative
+                       @ [FileSystem.FS]
+                       (GHC.Types.[] @ FileSystem.FS)
+                 } in
+                 letrec {
+                   go1 :: [FileSystem.FS] -> f4 [FileSystem.FS]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [FileSystem.FS]) ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> GHC.Base.liftA2
+                            @ f4
+                            $dApplicative
+                            @ FileSystem.FS
+                            @ [FileSystem.FS]
+                            @ [FileSystem.FS]
+                            (GHC.Types.: @ FileSystem.FS)
+                            (case y of wild1 {
+                               FileSystem.Dir ipv ipv1
+                               -> case GHC.Base.eqString ipv dk of wild2 {
+                                    GHC.Types.False
+                                    -> GHC.Base.pure @ f4 $dApplicative @ FileSystem.FS wild1
+                                    GHC.Types.True -> eta wild1 }
+                               FileSystem.File ds1
+                               -> GHC.Base.pure @ f4 $dApplicative @ FileSystem.FS wild1 })
+                            (go1 ys) }
+                 } in
+                 \ (eta1 :: FileSystem.FS) ->
+                 GHC.Base.fmap
+                   @ f4
+                   $dFunctor
+                   @ [FileSystem.FS]
+                   @ FileSystem.FS
+                   (\ (v :: [FileSystem.FS]) ->
+                    case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> FileSystem.Dir ds v
+                      FileSystem.File ipv -> FileSystem.cd1 })
+                   (case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> go1 ds1
+                      FileSystem.File ipv
+                      -> case FileSystem._contents1
+                         ret_ty (f4 [FileSystem.FS])
+                         of {} })) -}
+6fcbf74a86673f8d0d7235feaf0e7c71
+  cd1 :: FileSystem.FS
+  {- Strictness: x -}
+be798dd4f327c7126216eaa9365e3021
+  file ::
+    GHC.IO.FilePath
+    -> Lens.Micro.Type.Traversal' FileSystem.FS FileSystem.FS
+  {- Arity: 3,
+     Strictness: <L,U><L,U(1*U(C(C1(U)),A),C(U),A,C(C1(C1(U))),A,A)><L,C(U)>,
+     Unfolding: (\ (dk :: GHC.IO.FilePath)
+                   @ f4 :: * -> *
+                   ($dApplicative :: GHC.Base.Applicative f4)
+                   (eta :: FileSystem.FS -> f4 FileSystem.FS) ->
+                 let {
+                   $dFunctor :: GHC.Base.Functor f4
+                   = GHC.Base.$p1Applicative @ f4 $dApplicative
+                 } in
+                 let {
+                   z :: f4 [FileSystem.FS]
+                   = GHC.Base.pure
+                       @ f4
+                       $dApplicative
+                       @ [FileSystem.FS]
+                       (GHC.Types.[] @ FileSystem.FS)
+                 } in
+                 letrec {
+                   go1 :: [FileSystem.FS] -> f4 [FileSystem.FS]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [FileSystem.FS]) ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> GHC.Base.liftA2
+                            @ f4
+                            $dApplicative
+                            @ FileSystem.FS
+                            @ [FileSystem.FS]
+                            @ [FileSystem.FS]
+                            (GHC.Types.: @ FileSystem.FS)
+                            (case y of wild1 {
+                               FileSystem.Dir ipv ipv1
+                               -> GHC.Base.pure @ f4 $dApplicative @ FileSystem.FS wild1
+                               FileSystem.File ds1
+                               -> case GHC.Base.eqString ds1 dk of wild2 {
+                                    GHC.Types.False
+                                    -> GHC.Base.pure @ f4 $dApplicative @ FileSystem.FS wild1
+                                    GHC.Types.True -> eta wild1 } })
+                            (go1 ys) }
+                 } in
+                 \ (eta1 :: FileSystem.FS) ->
+                 GHC.Base.fmap
+                   @ f4
+                   $dFunctor
+                   @ [FileSystem.FS]
+                   @ FileSystem.FS
+                   (\ (v :: [FileSystem.FS]) ->
+                    case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> FileSystem.Dir ds v
+                      FileSystem.File ipv -> FileSystem.cd1 })
+                   (case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> go1 ds1
+                      FileSystem.File ipv
+                      -> case FileSystem._contents1
+                         ret_ty (f4 [FileSystem.FS])
+                         of {} })) -}
+5ea6b5c8e237b1c1e032fa418873d46d
+  ls :: Lens.Micro.Type.Traversal' FileSystem.FS GHC.IO.FilePath
+  {- Arity: 2,
+     Strictness: <L,U(1*U(C(C1(U)),A),1*C1(U),A,C(C1(C1(U))),A,A)><L,C(U)>,
+     Unfolding: (\ @ f4 :: * -> *
+                   ($dApplicative :: GHC.Base.Applicative f4)
+                   (eta :: GHC.IO.FilePath -> f4 GHC.IO.FilePath) ->
+                 let {
+                   $dFunctor :: GHC.Base.Functor f4
+                   = GHC.Base.$p1Applicative @ f4 $dApplicative
+                 } in
+                 let {
+                   z :: f4 [FileSystem.FS]
+                   = GHC.Base.pure
+                       @ f4
+                       $dApplicative
+                       @ [FileSystem.FS]
+                       (GHC.Types.[] @ FileSystem.FS)
+                 } in
+                 letrec {
+                   go1 :: [FileSystem.FS] -> f4 [FileSystem.FS]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [FileSystem.FS]) ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> GHC.Base.liftA2
+                            @ f4
+                            $dApplicative
+                            @ FileSystem.FS
+                            @ [FileSystem.FS]
+                            @ [FileSystem.FS]
+                            (GHC.Types.: @ FileSystem.FS)
+                            (GHC.Base.fmap
+                               @ f4
+                               $dFunctor
+                               @ GHC.IO.FilePath
+                               @ FileSystem.FS
+                               (\ (v :: GHC.IO.FilePath) ->
+                                case y of wild1 {
+                                  FileSystem.Dir ds1 ds2 -> FileSystem.Dir v ds2
+                                  FileSystem.File ds1 -> FileSystem.File v })
+                               (eta
+                                  (case y of wild1 {
+                                     FileSystem.Dir ds1 ds2 -> ds1 FileSystem.File ds1 -> ds1 })))
+                            (go1 ys) }
+                 } in
+                 \ (eta1 :: FileSystem.FS) ->
+                 GHC.Base.fmap
+                   @ f4
+                   $dFunctor
+                   @ [FileSystem.FS]
+                   @ FileSystem.FS
+                   (\ (v :: [FileSystem.FS]) ->
+                    case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> FileSystem.Dir ds v
+                      FileSystem.File ipv -> FileSystem.cd1 })
+                   (case eta1 of wild {
+                      FileSystem.Dir ds ds1 -> go1 ds1
+                      FileSystem.File ipv
+                      -> case FileSystem._contents1
+                         ret_ty (f4 [FileSystem.FS])
+                         of {} })) -}
+5083936598f0cc136ef9d95f0ec1c8e0
+  scan :: GHC.IO.FilePath -> GHC.Types.IO FileSystem.FS
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileSystem.scan1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <FileSystem.FS>_R)) -}
+e67a995a111e735dda84bdf3b816a6f0
+  scan1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, FileSystem.FS #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+instance [safe] GHC.Show.Show [FileSystem.FS] = FileSystem.$fShowFS
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
